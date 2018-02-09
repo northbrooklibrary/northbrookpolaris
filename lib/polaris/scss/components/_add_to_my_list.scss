@@ -1,0 +1,18 @@
+﻿.c-add-to-my-list {
+    padding: .5em;
+    color: $color_font-accent_dark;
+
+    &:link, &:visited {
+        color: $color_font-accent_dark;
+        text-decoration: $decoration_dashboard_hover_default;
+    }
+
+    &:hover, &:focus { 
+        text-decoration: $decoration_dashboard_hover;
+        color: $color_font_dashboard_hover_over;
+    }
+}
+
+.c-title-detail-actions__add-to-my-list {
+    font-size: .8125rem;
+}

@@ -1,0 +1,226 @@
+.caret-right {
+  border-bottom: 4px solid transparent;
+  border-top: 4px solid transparent;
+  border-left: 4px solid;
+  display: inline-block;
+  height: 0;
+  vertical-align: middle;
+  width: 0;
+}
+/*
+
+@mixin icon-responsive-dimensions($width, $height, $monotone:true){
+  width: $width+px;
+  height: $height+px;
+  
+  @if $monotone == true {
+    svg{
+      *{
+        fill: currentColor;
+      }
+    } 
+  }
+
+  &--r-svg{
+    height: 0;
+    padding-bottom: ($height/$width)*100%;
+
+    
+    &--max-scale{
+      @include mq($width){
+        width: $width+px;
+        height: $height+px;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   Default icon properties
+   ========================================================================== *
+.icon{
+
+  &__img{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    max-width: 100%;
+    
+    svg{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%; 
+    }
+
+    // Responsive
+    &--r-svg{
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      
+    }
+
+    // Act like normal image in copy
+    &--img{
+      margin-bottom: em($base_font_line_height);
+    }
+  }
+}
+
+/* ==========================================================================
+   Sizing
+   ========================================================================== *
+.icon{
+  
+  // logos
+  &--adjacent_logo{
+    $color: $color_default_primary;
+    $color-hover: $color_font_gray_dark;
+    color: $color;
+
+    .icon__link{
+      &:link, &:visited{
+        color: $color;
+      }
+      &:hover, &:active{
+        color: $color-hover;
+      }
+    }
+
+    .icon__img{
+      @include icon-responsive-dimensions(103, 25);
+    }
+  }
+
+  // social
+  &--social-facebook,
+  &--social-linkedin,
+  &--social-twitter,
+  &--social-youtube{
+    .icon__img{
+      @include icon-responsive-dimensions(35, 35);
+    }
+  }
+  &--social-facebook{
+    $color: #3a5897;
+    $color-hover: #b1b4b5; 
+    color: $color;
+
+    .icon__link{
+      &:link, &:visited{
+        color: $color;
+      }
+      &:hover, &:active{
+        color: $color-hover;
+      }
+    }
+  }
+  &--social-linkedin{
+    $color: #4876b5;
+    $color-hover: #b1b4b5; 
+    color: $color;
+
+    .icon__link{
+      &:link, &:visited{
+        color: $color;
+      }
+      &:hover, &:active{
+        color: $color-hover;
+      }
+    }
+  }
+  &--social-twitter{
+    $color: #54aced;
+    $color-hover: #b1b4b5; 
+    color: $color;
+
+    .icon__link{
+      &:link, &:visited{
+        color: $color;
+      }
+      &:hover, &:active{
+        color: $color-hover;
+      }
+    }
+  }
+  &--social-youtube{
+    $color: #ff3333;
+    $color-hover: #b1b4b5; 
+    color: $color;
+
+    .icon__link{
+      &:link, &:visited{
+        color: $color;
+      }
+      &:hover, &:active{
+        color: $color-hover;
+      }
+    }
+  }
+
+  // utility
+  &--arrow-left,
+  &--arrow-right{
+    $color: $color_font_gray_medium;
+    $color-hover: $color_font_gray_dark;
+    color: $color;
+
+    .icon__link{
+      &:link, &:visited{
+        color: $color;
+      }
+      &:hover, &:active{
+        color: $color-hover;
+      }
+    }
+
+    .icon__img{
+      @include icon-responsive-dimensions(14, 28);
+    }
+  }
+  &--menu{
+    $color: $color_font_gray_medium;
+    $color-hover: $color_font_gray_dark;
+    color: $color;
+
+    .icon__link{
+      &:link, &:visited{
+        color: $color;
+      }
+      &:hover, &:active{
+        color: $color-hover;
+      }
+    }
+
+    .icon__img{
+      @include icon-responsive-dimensions(20, 16);
+    }
+  }
+  &--search{
+    $color: $color_font_gray_medium;
+    $color-hover: $color_font_gray_dark;
+    color: $color;
+
+    .icon__link{
+      &:link, &:visited{
+        color: $color;
+      }
+      &:hover, &:active{
+        color: $color-hover;
+      }
+    }
+
+    .icon__img{
+      @include icon-responsive-dimensions(17, 18);
+    }
+  }
+}//.icon*/

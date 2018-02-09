@@ -1,0 +1,135 @@
+/* ==========================================================================
+   Nav Panel
+   ========================================================================== */
+
+.toggle-nav-panel{
+  &--myaccount, &--main-menu{
+    display: inline-block;
+    @include rem-fallback(font-size, 14);
+    @include rem-fallback(padding, 15, $sidepad_sm);
+
+    @include mq($break_sidepad){
+      @include rem-fallback(padding, 15, $sidepad_lg);
+    }
+
+
+    &:link, &:visited{
+      color: $color_font_white;
+      text-decoration: none;
+    }
+    &:focus { outline: 1px dotted invert; }
+    &:hover, &:active {
+      outline: 0;
+      color: $color_font_white;
+      text-decoration: none;
+    }
+  }
+
+  &--myaccount{
+    padding: 12px;
+    float: right;
+    text-align: right;
+    width: 65%;
+
+    span{
+      padding-left: 5px;
+    }
+  }
+  &--main-menu{
+    float: left;
+    width: 35%;
+
+    span{
+      padding-right: 5px;
+    }
+  }
+}
+
+.nav-panel{
+  background-color: $color_primary;
+  overflow: visible !important;
+
+  &__header{
+    
+  }
+  
+  &__top-nav{
+    position: relative;
+  }
+
+  &__welcome{
+    color: $color_font_white;
+    @include rem-fallback(font-size, 13);
+    @include apply_sidepad(13);
+    padding-top: em(50);
+  }
+
+  &__welcome-link{
+      &:link, &:visited{
+        color: $color_font_white;
+        text-decoration: none;
+      }
+      &:focus { outline: 1px dotted invert; }
+      &:hover, &:active {
+        outline: 0;
+        color: $color_font_white;
+        text-decoration: underline;
+      }
+    }
+
+    &__welcome-link--logout{
+      &:link, &:visited &:hover, &:active{
+        text-transform: capitalize;
+      }
+    }
+
+  &__nav-head{
+    color: $color_font_white;
+    @include rem-fallback(font-size, 32);
+    @include rem-fallback(padding, 0, 0, 5, 0);
+    @include apply_sidepad(32);
+    font-weight: 500;
+  }
+
+  &__quick-search{
+    padding-top: em(25);
+    padding-bottom: em(20);
+    @include apply_sidepad;
+    background-color: $color_white;
+  }
+
+  &__nav{
+
+  }
+
+  &__footer{
+    color: $color_font_white;
+    @include rem-fallback(font-size, 13);
+    @include rem-fallback(padding, 20);
+    @include apply_sidepad(13);
+  }
+    &__footer-link{
+      &:link, &:visited{
+        color: $color_font_white;
+        text-decoration: none;
+        background: $color_primary;
+        font-weight: 500;
+      }
+      &:focus { outline: 1px dotted invert; }
+      &:hover, &:active {
+        outline: 0;
+        color: $color_font_white;
+        text-decoration: none;
+      }
+    }
+
+  &--my-account{
+    
+  }
+  &--main-menu{
+
+  }
+}
+
+
+

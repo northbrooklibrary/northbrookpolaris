@@ -1,0 +1,88 @@
+﻿.payment{
+    &__page .row{
+        margin-right:0;
+        margin-left:0;
+    }
+    &__header-name{
+        margin-top:1em;
+        margin-bottom:1em;
+        font-size: 1.6em;
+        font-weight:bold;
+        text-align: center;
+    }
+    &__header-name--left{
+        text-align: left;
+        padding-right:5px;
+        padding-left:5px;
+        padding-top:1em;
+        padding-bottom: 1em;
+    }
+    &__data--center{
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        a:link , a:visited{
+            text-decoration: none;
+        }
+        a:hover, a:focus{
+            text-decoration: underline;
+        }
+    }
+    &__table--scroll{
+        overflow-x: auto;
+    }
+    &__table--no-padding{
+        padding-right:0;
+        padding-left:0;
+    }
+    &__table--center{
+        margin-right:auto;
+        margin-left: auto;
+        table td{
+            padding:0.7em 0.7em 0.7em 0.7em;
+        }
+        table th{
+            padding:0.7em 0.7em 0.7em 0.7em;
+        }
+        table th:last-child{
+            border-right: 1px solid grey;
+        }
+    }
+    &__row{
+        margin-right:0;
+        margin-left:0;
+    }
+    &__total{
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    &__label{
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    &__label--col2{
+        margin-top: 0.5em;
+     //   margin-bottom: 1em;
+    }
+    &__label--only{
+        padding-right: 15px;
+        padding-left:15px;
+    }
+    &__button{
+        margin-bottom:0.5em;
+        word-wrap: break-word;
+        white-space: normal;
+        word-break: break-word      
+    }
+}
+
+#checkboxSendAck {
+    height: .8125em;
+    margin-top: .21875em;
+    margin-bottom: .21875em;
+}
+
+#checkboxSendAck + label {
+    padding: 0 0 0 0.25em;
+    vertical-align: middle;
+}

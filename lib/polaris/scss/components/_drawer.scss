@@ -1,0 +1,59 @@
+﻿.drawer
+{
+    &-head
+    {
+        background-color: $color_white;
+        background-image: url(#{$shared-images-path}drawer_head_closed_background.gif);
+        background-position: top left;
+        background-repeat: no-repeat;
+        @include rem-fallback(font-size, 16);
+        font-weight: 500;
+        color: $color_font_accent; 
+        margin-top: 10px;
+        padding: 7px 7px 7px 25px;
+        border-top: 1px solid #b1bcdb;
+        cursor: pointer; 
+    }
+
+    &-head-hover
+    {
+        background-color: $color_accent; 
+        color: $color_font_white;
+    }
+
+    &-head-open
+    {
+        background-image: url(#{$shared-images-path}drawer_head_open_background.gif);
+    }
+
+    &-body
+    {
+        background-color: $color_white; 
+        padding: 7px;
+        margin: 0, 20px, 0, 20px;
+    }
+
+    &-link
+    {
+        background-color: $color_white; 
+        background-image: url(#{$shared-images-path}drawer_head_link_background.gif);
+        background-position: top left;
+        background-repeat: no-repeat;
+        @include rem-fallback(font-size, 16);
+        font-weight: 500;
+        color: $color_font_accent; 
+        margin-top: 10px;
+        padding: 7px;
+        padding-left: 25px;
+        border-top: 1px solid #b1bcdb;
+        cursor: pointer;  
+    }
+
+    &-link-hover
+    {
+        background-color: $color_accent; 
+        color: $color_font_white;
+    }
+
+  a.drawer-link-link:Hover  { text-decoration: none; }
+  }

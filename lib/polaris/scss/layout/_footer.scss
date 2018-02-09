@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer{
+  position: relative;
+
+  &__content-container{
+    max-width: em(1500);
+  }
+    // Main
+    &__main{
+      background-color: lighten($color_primary,2);
+    }
+
+    // Secondary
+    &__secondary-content{
+      @include apply_sidepad;
+      background-color: $color_primary;
+      color: $color_font_white;
+      @include rem-fallback(padding-top,40);
+      @include rem-fallback(padding-bottom,40);
+    }    
+      
+      // Copyright
+      &__copyright{
+        @include rem-fallback(font-size, 13);
+        line-height: (14/12);
+        @include rem-fallback(padding, 5, 0);
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      &__logo{
+        padding-bottom: em(15);
+      }
+
+      // Kid's Catalog link
+      &__kids-mobile {
+        text-align: center;
+      }
+
+      &__kids-mobile-link {
+        @include rem-fallback(font-size, 13);
+        @include rem-fallback(padding-bottom, 8);
+        line-height: 1;
+        text-transform: uppercase;
+
+        color: $color_font_white;
+        text-decoration: none;
+
+        &:link, &:visited{
+        color: $color_font_white;
+        text-decoration: none;
+        }
+
+        &:hover, &:active {
+        color: $color_font_footer_accent;
+        text-decoration: underline;
+       }
+     }
+
+     &__kids-catalog-logo {
+        font-size: 24px;
+     }
+
+    &__virtual-reference {
+        text-align: center;
+        padding: 0px 0px 30px 0px;
+        width: 100%;
+    }
+
+
+  @include mq($break_footer_mid){
+
+    // Main
+    &__main{
+      
+    }
+      &__main-col1{
+        
+      }
+      &__main-col2{
+        text-align: right;
+      }
+
+    // Secondary
+    &__secondary-content{
+      @include clearfix;
+    }
+
+      &__secondary-content-col1{
+        float: left;
+        width: 60%;
+      }
+        // Copyright
+        &__copyright{
+          padding: 0;
+          text-align: left;
+        }
+
+      &__secondary-content-col2{
+        float: right;
+        width: 40%;
+        text-align: right;
+        padding-right: 20px;
+      }
+        // Kid's Catalog link
+        &__kids-mobile{
+          display: inline-block;
+        }
+  }
+}

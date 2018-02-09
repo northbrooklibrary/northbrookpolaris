@@ -1,0 +1,1530 @@
+---
+title: "Results"
+layout: base_npl
+body_class: "results"
+polaris_body_classes: "section-search page-searchresults has-sidebar sidebar-left"
+
+---
+<div id="searchResults">
+  <script type="text/javascript">
+  function processDynamicLinksResponse(booksInfo)
+  {
+    for (id in booksInfo)
+    {
+      if (booksInfo[id] && booksInfo[id].preview == 'partial' && booksInfo[id].embeddable == true)
+      {
+        $('.gbs-preview-div').each(function ()
+        {
+          if ($(this).attr('id').indexOf(id) != -1) {
+            $(this).show();
+          }
+        });
+      }
+    }
+  }
+
+
+  </script>
+  <div class="c-results-utility c-results-utility--full">
+    <div class="c-results-utility__container c-results-utility__container--result-count">
+      <div class="c-results-utility-result-count">
+        1
+        -
+        10
+        of
+        30
+      </div>
+      <div class="c-results-utility-per-page form-inline">
+        <div class="c-results-utility-per-page__select-container select-styled">
+          <select class="c-results-utility-per-page__select" id="dropdownResultsPerPageTop" onchange="javascript:ajaxLoadResultsPage(1, 0, 'Top', 0);">
+            <option value="10" selected="">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+        <label for="c-results-utility-per-page__select" class="c-results-utility-per-page__label">per page</label>
+      </div>
+    </div>
+
+    <div class="c-results-utility__container c-results-utility__container--sort-narrow c-results-utility__container--affix">
+
+      <div class="c-results-utility-sort">
+        <label for="dropdownSortByTop" class="c-results-utility-sort__label">Sort</label>
+        <div class="c-results-utility-sort__select-container">
+
+          <select style="width:100%; max-width: 150px;" class="c-results-utility-sort__select js-select-width" id="dropdownSortByTop" onchange="javascript:ajaxSortSearchResults('Top');">
+
+            <option value="RELEVANCE" selected="">Relevance</option>
+
+            <option value="MP">Most popular</option>
+
+            <option value="AU">Author</option>
+
+            <option value="TI">Title</option>
+
+            <option value="CALL">Call Number</option>
+
+            <option value="PD">Publication date</option>
+
+            <option value="AU_TI">Author, then Title</option>
+
+            <option value="AU_PD">Author, then Publication date</option>
+
+            <option value="TI_AU">Title, then Author</option>
+
+            <option value="TI_PD">Title, then Publication date</option>
+
+            <option value="TI_TOM">Title, then Format</option>
+
+            <option value="PD_AU">Publication date, then Author</option>
+
+            <option value="PD_TI">Publication date, then Title</option>
+
+            <option value="CALL_AU">Call number, then Author</option>
+
+            <option value="CALL_TI">Call number, then Title</option>
+
+            <option value="CALL_PD">Call number, then Publication Date</option>
+
+          </select>
+
+        </div>
+      </div>
+
+      <!--<div class="c-results-utility-narrow" style="display: block;" data-show-at-load="">
+        <div class="c-accordion c-accordion--results-utility" id="narrow-container" role="tablist" aria-multiselectable="true">
+          <div class="c-accordion__panel" id="c-accordion__panel-narrow">
+            <div class="c-accordion__heading" role="tab">
+              <h5 class="c-accordion__title">
+                <a class="c-results-utility-narrow__link collapsed " role="button" href="javascript:showModalBasic('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxNarrowYourSearch.aspx', 'Narrow your search')">
+                  <span class="c-results-utility-narrow__narrow-label">Narrow</span>
+                  <span class="c-results-utility-narrow__narrowed-label">Narrowed</span>
+                </a>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+
+    <div class="c-results-utility__container c-results-utility__container--pagination c-results-utility__container--last">
+      <div class="c-results-utility-full-pagination">
+
+      </div>
+    </div>
+
+  </div>
+  <div class="search__position">
+    <a id="__pos-1" href="#"></a>
+  </div>
+  <div class="content-module content-module--search-result">
+    <div class="content-container c-title-detail__title-display">
+      <div class="c-title-detail c-title-detail--initial-two-col">
+        <div class="c-title-detail__container ">
+          <div class="c-title-detail-media__container c-title-detail-media__container--no-border">
+            <div class="c-title-detail__image-container">
+              <div id="srcp_1" class="hover__container" width="1%" align="center" valign="top">
+                <img id="hover_image_1" class="c-title-detail__thumbnail hover__thumbnail" src="http://www.syndetics.com/index.aspx?isbn=9780792763307/SC.GIF&amp;client=847-342-5300&amp;upc=&amp;oclc=301888576" alt="Little Dorrit" data-position="1">
+              </div>
+            </div>
+            <div class="c-title-detail-meta">
+              <div class="c-title-detail-formats__list">
+
+
+
+
+                <a href="javascript:showModalBasic('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxMARC.aspx?pos=1')">
+                  <img class="c-title-detail-formats__img" src="http://ccs-training.polarislibrary.com/polaris/themes/shared/formats/formatid52.gif" alt="Audio Book on CD" title="Audio Book on CD" border="0">
+                </a>
+
+
+
+              </div>
+            </div>
+
+            <div class="c-title-detail__3rd-party c-title-detail__pub-year">2009</div>
+
+
+            <div class="c-title-detail__3rd-party">
+
+
+              <div class="gbs-preview-div c-title-detail__3rd-party-item--google-preview" id="gbs_ISBN:9780792763307_1">
+                <a class="gbs-preview-link" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxGooglePreview.aspx?isbn=ISBN:9780792763307','', true)">
+                  <img src="http://ccs-training.polarislibrary.com/polaris/themes/shared/gbs_preview_button.gif" title="Google Books Preview" alt="Google Books Preview" border="0">
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="c-title-detail-info__container">
+            <div class="c-title-detail-info-main__container">
+              <div class="c-title-detail-info__result-num">
+
+
+              </div>
+            </div>
+            <div class="c-title-detail-info-secondary__container" id="plres_1">
+              <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody><tr class="nsm-brief-primary-zone">
+                  <td width="100%"><table width="100%" cellpadding="5" cellspacing="0">
+                    <tbody><tr valign="top">
+                      <td width="1%" align="right" style="padding-left: 0; padding-right: 0;">1.</td><td style="align: left; width: 100%; valign: top; margin-top: 5px;"><div class="nsm-brief-primary-title-group">
+                        <a class="nsm-brief-action-link" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=1"><span class="nsm-short-item nsm-e135"><span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span></span></a>
+                      </div><div class="nsm-brief-primary-author-group">
+                        by <span class="nsm-short-item nsm-e118"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=AU&amp;term=Dickens%2c+Charles%2c+1812-1870.&amp;page=0"><span class="nsm-browse-text">Dickens, Charles, 1812-1870.</span></a></span>
+                      </div><div class="nsm-brief-standard-group">
+                        <span class="nsm-brief-label nsm-e105">Edition: </span><span class="nsm-short-item nsm-e105">Unabridged.</span>
+                      </div></td><td nowrap="" width="1%" style="valign: top; text-align: right;"></td>
+                    </tr>
+                  </tbody></table></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e109">Summary: </span><span class="nsm-short-item nsm-e109">The daughter of an imprisoned debtor suffers injustices of nineteenth-century English society.</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e31">Copies available at this library: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">2 (of 2)</span></span>
+                  </div><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e32">Copies available at all libraries: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">2 (of 2)</span></span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e104">Call Number: </span><span class="nsm-short-item nsm-e104">823/.8</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+
+
+
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="c-title-detail-actions__container">
+          <ul id="c-title-detail__button-list-" class="c-title-detail-actions__list">
+
+
+            <li class="c-title-detail-actions__item button-brief-availability" role="presentation">
+              <a class="c-title-detail-actions__btn" id="buttonAvailability_1" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxavailability.aspx?fp=1&amp;level=local&amp;morelink=0&amp;pos=1&amp;bibid=634093')">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Find It
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-fulldisplay" role="presentation">
+              <a class="c-title-detail-actions__btn" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=1">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                More Info
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-request" role="presentation">
+
+              <a href="javascript:checkRequestLevel(1, 634093, 1)" class="c-title-detail-actions__btn">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                Place Hold
+              </a>
+
+            </li>
+
+
+          </ul>
+          <div class="c-title-detail-actions__add-to-my-list dropdown--scroll-into-view">
+
+            <span id="addtolist_1"><a class="c-add-to-my-list" href="javascript:AddToList(122, 1, '634093', 0)">Add to My List</a>&nbsp;&nbsp;</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="search__position">
+    <a id="__pos-2" href="#"></a>
+  </div>
+  <div class="content-module content-module--search-result">
+    <div class="content-container c-title-detail__title-display">
+      <div class="c-title-detail c-title-detail--initial-two-col">
+        <div class="c-title-detail__container ">
+          <div class="c-title-detail-media__container c-title-detail-media__container--no-border">
+            <div class="c-title-detail__image-container">
+              <div id="srcp_2" class="hover__container" width="1%" align="center" valign="top">
+                <img id="hover_image_2" class="c-title-detail__thumbnail hover__thumbnail" src="http://www.syndetics.com/index.aspx?isbn=9781419880674/SC.GIF&amp;client=847-342-5300&amp;upc=883929064946&amp;oclc=319172478" alt="Little Dorrit" data-position="2">
+              </div>
+            </div>
+            <div class="c-title-detail-meta">
+              <div class="c-title-detail-formats__list">
+
+
+
+
+                <a href="javascript:showModalBasic('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxMARC.aspx?pos=2')">
+                  <img class="c-title-detail-formats__img" src="http://ccs-training.polarislibrary.com/polaris/themes/shared/formats/formatid33.gif" alt="DVD" title="DVD" border="0">
+                </a>
+
+
+
+              </div>
+            </div>
+
+            <div class="c-title-detail__3rd-party c-title-detail__pub-year">2009</div>
+
+
+            <div class="c-title-detail__3rd-party">
+
+
+              <div class="gbs-preview-div c-title-detail__3rd-party-item--google-preview" id="gbs_ISBN:9781419880674_2">
+                <a class="gbs-preview-link" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxGooglePreview.aspx?isbn=ISBN:9781419880674','', true)">
+                  <img src="http://ccs-training.polarislibrary.com/polaris/themes/shared/gbs_preview_button.gif" title="Google Books Preview" alt="Google Books Preview" border="0">
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="c-title-detail-info__container">
+            <div class="c-title-detail-info-main__container">
+              <div class="c-title-detail-info__result-num">
+
+
+              </div>
+            </div>
+            <div class="c-title-detail-info-secondary__container" id="plres_2">
+              <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody><tr class="nsm-brief-primary-zone">
+                  <td width="100%"><table width="100%" cellpadding="5" cellspacing="0">
+                    <tbody><tr valign="top">
+                      <td width="1%" align="right" style="padding-left: 0; padding-right: 0;">2.</td><td style="align: left; width: 100%; valign: top; margin-top: 5px;"><div class="nsm-brief-primary-title-group">
+                        <a class="nsm-brief-action-link" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=2"><span class="nsm-short-item nsm-e135"><span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span></span></a>
+                      </div></td><td nowrap="" width="1%" style="valign: top; text-align: right;"></td>
+                    </tr>
+                  </tbody></table></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e109">Summary: </span><span class="nsm-short-item nsm-e109">When Arthur Clennam returns to London after several years abroad, he wants to learn more about his mother's new seamstress, young Amy <span class="nsm-hit-text">Dorrit</span>. His search brings him to the Marshalsea Debtors Prison, where he learns the truth about struggle and hardship in 1820s England.</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e31">Copies available at this library: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">14 (of 21)</span></span>
+                  </div><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e32">Copies available at all libraries: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">14 (of 21)</span></span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+
+
+
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="c-title-detail-actions__container">
+          <ul id="c-title-detail__button-list-" class="c-title-detail-actions__list">
+
+
+            <li class="c-title-detail-actions__item button-brief-availability" role="presentation">
+              <a class="c-title-detail-actions__btn" id="buttonAvailability_2" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxavailability.aspx?fp=1&amp;level=local&amp;morelink=0&amp;pos=2&amp;bibid=636515')">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Find It
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-fulldisplay" role="presentation">
+              <a class="c-title-detail-actions__btn" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=2">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                More Info
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-request" role="presentation">
+
+              <a href="javascript:checkRequestLevel(2, 636515, 1)" class="c-title-detail-actions__btn">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                Place Hold
+              </a>
+
+            </li>
+
+
+          </ul>
+          <div class="c-title-detail-actions__add-to-my-list dropdown--scroll-into-view">
+
+            <span id="addtolist_2"><a class="c-add-to-my-list" href="javascript:AddToList(122, 2, '636515', 0)">Add to My List</a>&nbsp;&nbsp;</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="search__position">
+    <a id="__pos-3" href="#"></a>
+  </div>
+  <div class="content-module content-module--search-result">
+    <div class="content-container c-title-detail__title-display">
+      <div class="c-title-detail c-title-detail--initial-two-col">
+        <div class="c-title-detail__container ">
+          <div class="c-title-detail-media__container c-title-detail-media__container--no-border">
+            <div class="c-title-detail__image-container">
+              <div id="srcp_3" class="hover__container" width="1%" align="center" valign="top">
+                <img id="hover_image_3" class="c-title-detail__thumbnail hover__thumbnail" src="http://www.syndetics.com/index.aspx?isbn=9780786180974/SC.GIF&amp;client=847-342-5300&amp;upc=&amp;oclc=154795828" alt="Little Dorrit. Part 1" data-position="3">
+              </div>
+            </div>
+            <div class="c-title-detail-meta">
+              <div class="c-title-detail-formats__list">
+
+
+
+
+                <a href="javascript:showModalBasic('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxMARC.aspx?pos=3')">
+                  <img class="c-title-detail-formats__img" src="http://ccs-training.polarislibrary.com/polaris/themes/shared/formats/formatid52.gif" alt="Audio Book on CD" title="Audio Book on CD" border="0">
+                </a>
+
+
+
+              </div>
+            </div>
+
+            <div class="c-title-detail__3rd-party c-title-detail__pub-year">1998</div>
+
+
+            <div class="c-title-detail__3rd-party">
+
+
+              <div class="gbs-preview-div c-title-detail__3rd-party-item--google-preview" id="gbs_ISBN:9780786180974_3">
+                <a class="gbs-preview-link" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxGooglePreview.aspx?isbn=ISBN:9780786180974','', true)">
+                  <img src="http://ccs-training.polarislibrary.com/polaris/themes/shared/gbs_preview_button.gif" title="Google Books Preview" alt="Google Books Preview" border="0">
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="c-title-detail-info__container">
+            <div class="c-title-detail-info-main__container">
+              <div class="c-title-detail-info__result-num">
+
+
+              </div>
+            </div>
+            <div class="c-title-detail-info-secondary__container" id="plres_3">
+              <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody><tr class="nsm-brief-primary-zone">
+                  <td width="100%"><table width="100%" cellpadding="5" cellspacing="0">
+                    <tbody><tr valign="top">
+                      <td width="1%" align="right" style="padding-left: 0; padding-right: 0;">3.</td><td style="align: left; width: 100%; valign: top; margin-top: 5px;"><div class="nsm-brief-primary-title-group">
+                        <a class="nsm-brief-action-link" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=3"><span class="nsm-short-item nsm-e135"><span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span>. Part 1</span></a>
+                      </div><div class="nsm-brief-primary-author-group">
+                        by <span class="nsm-short-item nsm-e118"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=AU&amp;term=Dickens%2c+Charles%2c+1812-1870.&amp;page=0"><span class="nsm-browse-text">Dickens, Charles, 1812-1870.</span></a></span>
+                      </div></td><td nowrap="" width="1%" style="valign: top; text-align: right;"></td>
+                    </tr>
+                  </tbody></table></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e109">Summary: </span><span class="nsm-short-item nsm-e109">"<span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span>" is born in debtor's prison and befriended by a family who hires her as a seamstress. When her inmate father inherits a fortune, they escape the Marshalsea, but meanwhile, their benefactor becomes victim of a fraud and is himself sentenced to the prison. <span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span> finds him there, and a relationship develops.</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e31">Copies available at this library: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">1 (of 1)</span></span>
+                  </div><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e32">Copies available at all libraries: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">1 (of 1)</span></span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e104">Call Number: </span><span class="nsm-short-item nsm-e104">3823/.8</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+
+
+
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="c-title-detail-actions__container">
+          <ul id="c-title-detail__button-list-" class="c-title-detail-actions__list">
+
+
+            <li class="c-title-detail-actions__item button-brief-availability" role="presentation">
+              <a class="c-title-detail-actions__btn" id="buttonAvailability_3" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxavailability.aspx?fp=1&amp;level=local&amp;morelink=0&amp;pos=3&amp;bibid=556612')">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Find It
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-fulldisplay" role="presentation">
+              <a class="c-title-detail-actions__btn" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=3">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                More Info
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-request" role="presentation">
+
+              <a href="javascript:checkRequestLevel(3, 556612, 1)" class="c-title-detail-actions__btn">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                Place Hold
+              </a>
+
+            </li>
+
+
+          </ul>
+          <div class="c-title-detail-actions__add-to-my-list dropdown--scroll-into-view">
+
+            <span id="addtolist_3"><a class="c-add-to-my-list" href="javascript:AddToList(122, 3, '556612', 0)">Add to My List</a>&nbsp;&nbsp;</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="search__position">
+    <a id="__pos-4" href="#"></a>
+  </div>
+  <div class="content-module content-module--search-result">
+    <div class="content-container c-title-detail__title-display">
+      <div class="c-title-detail c-title-detail--initial-two-col">
+        <div class="c-title-detail__container ">
+          <div class="c-title-detail-media__container c-title-detail-media__container--no-border">
+            <div class="c-title-detail__image-container">
+              <div id="srcp_4" class="hover__container" width="1%" align="center" valign="top">
+                <img id="hover_image_4" class="c-title-detail__thumbnail hover__thumbnail" src="http://www.syndetics.com/index.aspx?isbn=9780786180967/SC.GIF&amp;client=847-342-5300&amp;upc=&amp;oclc=154795833" alt="Little Dorrit. Part 2" data-position="4">
+              </div>
+            </div>
+            <div class="c-title-detail-meta">
+              <div class="c-title-detail-formats__list">
+
+
+
+
+                <a href="javascript:showModalBasic('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxMARC.aspx?pos=4')">
+                  <img class="c-title-detail-formats__img" src="http://ccs-training.polarislibrary.com/polaris/themes/shared/formats/formatid52.gif" alt="Audio Book on CD" title="Audio Book on CD" border="0">
+                </a>
+
+
+
+              </div>
+            </div>
+
+            <div class="c-title-detail__3rd-party c-title-detail__pub-year">1998</div>
+
+
+            <div class="c-title-detail__3rd-party">
+
+
+              <div class="gbs-preview-div c-title-detail__3rd-party-item--google-preview" id="gbs_ISBN:9780786180967_4">
+                <a class="gbs-preview-link" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxGooglePreview.aspx?isbn=ISBN:9780786180967','', true)">
+                  <img src="http://ccs-training.polarislibrary.com/polaris/themes/shared/gbs_preview_button.gif" title="Google Books Preview" alt="Google Books Preview" border="0">
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="c-title-detail-info__container">
+            <div class="c-title-detail-info-main__container">
+              <div class="c-title-detail-info__result-num">
+
+
+              </div>
+            </div>
+            <div class="c-title-detail-info-secondary__container" id="plres_4">
+              <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody><tr class="nsm-brief-primary-zone">
+                  <td width="100%"><table width="100%" cellpadding="5" cellspacing="0">
+                    <tbody><tr valign="top">
+                      <td width="1%" align="right" style="padding-left: 0; padding-right: 0;">4.</td><td style="align: left; width: 100%; valign: top; margin-top: 5px;"><div class="nsm-brief-primary-title-group">
+                        <a class="nsm-brief-action-link" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=4"><span class="nsm-short-item nsm-e135"><span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span>. Part 2</span></a>
+                      </div><div class="nsm-brief-primary-author-group">
+                        by <span class="nsm-short-item nsm-e118"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=AU&amp;term=Dickens%2c+Charles%2c+1812-1870.&amp;page=0"><span class="nsm-browse-text">Dickens, Charles, 1812-1870.</span></a></span>
+                      </div></td><td nowrap="" width="1%" style="valign: top; text-align: right;"></td>
+                    </tr>
+                  </tbody></table></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e109">Summary: </span><span class="nsm-short-item nsm-e109">"<span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span>" is born in debtor's prison and befriended by a family who hires her as a seamstress. When her inmate father inherits a fortune, they escape the Marshalsea, but meanwhile, their benefactor becomes victim of a fraud and is himself sentenced to the prison. <span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span> finds him there, and a relationship develops.</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e31">Copies available at this library: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">1 (of 1)</span></span>
+                  </div><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e32">Copies available at all libraries: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">1 (of 1)</span></span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e104">Call Number: </span><span class="nsm-short-item nsm-e104">3823/.8</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+
+
+
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="c-title-detail-actions__container">
+          <ul id="c-title-detail__button-list-" class="c-title-detail-actions__list">
+
+
+            <li class="c-title-detail-actions__item button-brief-availability" role="presentation">
+              <a class="c-title-detail-actions__btn" id="buttonAvailability_4" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxavailability.aspx?fp=1&amp;level=local&amp;morelink=0&amp;pos=4&amp;bibid=556614')">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Find It
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-fulldisplay" role="presentation">
+              <a class="c-title-detail-actions__btn" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=4">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                More Info
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-request" role="presentation">
+
+              <a href="javascript:checkRequestLevel(4, 556614, 1)" class="c-title-detail-actions__btn">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                Place Hold
+              </a>
+
+            </li>
+
+
+          </ul>
+          <div class="c-title-detail-actions__add-to-my-list dropdown--scroll-into-view">
+
+            <span id="addtolist_4"><a class="c-add-to-my-list" href="javascript:AddToList(122, 4, '556614', 0)">Add to My List</a>&nbsp;&nbsp;</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="search__position">
+    <a id="__pos-5" href="#"></a>
+  </div>
+  <div class="content-module content-module--search-result">
+    <div class="content-container c-title-detail__title-display">
+      <div class="c-title-detail c-title-detail--initial-two-col">
+        <div class="c-title-detail__container ">
+          <div class="c-title-detail-media__container c-title-detail-media__container--no-border">
+            <div class="c-title-detail__image-container">
+              <div id="srcp_5" class="hover__container" width="1%" align="center" valign="top">
+                <img id="hover_image_5" class="c-title-detail__thumbnail hover__thumbnail" src="http://www.syndetics.com/index.aspx?isbn=9780192545121/SC.GIF&amp;client=847-342-5300&amp;upc=&amp;oclc=17152444" alt="Little Dorrit" data-position="5">
+              </div>
+            </div>
+            <div class="c-title-detail-meta">
+              <div class="c-title-detail-formats__list">
+
+
+
+
+                <a href="javascript:showModalBasic('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxMARC.aspx?pos=5')">
+                  <img class="c-title-detail-formats__img" src="http://ccs-training.polarislibrary.com/polaris/themes/shared/formats/formatid01.gif" alt="Book" title="Book" border="0">
+                </a>
+
+
+
+              </div>
+            </div>
+
+            <div class="c-title-detail__3rd-party c-title-detail__pub-year">1987</div>
+
+
+            <div class="c-title-detail__3rd-party">
+
+
+              <div class="gbs-preview-div c-title-detail__3rd-party-item--google-preview" id="gbs_ISBN:9780192545121_5">
+                <a class="gbs-preview-link" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxGooglePreview.aspx?isbn=ISBN:9780192545121','', true)">
+                  <img src="http://ccs-training.polarislibrary.com/polaris/themes/shared/gbs_preview_button.gif" title="Google Books Preview" alt="Google Books Preview" border="0">
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="c-title-detail-info__container">
+            <div class="c-title-detail-info-main__container">
+              <div class="c-title-detail-info__result-num">
+
+
+              </div>
+            </div>
+            <div class="c-title-detail-info-secondary__container" id="plres_5">
+              <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody><tr class="nsm-brief-primary-zone">
+                  <td width="100%"><table width="100%" cellpadding="5" cellspacing="0">
+                    <tbody><tr valign="top">
+                      <td width="1%" align="right" style="padding-left: 0; padding-right: 0;">5.</td><td style="align: left; width: 100%; valign: top; margin-top: 5px;"><div class="nsm-brief-primary-title-group">
+                        <a class="nsm-brief-action-link" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=5"><span class="nsm-short-item nsm-e135"><span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span></span></a>
+                      </div><div class="nsm-brief-primary-author-group">
+                        by <span class="nsm-short-item nsm-e118"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=AU&amp;term=Dickens%2c+Charles%2c+1812-1870.&amp;page=0"><span class="nsm-browse-text">Dickens, Charles, 1812-1870.</span></a></span>
+                      </div><div class="nsm-brief-standard-group">
+                        <span class="nsm-brief-label nsm-e147">Series: </span><span class="nsm-short-item nsm-e147"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=SE&amp;term=Dickens%2c+Charles%2c+1812-1870.+Oxford+illustrated+Dickens.&amp;page=0"><span class="nsm-browse-text">Dickens, Charles, 1812-1870. Oxford illustrated Dickens.</span></a></span>
+                      </div></td><td nowrap="" width="1%" style="valign: top; text-align: right;"></td>
+                    </tr>
+                  </tbody></table></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e109">Summary: </span><span class="nsm-short-item nsm-e109">Describes the life of <span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span>, who was born and brought up in the Marshalsea prison where her father was confined for debt.</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e31">Copies available at this library: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">2 (of 2)</span></span>
+                  </div><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e32">Copies available at all libraries: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">2 (of 2)</span></span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e104">Call Number: </span><span class="nsm-short-item nsm-e104">813</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+
+
+
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="c-title-detail-actions__container">
+          <ul id="c-title-detail__button-list-" class="c-title-detail-actions__list">
+
+
+            <li class="c-title-detail-actions__item button-brief-availability" role="presentation">
+              <a class="c-title-detail-actions__btn" id="buttonAvailability_5" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxavailability.aspx?fp=1&amp;level=local&amp;morelink=0&amp;pos=5&amp;bibid=501041')">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Find It
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-fulldisplay" role="presentation">
+              <a class="c-title-detail-actions__btn" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=5">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                More Info
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-request" role="presentation">
+
+              <a href="javascript:checkRequestLevel(5, 501041, 1)" class="c-title-detail-actions__btn">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                Place Hold
+              </a>
+
+            </li>
+
+
+          </ul>
+          <div class="c-title-detail-actions__add-to-my-list dropdown--scroll-into-view">
+
+            <span id="addtolist_5"><a class="c-add-to-my-list" href="javascript:AddToList(122, 5, '501041', 0)">Add to My List</a>&nbsp;&nbsp;</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="search__position">
+    <a id="__pos-6" href="#"></a>
+  </div>
+  <div class="content-module content-module--search-result">
+    <div class="content-container c-title-detail__title-display">
+      <div class="c-title-detail c-title-detail--initial-two-col">
+        <div class="c-title-detail__container ">
+          <div class="c-title-detail-media__container c-title-detail-media__container--no-border">
+            <div class="c-title-detail__image-container">
+              <div id="srcp_6" class="hover__container" width="1%" align="center" valign="top">
+                <img id="hover_image_6" class="c-title-detail__thumbnail hover__thumbnail" src="http://www.syndetics.com/index.aspx?isbn=/SC.GIF&amp;client=847-342-5300&amp;upc=&amp;oclc=22859549" alt="Little Dorrit" data-position="6">
+              </div>
+            </div>
+            <div class="c-title-detail-meta">
+              <div class="c-title-detail-formats__list">
+
+
+
+
+                <a href="javascript:showModalBasic('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxMARC.aspx?pos=6')">
+                  <img class="c-title-detail-formats__img" src="http://ccs-training.polarislibrary.com/polaris/themes/shared/formats/formatid01.gif" alt="Book" title="Book" border="0">
+                </a>
+
+
+
+              </div>
+            </div>
+
+            <div class="c-title-detail__3rd-party c-title-detail__pub-year">1990</div>
+
+
+          </div>
+          <div class="c-title-detail-info__container">
+            <div class="c-title-detail-info-main__container">
+              <div class="c-title-detail-info__result-num">
+
+
+              </div>
+            </div>
+            <div class="c-title-detail-info-secondary__container" id="plres_6">
+              <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody><tr class="nsm-brief-primary-zone">
+                  <td width="100%"><table width="100%" cellpadding="5" cellspacing="0">
+                    <tbody><tr valign="top">
+                      <td width="1%" align="right" style="padding-left: 0; padding-right: 0;">6.</td><td style="align: left; width: 100%; valign: top; margin-top: 5px;"><div class="nsm-brief-primary-title-group">
+                        <a class="nsm-brief-action-link" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=6"><span class="nsm-short-item nsm-e135"><span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span></span></a>
+                      </div><div class="nsm-brief-primary-author-group">
+                        by <span class="nsm-short-item nsm-e118"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=AU&amp;term=Dickens%2c+Charles%2c+1812-1870.&amp;page=0"><span class="nsm-browse-text">Dickens, Charles, 1812-1870.</span></a></span>
+                      </div><div class="nsm-brief-standard-group">
+                        <span class="nsm-brief-label nsm-e105">Edition: </span><span class="nsm-short-item nsm-e105">Second edition</span>
+                      </div><div class="nsm-brief-standard-group">
+                        <span class="nsm-brief-label nsm-e147">Series: </span><span class="nsm-short-item nsm-e147"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=SE&amp;term=Great+books+of+the+Western+world+(1990)+%3b+47.&amp;page=0"><span class="nsm-browse-text">Great books of the Western world (1990) ; 47.</span></a></span>
+                      </div></td><td nowrap="" width="1%" style="valign: top; text-align: right;"></td>
+                    </tr>
+                  </tbody></table></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e31">Copies available at this library: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">5 (of 5)</span></span>
+                  </div><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e32">Copies available at all libraries: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">5 (of 5)</span></span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e104">Call Number: </span><span class="nsm-short-item nsm-e104">082 s 823/.8</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+
+
+
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="c-title-detail-actions__container">
+          <ul id="c-title-detail__button-list-" class="c-title-detail-actions__list">
+
+
+            <li class="c-title-detail-actions__item button-brief-availability" role="presentation">
+              <a class="c-title-detail-actions__btn" id="buttonAvailability_6" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxavailability.aspx?fp=1&amp;level=local&amp;morelink=0&amp;pos=6&amp;bibid=86011')">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Find It
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-fulldisplay" role="presentation">
+              <a class="c-title-detail-actions__btn" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=6">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                More Info
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-request" role="presentation">
+
+              <a href="javascript:checkRequestLevel(6, 86011, 1)" class="c-title-detail-actions__btn">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                Place Hold
+              </a>
+
+            </li>
+
+
+          </ul>
+          <div class="c-title-detail-actions__add-to-my-list dropdown--scroll-into-view">
+
+            <span id="addtolist_6"><a class="c-add-to-my-list" href="javascript:AddToList(122, 6, '86011', 0)">Add to My List</a>&nbsp;&nbsp;</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="search__position">
+    <a id="__pos-7" href="#"></a>
+  </div>
+  <div class="content-module content-module--search-result">
+    <div class="content-container c-title-detail__title-display">
+      <div class="c-title-detail c-title-detail--initial-two-col">
+        <div class="c-title-detail__container ">
+          <div class="c-title-detail-media__container c-title-detail-media__container--no-border">
+            <div class="c-title-detail__image-container">
+              <div id="srcp_7" class="hover__container" width="1%" align="center" valign="top">
+                <img id="hover_image_7" class="c-title-detail__thumbnail hover__thumbnail" src="http://www.syndetics.com/index.aspx?isbn=9780192545121/SC.GIF&amp;client=847-342-5300&amp;upc=&amp;oclc=2979509" alt="Little Dorrit" data-position="7">
+              </div>
+            </div>
+            <div class="c-title-detail-meta">
+              <div class="c-title-detail-formats__list">
+
+
+
+
+                <a href="javascript:showModalBasic('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxMARC.aspx?pos=7')">
+                  <img class="c-title-detail-formats__img" src="http://ccs-training.polarislibrary.com/polaris/themes/shared/formats/formatid01.gif" alt="Book" title="Book" border="0">
+                </a>
+
+
+
+              </div>
+            </div>
+
+            <div class="c-title-detail__3rd-party c-title-detail__pub-year">1953</div>
+
+
+            <div class="c-title-detail__3rd-party">
+
+
+              <div class="gbs-preview-div c-title-detail__3rd-party-item--google-preview" id="gbs_ISBN:9780192545121_7">
+                <a class="gbs-preview-link" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxGooglePreview.aspx?isbn=ISBN:9780192545121','', true)">
+                  <img src="http://ccs-training.polarislibrary.com/polaris/themes/shared/gbs_preview_button.gif" title="Google Books Preview" alt="Google Books Preview" border="0">
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="c-title-detail-info__container">
+            <div class="c-title-detail-info-main__container">
+              <div class="c-title-detail-info__result-num">
+
+
+              </div>
+            </div>
+            <div class="c-title-detail-info-secondary__container" id="plres_7">
+              <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody><tr class="nsm-brief-primary-zone">
+                  <td width="100%"><table width="100%" cellpadding="5" cellspacing="0">
+                    <tbody><tr valign="top">
+                      <td width="1%" align="right" style="padding-left: 0; padding-right: 0;">7.</td><td style="align: left; width: 100%; valign: top; margin-top: 5px;"><div class="nsm-brief-primary-title-group">
+                        <a class="nsm-brief-action-link" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=7"><span class="nsm-short-item nsm-e135"><span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span></span></a>
+                      </div><div class="nsm-brief-primary-author-group">
+                        by <span class="nsm-short-item nsm-e118"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=AU&amp;term=Dickens%2c+Charles%2c+1812-1870.&amp;page=0"><span class="nsm-browse-text">Dickens, Charles, 1812-1870.</span></a></span>
+                      </div><div class="nsm-brief-standard-group">
+                        <span class="nsm-brief-label nsm-e147">Series: </span><span class="nsm-short-item nsm-e147"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=SE&amp;term=Dickens%2c+Charles%2c+1812-1870.+Oxford+illustrated+Dickens.&amp;page=0"><span class="nsm-browse-text">Dickens, Charles, 1812-1870. Oxford illustrated Dickens.</span></a></span>
+                      </div></td><td nowrap="" width="1%" style="valign: top; text-align: right;"></td>
+                    </tr>
+                  </tbody></table></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e31">Copies available at this library: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">2 (of 2)</span></span>
+                  </div><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e32">Copies available at all libraries: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">2 (of 2)</span></span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e104">Call Number: </span><span class="nsm-short-item nsm-e104">823.8</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+
+
+
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="c-title-detail-actions__container">
+          <ul id="c-title-detail__button-list-" class="c-title-detail-actions__list">
+
+
+            <li class="c-title-detail-actions__item button-brief-availability" role="presentation">
+              <a class="c-title-detail-actions__btn" id="buttonAvailability_7" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxavailability.aspx?fp=1&amp;level=local&amp;morelink=0&amp;pos=7&amp;bibid=86012')">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Find It
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-fulldisplay" role="presentation">
+              <a class="c-title-detail-actions__btn" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=7">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                More Info
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-request" role="presentation">
+
+              <a href="javascript:checkRequestLevel(7, 86012, 1)" class="c-title-detail-actions__btn">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                Place Hold
+              </a>
+
+            </li>
+
+
+          </ul>
+          <div class="c-title-detail-actions__add-to-my-list dropdown--scroll-into-view">
+
+            <span id="addtolist_7"><a class="c-add-to-my-list" href="javascript:AddToList(122, 7, '86012', 0)">Add to My List</a>&nbsp;&nbsp;</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="search__position">
+    <a id="__pos-8" href="#"></a>
+  </div>
+  <div class="content-module content-module--search-result">
+    <div class="content-container c-title-detail__title-display">
+      <div class="c-title-detail c-title-detail--initial-two-col">
+        <div class="c-title-detail__container ">
+          <div class="c-title-detail-media__container c-title-detail-media__container--no-border">
+            <div class="c-title-detail__image-container">
+              <div id="srcp_8" class="hover__container" width="1%" align="center" valign="top">
+                <img id="hover_image_8" class="c-title-detail__thumbnail hover__thumbnail" src="http://www.syndetics.com/index.aspx?isbn=9780192815927/SC.GIF&amp;client=847-342-5300&amp;upc=&amp;oclc=8032460" alt="Little Dorrit" data-position="8">
+              </div>
+            </div>
+            <div class="c-title-detail-meta">
+              <div class="c-title-detail-formats__list">
+
+
+
+
+                <a href="javascript:showModalBasic('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxMARC.aspx?pos=8')">
+                  <img class="c-title-detail-formats__img" src="http://ccs-training.polarislibrary.com/polaris/themes/shared/formats/formatid01.gif" alt="Book" title="Book" border="0">
+                </a>
+
+
+
+              </div>
+            </div>
+
+            <div class="c-title-detail__3rd-party c-title-detail__pub-year">1982</div>
+
+
+            <div class="c-title-detail__3rd-party">
+
+
+              <div class="gbs-preview-div c-title-detail__3rd-party-item--google-preview" id="gbs_ISBN:9780192815927_8">
+                <a class="gbs-preview-link" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxGooglePreview.aspx?isbn=ISBN:9780192815927','', true)">
+                  <img src="http://ccs-training.polarislibrary.com/polaris/themes/shared/gbs_preview_button.gif" title="Google Books Preview" alt="Google Books Preview" border="0">
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="c-title-detail-info__container">
+            <div class="c-title-detail-info-main__container">
+              <div class="c-title-detail-info__result-num">
+
+
+              </div>
+            </div>
+            <div class="c-title-detail-info-secondary__container" id="plres_8">
+              <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody><tr class="nsm-brief-primary-zone">
+                  <td width="100%"><table width="100%" cellpadding="5" cellspacing="0">
+                    <tbody><tr valign="top">
+                      <td width="1%" align="right" style="padding-left: 0; padding-right: 0;">8.</td><td style="align: left; width: 100%; valign: top; margin-top: 5px;"><div class="nsm-brief-primary-title-group">
+                        <a class="nsm-brief-action-link" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=8"><span class="nsm-short-item nsm-e135"><span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span></span></a>
+                      </div><div class="nsm-brief-primary-author-group">
+                        by <span class="nsm-short-item nsm-e118"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=AU&amp;term=Dickens%2c+Charles%2c+1812-1870.&amp;page=0"><span class="nsm-browse-text">Dickens, Charles, 1812-1870.</span></a></span>
+                      </div><div class="nsm-brief-standard-group">
+                        <span class="nsm-brief-label nsm-e147">Series: </span><span class="nsm-short-item nsm-e147"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=SE&amp;term=World%27s+classics.&amp;page=0"><span class="nsm-browse-text">World's classics.</span></a></span>
+                      </div></td><td nowrap="" width="1%" style="valign: top; text-align: right;"></td>
+                    </tr>
+                  </tbody></table></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e32">Copies available at all libraries: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">0 (of 0)</span></span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e104">Call Number: </span><span class="nsm-short-item nsm-e104">823/.8</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+
+
+
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="c-title-detail-actions__container">
+          <ul id="c-title-detail__button-list-" class="c-title-detail-actions__list">
+
+
+            <li class="c-title-detail-actions__item button-brief-availability" role="presentation">
+              <a class="c-title-detail-actions__btn" id="buttonAvailability_8" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxavailability.aspx?fp=1&amp;level=local&amp;morelink=0&amp;pos=8&amp;bibid=338626')">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Find It
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-fulldisplay" role="presentation">
+              <a class="c-title-detail-actions__btn" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=8">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                More Info
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-request" role="presentation">
+
+              <a href="javascript:checkRequestLevel(8, 338626, 1)" class="c-title-detail-actions__btn">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                Place Hold
+              </a>
+
+            </li>
+
+
+          </ul>
+          <div class="c-title-detail-actions__add-to-my-list dropdown--scroll-into-view">
+
+            <span id="addtolist_8"><a class="c-add-to-my-list" href="javascript:AddToList(122, 8, '338626', 0)">Add to My List</a>&nbsp;&nbsp;</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="search__position">
+    <a id="__pos-9" href="#"></a>
+  </div>
+  <div class="content-module content-module--search-result">
+    <div class="content-container c-title-detail__title-display">
+      <div class="c-title-detail c-title-detail--initial-two-col">
+        <div class="c-title-detail__container ">
+          <div class="c-title-detail-media__container c-title-detail-media__container--no-border">
+            <div class="c-title-detail__image-container">
+              <div id="srcp_9" class="hover__container" width="1%" align="center" valign="top">
+                <img id="hover_image_9" class="c-title-detail__thumbnail hover__thumbnail" src="http://www.syndetics.com/index.aspx?isbn=9780679417255/SC.GIF&amp;client=847-342-5300&amp;upc=&amp;oclc=23246652" alt="Little Dorrit" data-position="9">
+              </div>
+            </div>
+            <div class="c-title-detail-meta">
+              <div class="c-title-detail-formats__list">
+
+
+
+
+                <a href="javascript:showModalBasic('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxMARC.aspx?pos=9')">
+                  <img class="c-title-detail-formats__img" src="http://ccs-training.polarislibrary.com/polaris/themes/shared/formats/formatid01.gif" alt="Book" title="Book" border="0">
+                </a>
+
+
+
+              </div>
+            </div>
+
+            <div class="c-title-detail__3rd-party c-title-detail__pub-year">1992</div>
+
+
+            <div class="c-title-detail__3rd-party">
+
+
+              <div class="gbs-preview-div c-title-detail__3rd-party-item--google-preview" id="gbs_ISBN:9780679417255_9">
+                <a class="gbs-preview-link" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxGooglePreview.aspx?isbn=ISBN:9780679417255','', true)">
+                  <img src="http://ccs-training.polarislibrary.com/polaris/themes/shared/gbs_preview_button.gif" title="Google Books Preview" alt="Google Books Preview" border="0">
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="c-title-detail-info__container">
+            <div class="c-title-detail-info-main__container">
+              <div class="c-title-detail-info__result-num">
+
+
+              </div>
+            </div>
+            <div class="c-title-detail-info-secondary__container" id="plres_9">
+              <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody><tr class="nsm-brief-primary-zone">
+                  <td width="100%"><table width="100%" cellpadding="5" cellspacing="0">
+                    <tbody><tr valign="top">
+                      <td width="1%" align="right" style="padding-left: 0; padding-right: 0;">9.</td><td style="align: left; width: 100%; valign: top; margin-top: 5px;"><div class="nsm-brief-primary-title-group">
+                        <a class="nsm-brief-action-link" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=9"><span class="nsm-short-item nsm-e135"><span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span></span></a>
+                      </div><div class="nsm-brief-primary-author-group">
+                        by <span class="nsm-short-item nsm-e118"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=AU&amp;term=Dickens%2c+Charles%2c+1812-1870.&amp;page=0"><span class="nsm-browse-text">Dickens, Charles, 1812-1870.</span></a></span>
+                      </div><div class="nsm-brief-standard-group">
+                        <span class="nsm-brief-label nsm-e147">Series: </span><span class="nsm-short-item nsm-e147"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=SE&amp;term=Everyman%27s+library+%3b+111.&amp;page=0"><span class="nsm-browse-text">Everyman's library ; 111.</span></a></span>
+                      </div></td><td nowrap="" width="1%" style="valign: top; text-align: right;"></td>
+                    </tr>
+                  </tbody></table></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e31">Copies available at this library: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">5 (of 5)</span></span>
+                  </div><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e32">Copies available at all libraries: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">5 (of 5)</span></span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e104">Call Number: </span><span class="nsm-short-item nsm-e104">823/.8</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+
+
+
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="c-title-detail-actions__container">
+          <ul id="c-title-detail__button-list-" class="c-title-detail-actions__list">
+
+
+            <li class="c-title-detail-actions__item button-brief-availability" role="presentation">
+              <a class="c-title-detail-actions__btn" id="buttonAvailability_9" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxavailability.aspx?fp=1&amp;level=local&amp;morelink=0&amp;pos=9&amp;bibid=350505')">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Find It
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-fulldisplay" role="presentation">
+              <a class="c-title-detail-actions__btn" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=9">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                More Info
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-request" role="presentation">
+
+              <a href="javascript:checkRequestLevel(9, 350505, 1)" class="c-title-detail-actions__btn">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                Place Hold
+              </a>
+
+            </li>
+
+
+          </ul>
+          <div class="c-title-detail-actions__add-to-my-list dropdown--scroll-into-view">
+
+            <span id="addtolist_9"><a class="c-add-to-my-list" href="javascript:AddToList(122, 9, '350505', 0)">Add to My List</a>&nbsp;&nbsp;</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="search__position">
+    <a id="__pos-10" href="#"></a>
+  </div>
+  <div class="content-module content-module--search-result">
+    <div class="content-container c-title-detail__title-display">
+      <div class="c-title-detail c-title-detail--initial-two-col">
+        <div class="c-title-detail__container ">
+          <div class="c-title-detail-media__container c-title-detail-media__container--no-border">
+            <div class="c-title-detail__image-container">
+              <div id="srcp_10" class="hover__container" width="1%" align="center" valign="top">
+                <img id="hover_image_10" class="c-title-detail__thumbnail hover__thumbnail" src="http://www.syndetics.com/index.aspx?isbn=/SC.GIF&amp;client=847-342-5300&amp;upc=&amp;oclc=1865010" alt="Little Dorrit" data-position="10">
+              </div>
+            </div>
+            <div class="c-title-detail-meta">
+              <div class="c-title-detail-formats__list">
+
+
+
+
+                <a href="javascript:showModalBasic('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxMARC.aspx?pos=10')">
+                  <img class="c-title-detail-formats__img" src="http://ccs-training.polarislibrary.com/polaris/themes/shared/formats/formatid01.gif" alt="Book" title="Book" border="0">
+                </a>
+
+
+
+              </div>
+            </div>
+
+            <div class="c-title-detail__3rd-party c-title-detail__pub-year">1951</div>
+
+
+          </div>
+          <div class="c-title-detail-info__container">
+            <div class="c-title-detail-info-main__container">
+              <div class="c-title-detail-info__result-num">
+
+
+              </div>
+            </div>
+            <div class="c-title-detail-info-secondary__container" id="plres_10">
+              <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                <tbody><tr class="nsm-brief-primary-zone">
+                  <td width="100%"><table width="100%" cellpadding="5" cellspacing="0">
+                    <tbody><tr valign="top">
+                      <td width="1%" align="right" style="padding-left: 0; padding-right: 0;">10.</td><td style="align: left; width: 100%; valign: top; margin-top: 5px;"><div class="nsm-brief-primary-title-group">
+                        <a class="nsm-brief-action-link" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=10"><span class="nsm-short-item nsm-e135"><span class="nsm-hit-text">Little</span> <span class="nsm-hit-text">Dorrit</span></span></a>
+                      </div><div class="nsm-brief-primary-author-group">
+                        by <span class="nsm-short-item nsm-e118"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=AU&amp;term=Dickens%2c+Charles%2c+1812-1870.&amp;page=0"><span class="nsm-browse-text">Dickens, Charles, 1812-1870.</span></a></span>
+                      </div><div class="nsm-brief-standard-group">
+                        <span class="nsm-brief-label nsm-e147">Series: </span><span class="nsm-short-item nsm-e147"><a class="nsm-browse-link" href="../search/browse.aspx?ctx=1.1033.0.0.1&amp;type=Browse&amp;by=SE&amp;term=Great+illustrated+classics+Titan+editions.&amp;page=0"><span class="nsm-browse-text">Great illustrated classics Titan editions.</span></a></span>
+                      </div></td><td nowrap="" width="1%" style="valign: top; text-align: right;"></td>
+                    </tr>
+                  </tbody></table></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e31">Copies available at this library: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">2 (of 2)</span></span>
+                  </div><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e32">Copies available at all libraries: </span><span class="nsm-short-item nsm-e"><span class="nsm-brief-inline-subzone">2 (of 2)</span></span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td><div class="nsm-brief-standard-group">
+                    <span class="nsm-brief-label nsm-e104">Call Number: </span><span class="nsm-short-item nsm-e104">Fiction Dicke.C</span>
+                  </div></td>
+                </tr><tr class="nsm-brief-secondary-zone">
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <td colspan="2">
+
+
+
+                  </td>
+                </tr>
+              </tbody></table>
+            </div>
+          </div>
+        </div>
+        <div class="c-title-detail-actions__container">
+          <ul id="c-title-detail__button-list-" class="c-title-detail-actions__list">
+
+
+            <li class="c-title-detail-actions__item button-brief-availability" role="presentation">
+              <a class="c-title-detail-actions__btn" id="buttonAvailability_10" href="javascript:showModalBasicWithIframe('http://ccs-training.polarislibrary.com/polaris/search/components/ajaxavailability.aspx?fp=1&amp;level=local&amp;morelink=0&amp;pos=10&amp;bibid=402005')">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                Find It
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-fulldisplay" role="presentation">
+              <a class="c-title-detail-actions__btn" href="http://ccs-training.polarislibrary.com/polaris/search/title.aspx?ctx=1.1033.0.0.1&amp;pos=10">
+                <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                More Info
+              </a>
+            </li>
+
+
+
+            <li class="c-title-detail-actions__item button-brief-request" role="presentation">
+
+              <a href="javascript:checkRequestLevel(10, 402005, 1)" class="c-title-detail-actions__btn">
+                <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+                Place Hold
+              </a>
+
+            </li>
+
+
+          </ul>
+          <div class="c-title-detail-actions__add-to-my-list dropdown--scroll-into-view">
+
+            <span id="addtolist_10"><a class="c-add-to-my-list" href="javascript:AddToList(122, 10, '402005', 0)">Add to My List</a>&nbsp;&nbsp;</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <script lang="text/javascript">
+  $('#pagination-results-bottom').twbsPagination({
+    totalPages: 3,
+    visiblePages: 4,
+    startPage: 1,
+    prev: '<span aria-hidden="true">&lt;</span>',
+    next: '<span aria-hidden="true">&gt;</span>',
+    first: '<span aria-hidden="true">&laquo;</span>',
+    last: '<span aria-hidden="true">&raquo;</span>',
+    pageClass: 'navigation-button',
+    onPageClick: function (event, page) {
+      if (page != 1) {
+        ajaxLoadResultsPage(page, 1, null, 0);
+      }
+    }
+  });
+  </script>
+  <div class="c-results-utility c-results-utility--partial">
+    <div class="c-results-utility__container c-results-utility__container--result-count">
+      <div class="c-results-utility-result-count">
+        1
+        -
+        10
+        of
+        30
+      </div>
+      <div class="c-results-utility-per-page form-inline">
+        <div class="c-results-utility-per-page__select-container select-styled">
+          <select class="c-results-utility-per-page__select" id="dropdownResultsPerPageBottom" onchange="javascript:ajaxLoadResultsPage(1, 1, 'Bottom', 0);">
+            <option value="10" selected="">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+          </select>
+        </div>
+        <label for="c-results-utility-per-page__select" class="c-results-utility-per-page__label">per page</label>
+      </div>
+    </div>
+
+
+    <div class="c-results-utility__container c-results-utility__container--pagination c-results-utility__container--last">
+      <div class="c-results-utility-full-pagination">
+
+        <ul id="pagination-results-bottom" class="pagination-sm pagination" style="margin: 0px;"><li class="page-item first disabled"><a href="#" class="page-link"><span aria-hidden="true">«</span></a></li><li class="page-item prev disabled"><a href="#" class="page-link"><span aria-hidden="true">&lt;</span></a></li><li class="navigation-button active"><a href="#" class="page-link">1</a></li><li class="navigation-button"><a href="#" class="page-link">2</a></li><li class="navigation-button"><a href="#" class="page-link">3</a></li><li class="page-item next"><a href="#" class="page-link"><span aria-hidden="true">&gt;</span></a></li><li class="page-item last"><a href="#" class="page-link"><span aria-hidden="true">»</span></a></li></ul>
+
+      </div>
+    </div>
+
+  </div>
+  <script src="http://books.google.com/books?jscmd=viewapi&amp;bibkeys=ISBN:9780792763307,ISBN:9781419880674,ISBN:9780786180974,ISBN:9780786180967,ISBN:9780192545121,ISBN:9780192545121,ISBN:9780192815927,ISBN:9780679417255,&amp;callback=processDynamicLinksResponse"></script>
+  <script type="text/javascript" defer="defer">
+  $(document).ready(function ($) {
+    GetPrivillegesWrapper("", false);
+  });
+  $(document).ready(function ($) {
+    GetAxis360PrivillegesWrapper("", false);
+  });
+  $(document).ready(function ($) {
+    GetOverdrivePrivillegesWrapper("", false);
+  });
+  $(document).ready(function ($) {
+    GetRestrictedWrapper();
+  });
+  initializeBibliographicHover();
+</script>
+
+<script>
+  (function(){
+    var covers = document.getElementsByClassName('c-title-detail__thumbnail');
+
+    for (i = 0; i < covers.length; i++){
+      var old_src = covers[i].src
+      console.log(old_src)
+      var new_src = old_src.replace('SC.gif', 'MC.gif');
+      console.log(new_src)
+
+      covers[i].src = new_src;
+    }
+  })();
+</script>
+
+</div>

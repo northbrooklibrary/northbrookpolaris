@@ -1,0 +1,220 @@
+﻿// Patron header of patron account views
+
+.patron-header__refresh-econtent {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    word-break: break-word;
+    white-space: normal;
+    @include web-font( $font_sansserif_primary, reg );
+
+}
+.patron-account__button{
+    word-break: break-word;
+    white-space: normal;
+}
+.patron-header__more-info {
+    color: $color_link;
+}
+
+.patron-header__name {
+    font-weight: bold; 
+}
+
+.patron-header__section-name {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.6em; 
+}
+
+.patron-header-view {
+    border-width:0px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.patron-footer-view {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width:0px;
+}
+
+
+// Patron account and list views
+.patron-account__basic-info{
+    padding-left:10px;
+}
+.patron-account-view {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-width:0px;
+}
+
+a.patron-account__policy-link,
+a.patron-account__click-here{
+    text-decoration: none;
+    &:link , &:visited{
+        text-decoration: none;
+    }
+    &:hover, &:focus{
+        text-decoration: underline;
+    }
+}
+tr.headings-patrongrid {
+
+    a {
+        color: $color_font_white;
+        padding: .2em;
+        text-decoration: underline;
+    }
+
+    td {
+        padding: 1em;
+        white-space: normal !important;
+    }
+
+    th { 
+        padding: .4em; 
+        text-align: center;
+        border: solid 1px #999; 
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+.patrongrid {
+    border: solid 1px #bbb;
+}
+
+td.items-patrongrid {
+    @media screen and (max-width: $screen-sm-max) {
+        white-space: normal !important;
+    }
+}
+
+.patrongrid-headings-pager
+{
+    border: 0px solid #cccccc;
+    text-align:right;
+}
+
+.patrongrid-headings-pager a
+{
+    text-decoration: underline !important;
+}
+
+.patron-account-action-button{ 
+    margin: 5px; 
+}
+
+
+a.patron-account-action-button{ 
+    text-decoration: none;
+}
+
+.patron-account__message{
+    padding: 10px 10% 25px 10%;
+}
+
+.patron-account__dialog-title{
+    padding: 20px 5px;
+    font-weight: bold;
+    font-sice: 1.1em;
+}
+
+.patron-account__holds-held            { color : $color_red; font-size: 1.2em; }
+.patron-account__holds-held-3m		   { color : green; font-size: 0.9em; }
+.patron-account__holds-active		   { color : green; font-size: 1.2em; }
+.patron-account__holds-pending-shipped { color : maroon; font-size: 1.2em; }
+.patron-account__holds-ill-transferred { color : navy; font-size: 1.2em; }
+.patron-account__holds-misc			   { color : #7F7F7F; }
+.patron-account__holds-author          { color : #555555; }
+.patron-account__holds-date            { color : #555555; font-size: .85em; }
+
+.patron-account__overdue-date           { color: $color_red;}
+
+.patron-account__grid-row
+{
+    background-color : white;
+    border-bottom: solid 1px #bbb  ;
+}
+
+.patron-account__grid-alternating-row
+{
+	background-color : white;
+    border-bottom: solid 1px #bbb; 
+}
+
+.patron-account__grid-row--title
+{
+    min-width: 200px;
+}
+
+.patron-account__grid-link{
+    text-decoration: $decoration_patrongrid_default;  
+    color: $color_patrongrid_default; 
+    &:link{
+        color: $color_patrongrid_default;
+	    text-decoration: $decoration_patrongrid_default;
+    }
+    &:visited{
+        color: $color_patrongrid_default;
+	    text-decoration: $decoration_patrongrid_default;
+    }
+    &:hover{
+	    color: $color_patrongrid_hover;
+	    text-decoration: $decoration_patrongrid_hover;
+    } 
+    &:active{ 
+        color: $color_patrongrid_default;
+        text-decoration: $decoration_patrongrid_default;
+    }    
+}
+
+.patron-account__grid-empty-message
+{
+    padding: 30px 5% 30px 5%; 
+    border: solid 1px #ccc;
+    margin-bottom: 15px;
+}
+
+.patron-account__fine-label {
+    font-weight: bold;
+}
+
+.patron-account__fine-data {
+    color: $color_red;
+}
+
+.patron-account__estimate-overdue-fines {
+    margin: 10px;
+
+    &__header {
+        font-weight: bold;
+        padding-bottom: 10px;
+        text-align: center;
+
+        @media screen and (max-width: 651px) {
+            text-align: left;
+        }
+    }
+
+    &__body {
+        .invalid-date-text {
+            color: $color_font_warning_text;
+            font-weight: bold;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+    }
+
+    &__footer {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    &__amount {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,19 @@
+﻿/* ==========================================================================
+   jQuery-UI Overrides
+   ========================================================================== */
+
+.ui-tabs {
+    position: relative;
+
+    .ui-tabs-nav {
+        border-bottom: 0;
+    }
+            
+    .ui-tabs-hide {
+        display: none !important;
+    }
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-size: $font-size-base;
+}

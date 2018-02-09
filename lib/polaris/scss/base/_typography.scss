@@ -1,0 +1,225 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+html, body{
+  @include web-font( $font_sansserif_primary, reg );
+  color: $color_text_main;
+  font-size: 100%;
+  font-weight: 300;
+}
+
+.site-container{
+  font-size: em($base_font_size, 16);
+  line-height: ($base_font_line_height/$base_font_size);
+}
+
+::-moz-selection {
+  background: rgba($color_default_primary, .5);
+  text-shadow: none;
+}
+
+::selection {
+  background: rgba($color_default_primary, .5);
+  text-shadow: none;
+}
+
+.max-text-width{
+  max-width: $max-text-width;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+a{
+  &:link, &:visited{
+    color: $color_link;
+    text-decoration: none;
+  }
+  &:focus { outline: 1px dotted invert; }
+  &:hover, &:active {
+    outline: 0;
+    color: $color_link_over;
+    text-decoration: underline;
+  }
+}
+
+ 
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-weight: normal;
+  margin: 0;
+
+  a{
+    &:link, &:visited{
+      text-decoration: none;
+    }
+  }
+}
+h1, .h1{
+  @include web-font( $font_sansserif_primary, bold );
+  @include rem-fallback(font-size, $heading1_size_sm);
+  line-height: ($heading1_lineheight_sm/$heading1_size_sm);
+  padding-bottom: 1em;
+
+  @include mq($break_fontsize_mid){
+    @include rem-fallback(font-size, $heading1_size_mid);
+    line-height: ($heading1_lineheight_mid/$heading1_size_mid);
+  }
+}
+h1, h1 a:link, h1 a:visited,
+.h1, .h1 a:link, .h1 a:visited{
+  color: $color_font_primary;
+}
+h1 a:hover, h1 a:active,
+.h1 a:hover, .h1 a:active{
+  color: $color_font_accent;
+}
+
+h2, .h2{
+  @include web-font( $font_sansserif_primary, reg );
+  @include rem-fallback(font-size, $heading2_size_sm);
+  line-height: ($heading2_lineheight_sm/$heading2_size_sm);
+  @include rem-fallback(padding-bottom, 12);
+
+  @include mq($break_fontsize_mid){
+    @include rem-fallback(font-size, $heading2_size_mid);
+    line-height: ($heading2_lineheight_mid/$heading2_size_mid);
+    @include rem-fallback(padding-bottom, 28);
+  }
+}
+h2, h2 a:link, h2 a:visited,
+.h2, .h2 a:link, .h2 a:visited{
+  color: $color_font_primary;
+}
+h2 a:hover, h2 a:active,
+.h2 a:hover, .h2 a:active{
+  color: $color_font_accent;
+}
+
+h3, .h3{
+  @include web-font( $font_sansserif_primary, reg );
+  @include rem-fallback(font-size, $heading3_size_sm);
+  line-height: ($heading3_lineheight_sm/$heading3_size_sm);
+  @include rem-fallback(padding-bottom, 12);
+  font-weight: 500;
+
+  @include mq($break_fontsize_mid){
+    @include rem-fallback(font-size, $heading3_size_mid);
+    line-height: ($heading3_lineheight_mid/$heading3_size_mid);
+  }
+}
+h3, h3 a:link, h3 a:visited,
+.h3, .h3 a:link, .h3 a:visited{
+  color: $color_font_primary;
+}
+h3 a:hover, h3 a:active,
+.h3 a:hover, .h3 a:active{
+  color: $color_font_accent;
+}
+
+h4, .h4{
+  @include web-font( $font_sansserif_primary, reg );
+  @include rem-fallback(font-size, $heading4_size_sm);
+  line-height: ($heading4_lineheight_sm/$heading4_size_sm);
+  @include rem-fallback(padding-bottom, 4);
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @include mq($break_fontsize_mid){
+    @include rem-fallback(font-size, $heading4_size_mid);
+    line-height: ($heading4_lineheight_mid/$heading4_size_mid);
+  }
+}
+h4, h4 a:link, h4 a:visited,
+.h4, .h4 a:link, .h4 a:visited{
+  color: $color_font_primary;
+}
+h4 a:hover, h4 a:active,
+.h4 a:hover, .h4 a:active{
+  color: $color_font_accent;
+}
+
+h5, .h5{
+  @include web-font( $font_sansserif_primary, reg );
+  @include rem-fallback(font-size, $heading5_size_sm);
+  line-height: ($heading5_lineheight_sm/$heading5_size_sm);
+  font-weight: 500;
+
+  @include mq($break_fontsize_mid){
+    @include rem-fallback(font-size, $heading5_size_mid);
+    line-height: ($heading5_lineheight_mid/$heading5_size_mid);
+  }
+}
+h5, h5 a:link, h5 a:visited,
+.h5, .h5 a:link, .h5 a:visited{
+  color: $color_font_primary;
+}
+h5 a:hover, h5 a:active,
+.h5 a:hover, .h5 a:active{
+  color: $color_font_accent;
+}
+
+h6, .h6{
+  @include web-font( $font_sansserif_primary, reg );
+  @include rem-fallback(font-size, $heading6_size_sm);
+  line-height: ($heading6_lineheight_sm/$heading6_size_sm);
+
+  @include mq($break_fontsize_mid){
+    @include rem-fallback(font-size, $heading6_size_mid);
+    line-height: ($heading6_lineheight_mid/$heading6_size_mid);
+  }
+}
+h6, h6 a:link, h6 a:visited,
+.h6, .h6 a:link, .h6 a:visited{
+  color: $color_font_primary;
+}
+h6 a:hover, h6 a:active,
+.h6 a:hover, .h6 a:active{
+  color: $color_font_accent;
+}
+
+/* ==========================================================================
+   Text Elements
+   ========================================================================== */
+
+// Emphasize/Italic
+em, i{
+  @include web-font( $font_sansserif_primary, reg-ital );
+
+  strong, b{
+    @include web-font( $font_sansserif_primary, bold-ital );
+  }
+}
+
+//Quote
+q{
+  @include web-font( $font_sansserif_primary, reg );
+}
+
+// Strong/Bold
+strong, b{
+  @include web-font( $font_sansserif_primary, bold );
+
+  em, i{
+    @include web-font( $font_sansserif_primary, bold-ital );
+  }
+}
+
+//.site-container{
+
+  // Paragraph
+  p{
+    padding: 0 0 1em 0;
+  }
+//}
+
+.text-warning {
+     color: $color_font_warning-text;
+}
+
+
+

@@ -1,0 +1,40 @@
+.npl-site-content{
+  background-color: $light-grey;
+}
+
+//will probably dump below
+
+.content-carousel__title{
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 0 0 .5rem;
+  text-align: left;
+}
+
+.content-carousel__slider{
+  display: flex;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 2rem;
+
+}
+
+.content-carousel__item{
+  width: 18%;
+  padding: 0 1rem;
+  flex-shrink: 0;
+  text-align: center;
+  line-height: 1.2;
+  font-size: .875rem;
+}
+
+.content-carousel__link{
+  display: inline-block;
+  margin-bottom: .5rem;
+  font-size: 1rem;
+}
+
+.content-carousel__image_container{
+  margin-bottom: 1rem;
+  background-image: url() !important;
+}

@@ -1,0 +1,280 @@
+﻿/* ==========================================================================
+   Community
+   ========================================================================== */
+
+/* patroncommunity.aspx styles */
+.community-record {
+
+    &__list__container {
+        padding: 0 10px;
+    }
+
+    &__link {
+        clear: both;
+        margin-bottom: 20px;
+        text-align: left;
+
+        span + span {
+            padding: 0 10px;
+        }
+    }
+}
+
+/* ajaxEditCommunityRecord.aspx and ajaxEditEvent.aspx shared styles */
+/* More page-specific definitions below */
+.community-record__body,
+.community-event__body {
+    background-color: white;
+
+    .tabs__container {
+        padding-bottom: 10px;
+        position: relative;
+        overflow: auto;
+    }
+
+    .group__container {
+        margin-bottom: 10px;
+    }
+
+    .form-control {
+        margin-bottom: 10px;
+    }
+
+    .form-label {
+        font-weight: normal;
+
+        &-header {
+            font-weight: normal;
+            padding-bottom: 10px;
+
+            &--bold {
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+        }
+
+        &--bold {
+            font-weight: bold;
+        }
+    }
+
+    .subtab-group__container {
+        margin-bottom: 10px;
+
+        .ui-tabs-hide {
+            border-left: 1px solid $color_gray_extra_light;
+            border-right: 1px solid $color_gray_extra_light;
+            border-bottom: 1px solid $color_gray_extra_light;
+        }
+    }
+
+    .community__whats-this-link {
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+    }
+
+    .hidden-buttons__container {
+        display: none;
+
+        input {
+            display: none;
+        }
+    }
+
+    /* BEGIN: Old Community.css */
+    .community-warning-area {
+        Z-INDEX: 750;
+        border-right: #222222 1px solid;
+        border-bottom: #222222 1px solid;
+        padding: 0px;
+        POSITION: fixed;
+        TOP: 200px;
+        LEFT: 300px;
+        background: white;
+        overflow: hidden;
+        width: 400px;
+        height: 160px;
+        zoom: 1;
+        display: none;
+    }
+    /* END: Old Community.css */
+}
+a.community__calendar-link{
+    &:link, &:visited,
+    &:hover, &:focus {
+        text-decoration: none;
+    }     
+}
+/* ajaxEditCommunityRecord.aspx styles */
+.community-record__body {
+
+    .community-record__edit-image {
+        cursor: pointer;
+        max-height: 100px;
+        max-width: 100px;
+
+        &__container {
+            height: 105px;
+            width: 105px;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        &__popup {
+            display: none;
+
+            &-header,
+            &-footer {
+                text-align: center;
+            }
+        }
+    }
+
+    .community-record__hours__container {
+        margin-bottom: 10px;
+        padding: 1em 1.4em;
+    }
+
+    /*.community-record__moreinfo__container {
+    }*/
+
+    .community-record__events__container {
+        .community-record__events__event-buttons__container {
+            text-align: right;
+        }
+    }
+    .community-record__event-view-link{
+        &:link, &:visited,
+        &:hover, &:focus {
+            text-decoration: none;
+        }     
+    }
+    .community-record__social__container {
+        .community-record__social {
+            &__share__container {
+                margin-left: -15px;
+                margin-right: -15px;
+
+                & > div:first-of-type {
+                    padding-left: 0;
+                }
+
+                & > div:last-of-type {
+                    padding-right: 0;
+                }
+            }
+
+            &__web__container {
+                margin-bottom: 10px;
+                margin-left: -15px;
+                margin-right: -15px;
+                padding: 1em 1.4em;
+
+                .row > div {
+                    min-height: 0;
+                }
+            }
+        }
+    }
+
+    /*.community-record__services__container {
+    }*/
+
+    .community-record__subjects__container {
+        .community-record__subjects {
+            &__library-added__container {
+                margin-bottom: 20px;
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 15px;
+                padding-right: 15px;
+
+                li {
+                    list-style: disc;
+                    line-height: 2em;
+                }
+            }
+
+            &__organization-added__container {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .community-record__contentxchange__container {
+        .form-label--bold {
+            margin-bottom: 0.5em;
+        }
+
+        .community-record__contentxchange {
+            &-header {
+                margin-bottom: 2em;
+            }
+
+            &-options {
+                .row > div {
+                    margin-bottom: 2em;
+                }
+                    
+                .btn {
+                    margin-top: 0.5em;
+                }
+            }
+
+            &__popup {
+                display: none;
+
+                &-header {
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/* ajaxEditEvent.aspx styles */
+.community-event__body {
+    .community-event__timing__container {
+        .community-event__date__container {
+            /*padding-left: 0;*/
+        }
+
+        @media screen and (min-width: 651px) {
+            .community-event__time__container {
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 0;
+                padding-right: 0;
+
+                & > div {
+                    padding-left: 0;
+                    /*padding-right: 0;*/
+
+                    select.form-control {
+                        padding: 6px;
+                        /*padding-right: 0;*/
+                    }
+                }
+            }
+        }
+    }
+}
+
+.community__thumbnail-cell {
+    padding: 1em; // must cover the distance between the image and the (summary) popover.
+}
+
+.community{
+    &__content-container {
+        padding-left: 0px;
+    }
+    &__search{
+        background-color: $color_secondary;
+    }
+    &__search--instructions{
+        background-color: $color_white;
+    }
+}

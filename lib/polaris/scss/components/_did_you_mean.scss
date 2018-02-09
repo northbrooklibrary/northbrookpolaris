@@ -1,0 +1,40 @@
+﻿.did-you-mean-toggle {
+  margin-left: .5em;
+    &:link, &:visited,
+    &:hover, &:focus{
+        text-decoration: $decoration_dashboard_hover_default;
+    }
+  
+  .glyphicon {
+      font-size: .7em;
+      top: 0;
+  }
+  &__click-here{
+    a:link, a:visited,
+    a:hover, a:focus{
+        text-decoration: $decoration_dashboard_hover_default;
+    }
+  }
+  &__more {
+    display: none;
+    padding-right: .25em;
+}
+   
+  &__less {
+    display: inline;
+    padding-right: .5em;
+  }
+  
+  &.collapsed &__more {
+    display: inline;
+   } 
+   
+  &.collapsed &__less {
+    display: none;
+  }  
+}
+.DidYouMeanLink{
+    &:link, &:visited, &:hover, &:focus{
+        text-decoration: $decoration_dashboard_hover_default;
+    }
+}

@@ -1,0 +1,55 @@
+.modal-open {
+    overflow: hidden;
+}
+
+.modal-dialog {
+    &.modal-wide {
+        min-width: 80%;
+    }
+}
+
+.modal-content {
+    @include glow;
+    border: none;
+}
+
+.modal-header {
+}
+
+.modal-title {
+    @include web-font( $font_sansserif_primary, bold );
+}
+
+.modal-body {
+
+
+    .horizontal-scroll-on-narrow__content {
+        max-height: em(400);
+        overflow-y: auto;
+    }
+}
+
+.modal-subtitle {
+    padding-bottom: 1em;
+}
+
+.modal-footer {
+}
+
+.btn-group {
+}
+
+.modalBasic--loading {
+    background-image: url("#{$shared-images-path}waiting.gif");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    min-height: 100px;
+}
+
+.modal .hidden-buttons__container {
+    display: none;
+
+    input {
+        display: none;
+    }
+}

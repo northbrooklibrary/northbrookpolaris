@@ -1,0 +1,45 @@
+﻿@charset "UTF-8";
+
+// Template for custom theme SCSS file
+// Copy template to /custom/temes/{theme}/scss/ folder
+// Rename to site-{theme}.scss
+// Refer to published instructions on compiling to 'site.css'
+
+$color_primary:         #0174A0;
+$color_primary_light:   lighten(#30465b,5);
+$color_secondary:       #F0F0F0;
+$color_secondary_light: lighten(#dee3e8,4);
+$color_accent:          #0174A0;
+$color_accent_light:    lighten(#2781bc,10);
+
+$color_font_primary:          $color_primary;
+$color_font_secondary:        $color_secondary;
+$color_font_accent:           $color_accent;
+$color_font_footer_accent:    white;
+$color_font_accent_dark:      #3166AA;
+
+$icon-font-path: "../../../themes/shared/fonts/bootstrap/";
+$shared-images-path: "../../../themes/shared/";
+
+//@import "style-core";
+
+// Place any CSS/SCSS theme overrides and additions below
+@import 'settings';
+@import 'mixins';
+@import 'base';
+@import 'layout';
+@import 'header';
+@import 'nav';
+@import 'meta-nav';
+@import 'footer';
+@import 'search';
+@import 'search-tools';
+@import 'buttons';
+@import 'content';
+@import 'quick-links';
+@import 'search-results';
+@import 'results-filters';
+@import 'result-detail';
+@import 'login';
+@import 'account';
+@import 'help';

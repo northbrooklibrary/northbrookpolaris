@@ -1,0 +1,26 @@
+﻿.librarything-ratings
+{
+    padding: 5px 0px;
+    text-align: center;
+    margin: 0 auto;
+    word-break: break-all;
+    font-size: 0.75em;        
+}
+
+.librarything-ratings span{
+    margin: 0 auto;
+    display:inline-block;
+    max-width:115px;
+    img{
+        max-width: 80%;
+    }
+}
+.librarything-ratings a{
+    margin: 0 auto;
+    display:inline-block;
+    max-width:115px;
+    word-break: break-word;
+}
+
+
+    

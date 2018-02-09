@@ -1,0 +1,108 @@
+// Path variables
+$shared-images-path: "../shared/" !default;
+
+// Type
+$font_sansserif_primary:  'Roboto' !default; 
+$font_serif_primary:      'georgia' !default;
+
+$large_print_break:       1024px;
+$zoom_factor: 1.0 !default;
+
+$base_font_size:          16 * $zoom_factor !default;
+$base_font_line_height:   20 * $zoom_factor !default;
+$break_fontsize_mid:      600 * $zoom_factor !default;
+$max-text-width:          35em * $zoom_factor !default;
+
+$heading1_size_sm:        26 * $zoom_factor !default;
+$heading1_lineheight_sm:  26 * $zoom_factor !default;
+$heading1_size_mid:       36 * $zoom_factor !default;
+$heading1_lineheight_mid: 36 * $zoom_factor !default;
+
+$heading2_size_sm:        22 * $zoom_factor  !default;
+$heading2_lineheight_sm:  28 * $zoom_factor !default;
+$heading2_size_mid:       30 * $zoom_factor !default;
+$heading2_lineheight_mid: 32 * $zoom_factor !default;
+
+$heading3_size_sm:        18 * $zoom_factor !default;
+$heading3_lineheight_sm:  21 * $zoom_factor  !default;
+$heading3_size_mid:       24 * $zoom_factor !default;
+$heading3_lineheight_mid: 28 * $zoom_factor !default;
+
+$heading4_size_sm:        14 * $zoom_factor !default;
+$heading4_lineheight_sm:  18 * $zoom_factor !default;
+$heading4_size_mid:       20 * $zoom_factor !default;
+$heading4_lineheight_mid: 24 * $zoom_factor !default;
+
+$heading5_size_sm:        16 * $zoom_factor !default;
+$heading5_lineheight_sm:  21 * $zoom_factor !default;
+$heading5_size_mid:       16 * $zoom_factor !default;
+$heading5_lineheight_mid: 21 * $zoom_factor !default;
+
+$heading6_size_sm:        14 * $zoom_factor !default;
+$heading6_lineheight_sm:  21 * $zoom_factor !default;
+$heading6_size_mid:       14 * $zoom_factor !default;
+$heading6_lineheight_mid: 21 * $zoom_factor !default;
+
+$paragraph_size_sm:       14 * $zoom_factor !default;
+$paragraph_lineheight_sm: 18 * $zoom_factor !default;
+$paragraph_size_mid:      $base_font_size !default;
+$paragraph_lineheight_mid: $base_font_line_height !default;
+
+
+// Layout
+$pad_vert:                35 * $zoom_factor !default;
+$sidepad_sm:              20 * $zoom_factor !default;
+$sidepad_lg:              30 * $zoom_factor !default;
+$break_sidepad:           500 * $zoom_factor !default;
+
+$break_mid:               650 * $zoom_factor !default;
+$break_lg:                960 * $zoom_factor !default;
+$content_contain:         986 * $zoom_factor !default;
+$content_contain_lg:      1100 * $zoom_factor !default;
+$site_contain:            1500 * $zoom_factor !default;
+
+$break_footer_mid:        600 * $zoom_factor !default;
+
+$break_sidebar:           650 * $zoom_factor !default;
+
+
+// Navs
+$break_nav_main:          870 * $zoom_factor !default;
+
+
+/* ==========================================================================
+   BOOTSTRAP
+   ========================================================================== */ 
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+$brand-primary:         $color_default_primary;
+
+
+//== Scaffolding
+//** Global text color on `<body>`.
+$text-color:            $color_text_main;
+
+//** Global textual link color.
+$link-color:            $color_link;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      $color_link_over;
+//** Link hover decoration.
+$link-hover-decoration: none;
+
+//== Typography
+$font-size-base:          ($base_font_size * 1px);
+$line-height-base:        ($base_font_line_height/$base_font_size);
+
+$zoom_factor: 1.0 !default;
+$popover_xs_breakpoint: 268px * $zoom_factor;
+$popover_xs_max: 188px * $zoom_factor;
+$popover_sm_breakpoint: 364px * $zoom_factor;
+$popover_sm_max: 284px * $zoom_factor;
+$popover_md_breakpoint: 460px * $zoom_factor;
+$popover_md_max: 380px * $zoom_factor;
+$popover_lg_breakpoint: 652px * $zoom_factor;
+$popover_lg_max: 572px * $zoom_factor;
+$popover_xl_breakpoint: 844px * $zoom_factor;
+$popover_xl_max: 764px * $zoom_factor;

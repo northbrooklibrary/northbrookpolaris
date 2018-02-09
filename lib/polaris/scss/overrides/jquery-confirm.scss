@@ -1,0 +1,45 @@
+﻿/* ==========================================================================
+   jquery-confirm Overrides
+   ========================================================================== */
+
+.jconfirm.jconfirm-light .jconfirm-bg {
+}
+
+.jconfirm.jconfirm-light .jconfirm-box {
+}
+
+.jconfirm.jconfirm-light .jconfirm-box.loading {
+}
+
+.jconfirm.jconfirm-light .jconfirm-box.loading:before {
+}
+
+.jconfirm.jconfirm-light .jconfirm-box.loading:after {
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-closeIcon {
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-title-c {
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-content-pane {
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-content {
+    font-size: $font-size-base;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons {
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button.btn-default {
+    @include button-variant($color-btn-text, $color-btn-background, $color-btn-border);
+    font-size: $font-size-base;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button.btn-default[disabled] {
+    cursor: not-allowed;
+}

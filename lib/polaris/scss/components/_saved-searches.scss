@@ -1,0 +1,81 @@
+.c-saved-searches {
+    $colorred: brown;
+    padding: 0px;
+    margin: 0;
+    padding-right:1em;
+    padding-left: 1em;
+
+  &__list{
+      list-style: none;
+      margin: 0px;
+      padding: 0px; 
+      ul{
+      //list-style-position: outside; // new for today
+      }
+  }
+  &__item{
+  }
+  &__li-div{
+      text-indent: -2.5em; 
+      padding-left: 5.0em; 
+  }
+  &__link{
+      text-decoration: $decoration_dashboard_hover_default;
+  }
+
+  &__link-name {
+      color: $color_font_accent;
+      text-decoration: $decoration_dashboard_hover_default;
+
+      &:link, &:visited {
+          color: $color_font_accent;
+          text-decoration: $decoration_dashboard_hover_default; 
+      }
+      &:hover{
+          color: $color_font_dashboard_hover_over;
+          text-decoration: $decoration_dashboard_hover; 
+      } 
+  }
+  &__show-all {
+      margin-top: 1.5em;
+      margin-left: 0.5em;
+      color: $color_font_accent;
+      text-decoration: $decoration_dashboard_hover_default;
+      &:hover{
+          color: $color_font_dashboard_hover_over;
+          text-decoration: $decoration_dashboard_hover; 
+      } 
+      a{
+         &:link, &:visited {
+              color: $color_font_accent;
+              text-decoration: $decoration_dashboard_hover_default; 
+          }
+          &:hover{
+              color: $color_font_dashboard_hover_over;
+              text-decoration: $decoration_dashboard_hover; 
+          } 
+      }
+  }
+  &__glyphicon-play{
+      color: green;
+      margin-right: 1em;
+  }
+  &__link-go:link{
+    color: green;
+    text-decoration: $decoration_dashboard_hover_default;
+    &:link, &:visited,&:hover, &:active {
+        color: green;
+     }
+  }
+  &__glyphicon-remove{
+      color: $colorred;
+      margin-right: 1em;
+  }
+  &__link-delete:link {
+    color: $colorred;
+    text-decoration: none;
+    &:link, &:visited,&:hover, &:active {
+        color: $colorred;
+    }
+  }
+}

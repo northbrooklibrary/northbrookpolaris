@@ -1,0 +1,30 @@
+﻿
+
+.search-results-community__results-link-panel{
+    background-color: $color_secondary;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    text-align:right;
+}
+a.search-results-community__browse-results{
+    color: $color_font_accent_dark;
+    &:link, &:visited{
+        text-decoration: none;
+    }     
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
+}
+
+.search-results-community__heading{
+    color: $color_font_accent_dark;
+    a:link, a:visited{
+        text-decoration: none;
+        color: $color_font_accent_dark;
+    }     
+    a:hover, a:focus {
+        text-decoration: underline;
+        color: $color_font_dashboard_hover_over;
+    }
+}

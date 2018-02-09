@@ -1,0 +1,79 @@
+.section-patronaccount{
+
+  #formMain{
+    padding: 2rem;
+    background-color: $white;
+  }
+}
+
+.patron-header__name{
+  display: inline-block;
+  width: auto !important;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.patron-header__section-name{
+  display: inline-block;
+  width: auto !important;
+  font-size: 1.125rem;
+
+  &:before{
+    content: "|";
+  }
+}
+
+.patrongrid{
+  width: 100%;
+  border: 0;
+
+  th{
+    border-bottom: 1px solid $border-color;
+    border-top: 0 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    text-align: left !important;
+    font-size: .675rem;
+    text-transform: uppercase;
+  }
+
+  td{
+    padding: .5rem;
+    border-bottom: 1px solid $border-color !important;
+    line-height: 1.3;
+  }
+}
+
+.patron-footer-view{
+  margin-top: 2rem;
+}
+
+.c-accordion__account-alert{
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  padding: .5rem;
+  background-color: red;
+
+  a{
+    color: $white;
+  }
+}
+
+//account detail package
+
+.my-record__account-view{
+  padding: 2rem;
+  background-color: $white;
+}
+
+.my-record__account-view .my-record__row{
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: 1px solid $border-color;
+
+  div:first-child{
+    width: 20%;
+    color: $grey;
+  }
+}

@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Previous Titles
+   ========================================================================== */
+
+.c-previous-titles {
+
+  &__container{
+    position: relative;
+    padding-bottom: em(20);
+  }
+    &-media__container{
+    }
+          &__image-title-author-link-ul{
+              list-style: none;
+          }
+
+       &__image-title-author-link, __image-title-author-link-li, __image-title-author-link-ul {
+            padding-bottom: em(2);
+            font-weight: 500;
+            display: block;
+            text-align: center;
+            vertical-align: middle;        
+            margin-right: auto;
+            margin-left: auto;
+            text-decoration: $decoration_dashboard_hover_default;
+            &:link, &:visited {
+                  color: $color_font_accent;
+                  text-decoration: $decoration_dashboard_hover_default; 
+           }
+           &:hover{
+              color: $color_font_dashboard_hover_over;
+              text-decoration: $decoration_dashboard_hover; 
+          } 
+          a{
+             &:link, &:visited {
+                  color: $color_font_accent;
+                  text-decoration: $decoration_dashboard_hover_default; 
+              }
+              &:hover{
+                  color: $color_font_dashboard_hover_over;
+                  text-decoration: $decoration_dashboard_hover; 
+              } 
+          }
+       }
+      &__image-title-author-link-img{
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+          padding-bottom: em(0);
+          max-height: 8.125em; // 130px;
+          max-width: 6.25em; //100px;
+        }
+          &__material-type, &__material-type-img{
+            padding-bottom: em(2);
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+          }       
+        &__pub-year{
+            font-size:0.75rem;
+            text-align: center;
+        }
+
+
+      &__recently-viewed {
+          margin-top: 1.5em;
+          margin-left: 0.5em;
+          color: $color_font_accent;
+          text-decoration: $decoration_dashboard_hover_default;
+          &:link, &:visited {
+                  color: $color_font_accent;
+                  text-decoration: $decoration_dashboard_hover_default; 
+           }
+           &:hover{
+              color: $color_font_dashboard_hover_over;
+              text-decoration: $decoration_dashboard_hover; 
+          } 
+          a{
+             &:link, &:visited {
+                  color: $color_font_accent;
+                  text-decoration: $decoration_dashboard_hover_default; 
+              }
+              &:hover{
+                  color: $color_font_dashboard_hover_over;
+                  text-decoration: $decoration_dashboard_hover; 
+              } 
+          }
+       }
+    }

@@ -1,0 +1,7 @@
+﻿// Overrides of Bootstrap's modal body class to have content scroll instead of 
+// dialog being full height of content
+
+.modal-body {
+    max-height: calc(100vh - 175px); 
+    overflow-y: auto; 
+}

@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Content Module - Base Styles
+   ========================================================================== */
+@-ms-viewport{
+    width:auto!important;
+}
+.content-module{
+  
+  .content-container{
+    @include apply_sidepad;
+    padding-top: em(20);
+    padding-bottom: em(20);
+
+    p{
+      &:last-child{
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  &--first{
+
+  }
+  &--last{
+
+  }
+}
+
+@mixin content-module-adjust-padding($top, $right, $bottom, $left){
+  .content-module{
+    .content-container{
+      padding: em($top) em($right) em($bottom) em($left);
+    }
+  }
+}

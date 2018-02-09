@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.nosidepad{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.text-replace{
+  @include text-replace;
+}
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+
+    // scss-lint:disable PropertySpelling
+    *text-indent: -9999px;
+    // scss-lint:enable PropertySpelling
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix{
+  @include clearfix;
+}
+
+// CSS Transforms - Vertical Centering
+html.csstransforms{
+  .vert-center{
+    position: relative;
+
+    .vert-center-content{
+      position: absolute !important;
+      top: 50% !important;
+      left: 0;
+      width: 100%;
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+.browsehappy{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFF;
+  color: #000;
+  padding: 2em 1em;
+  z-index: 1500;
+  line-height: 2;
+  text-align: center;
+
+  span{
+    background-color: #000;
+    padding: .5em;
+    color: #FFF;
+  }
+
+  a{
+    &:link, &:visited{
+      color: $color_font_gray_medium;
+      font-weight: normal;
+      text-decoration: underline;
+    }
+    &:focus, &:hover, &:active { outline: 0; color: $color_font_gray_medium; }
+  }
+}

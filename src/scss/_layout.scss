@@ -1,0 +1,16 @@
+.npl-container{
+  position: relative;
+  clear: both;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 2rem;
+  overflow: hidden;
+
+  &.narrow{
+
+    @media screen and (#{$bp-larger-than-tablet}){
+      padding-left: 6rem;
+      padding-right: 6rem;
+    }
+  }
+}

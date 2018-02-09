@@ -1,0 +1,70 @@
+﻿.Red { 
+    color: $color_red; 
+}
+
+.Results {
+	color : black;
+}
+
+.LibraryHeader {
+	font-size : 1.4em;
+	text-align : center
+}
+
+img.thumbnail {
+    max-height: 130px !important;
+	max-width: 100px !important;
+    -moz-force-broken-image-icon: 1;
+    margin: 0px;
+}
+
+.AvailabilityHoldsMessage
+{
+    margin: 10px 50px; 
+    padding: 25px; 
+    border: solid 1px #999999; 
+    background-color: #FFFFCC;
+}
+
+.RegularBold
+{
+	font-weight : bold;
+}
+
+.RegularSmall
+{
+	font-size : .9em;
+}
+
+.RegularXSmall
+{
+	font-size : .9em;
+}
+
+.Headings1
+{
+	background-color : lighten($color_secondary_light,3);
+	padding : 5px;
+}
+
+.Headings2
+{
+	background-color : White;
+	padding : 5px;
+}
+
+.FormHeader
+{
+	background-color: #ebf0f6;
+}
+
+.FormBody
+{
+	background-color: #F6F6F6;
+}
+
+.FormHeaderText
+{
+	@include rem-fallback(font-size, 16);
+	font-weight: bold;
+}

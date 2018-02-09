@@ -1,0 +1,55 @@
+﻿.textit {
+    &-container {
+        width: 96%;
+        margin: 0, 2%;
+        padding: 20px;
+    }
+    
+    &-header-container {
+        clear: both;
+        padding-bottom: 50px;
+
+        .textit-icon {
+            font-size: 2em;
+            text-align: right;
+        }
+    }
+
+    &-primary-header {
+        font-weight: bold;
+    }
+
+    &-secondary-header {
+        font-weight: normal;
+    }
+
+    &-inputs-container {
+        .row {
+            margin-bottom: 10px;
+
+            .form-group {
+                margin-bottom: 0;
+
+                .form-control {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .input-label {
+            font-weight: bold;
+        }
+
+        #TxtMobile1, #TxtMobile2 {
+            width: 60px;
+        }
+
+        #TxtMobile3 {
+            width: 80px;
+        }
+
+        #CarrierList {
+            width: 220px;
+        }
+    }
+}

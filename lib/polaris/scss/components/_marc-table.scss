@@ -1,0 +1,32 @@
+.marc_body {
+    background-color: $color_white;
+}
+.marc_table{
+  font-family: monospace;
+
+  td{
+    vertical-align: top;
+    padding: em(2);
+  }  
+}
+  .marc_tag{
+    color: blue;
+  }
+  .marc_ind{
+    color: $color_red;
+  }
+  .marc_sub {
+      color: green;
+  } 
+
+  .marc_data {
+    color: black;
+    vertical-align: top; 
+    padding-bottom: .2pt; 
+    word-wrap: break-word;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }

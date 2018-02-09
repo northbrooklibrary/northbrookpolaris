@@ -1,0 +1,30 @@
+﻿.feature-it-icon
+{
+    width: 20px; 
+    height: 20px; 
+    max-width: 20px; 
+    max-height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.feature-it__panel {
+    border-bottom: .625em solid $color_secondary;
+    border-top: .625em solid $color_secondary;
+    font-size: .875em;
+    padding: 0;
+
+    .feature-body {
+        max-height: 15em;
+        overflow-y: auto;
+        padding: 1em 1em 0 1.5em;
+    }
+}
+
+.feature-it__panel + .feature-it__panel {
+    border-top-width: 0;
+}
+
+div.search__position:first-of-type {
+    margin-top: .625em;
+}

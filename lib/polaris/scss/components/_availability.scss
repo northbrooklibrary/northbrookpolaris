@@ -1,0 +1,77 @@
+﻿.availability__body {
+    background-color: #fff;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.availability {
+    height: 100%;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.availability__table-container.table-responsive {
+    border-width: 0;
+    height: 100%;
+    overflow: auto;
+
+    table.table {
+
+        border-width: 0;
+
+        th {
+            font-weight: normal;
+        }
+
+        position: relative;
+        tbody {
+            tr {
+                border: 0;
+
+                td {
+                    border: 0;
+                }
+
+                td.course-reserves__title {
+                    white-space: normal;
+                }
+            }
+        }
+    }
+
+    img.group {
+        padding-bottom: .2em;
+        padding-right: .5em;
+    }
+
+    .glyphicon:focus {
+        outline: none;
+    }
+
+    th.Holdings:first-child {
+        padding-left: 5em;
+    }
+
+    .glyphicon-usd {
+        color: $color_money_green;
+    }
+}
+
+.availability--full-page {
+    height: 100%;
+    overflow: hidden;
+}
+
+a.group {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+i.group {
+    padding-right: .5em;
+}

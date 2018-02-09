@@ -1,0 +1,130 @@
+
+.c-search-header-community {
+    position: relative;
+    padding-bottom: 1em;
+    &__content-container {
+        padding-left: 0px;
+    }
+    &__row-data {
+        padding-top: 0.25em;
+        padding-left: 0px;
+        text-align: left;
+    }
+    &__dropdown {
+        border: none;
+        width: 230px;
+    }
+    &__results-dropdown {
+        border: none;
+        width: 4.5em;
+    }
+    &__per-page-dropdown {
+        height: auto;
+        border: solid 1px #ccc;
+        background-color:white; 
+    }
+    &__row--padding{
+        margin-top: 5px;
+    }
+    &__row-label {
+        padding-top: 0.25em;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: left;
+        word-break:break-word;
+    }
+
+    &__row {
+        margin-right: 0;
+        margin-left: 0;
+        text-align: left;
+    }
+    &__label {
+        @include clearfix;
+        @include rem-fallback(font-size, 13);
+        margin: 0;
+        color: $color_font_primary;
+        white-space: nowrap;
+        padding-top: 9px;
+        margin-bottom: 5px;
+        white-space:normal;
+    }
+
+    &__box--height {
+        height: 28px;
+    }
+    &__glyphicon-search{
+        padding-top: 2px;
+    }
+
+div.c-search-header-community__search-box-div {
+    padding: 2px 2px 2px 6px !important;
+    width: 100%;
+    input.AutoSuggestShowCold,
+    input.AutoSuggestShowHot {
+        right: 35px;
+    }
+}
+
+.c-search-header-community__search-box {
+    width: calc(100% - 37px - 1em);
+}
+
+.c-search-header-community__search-browse-box {
+    width: calc(100% - 20px - 1em);
+}
+
+.c-search-header-community__search-label {
+    padding: 3px 6px;
+    position: relative; 
+    right: 0px; 
+    top: -1px;
+}
+
+
+    &__search-box {
+        border: none;
+        transition: none;
+        margin: 0;
+        outline-style: none;
+        padding-right: 5px;
+        padding-bottom: 0;
+        background-color: white;
+        border-bottom-color: none;
+        border-top-color: none;
+        border-right-color: none;
+        border-left-color: none;
+
+        &input {
+            border: none;
+            transition: none;
+            outline-style: none;
+            padding-right: 5px;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        &:focus {
+            border-color: none;
+        }
+    }
+}
+
+@media screen and (min-width: 381px) {
+    .c-search-header-community__dropdown{
+        width: 230px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .c-search-header-community__dropdown{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .c-search-header-community {
+        padding-bottom: 1em;
+    }
+}
+

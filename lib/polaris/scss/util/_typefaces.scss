@@ -1,0 +1,65 @@
+// Typefaces
+@mixin web-font( $font:$font_sansserif_primary, $variant:'reg' ){
+
+  // SANS-SERIF
+  @if $font == $font_sansserif_primary {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
+    // Regular
+    @if $variant == reg {
+      font-weight: 300;
+      font-style: normal;
+    // Regular Italic
+    } @else if  $variant == reg-ital {
+      font-weight: 300;
+      font-style: italic;
+    // Bold
+    } @else if  $variant == bold {
+      font-weight: 500;
+      font-style: normal;
+    // Bold Italic
+    } @else if  $variant == bold-ital {
+      font-weight: 500;
+      font-style: italic;
+    // DEFAULT - Regular
+    } @else {
+      font-weight: 300;
+      font-style: normal;
+    }
+
+  // SERIF
+  } @else if $font == $font_serif_primary {
+    // Regular
+    @if $variant == reg {
+        font-family: Georgia, Times, "Times New Roman", serif;
+        font-weight: 300;
+        font-style: normal;
+    // Regular Italic
+    } @else if  $variant == reg-ital {
+      font-family: Georgia, Times, "Times New Roman", serif;
+      font-weight: 300;
+      font-style: italic;
+    // Bold
+    } @else if  $variant == bold {
+      font-family: Georgia, Times, "Times New Roman", serif;
+      font-weight: 500;
+      font-style: normal;
+    // Bold Italic
+    } @else if  $variant == bold-ital {
+      font-family: Georgia, Times, "Times New Roman", serif;
+      font-weight: 500;
+      font-style: italic;
+    // DEFAULT - Regular
+    } @else {
+      font-family: Georgia, Times, "Times New Roman", serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+  // DEFAULT
+  } @else {
+    font-family: "Roboto", "proxima-nova-n4", "proxima-nova", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+}

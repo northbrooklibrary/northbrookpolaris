@@ -1,0 +1,412 @@
+/* ==========================================================================
+   Nav - General
+   ========================================================================== */
+nav{
+  
+  
+}
+
+.navbar-collapse{
+  box-shadow: none;
+  border: none;
+}
+
+
+/* ==========================================================================
+   Expandable Block Nav
+   ========================================================================== */
+.expandable-block-nav{
+  padding-left: 0;
+  padding-right: 0;
+
+  .nav__list-level-1{
+    margin: 0;
+  }
+    .nav__item-level-1{
+      margin-top: em(6);
+     
+      &:first-child{
+      }
+
+      &.open{
+        .nav__link-level-1{
+          &:link, &:visited, &:focus{
+            color: $color_font_gray_extra_light;
+            background: transparent;
+            @include transition-fade;
+          }
+        }
+        .nav__link-level-2, .nav__link-level-3{
+          @include apply_sidepad;
+        }
+      }
+      &--more{
+        display: none;
+      }
+    }
+      .nav__link-level-1{
+          text-align: left;
+        @include clearfix;
+        @include rem-fallback(padding, 15, $sidepad_sm);
+
+        @include mq($break_sidepad){
+          @include rem-fallback(padding, 15, $sidepad_lg);
+        }
+
+        span{
+          position: relative;
+          float: right;
+          margin-top: em(3);
+
+          &.caret-right{
+            margin-right: em(3);
+          }
+        }
+
+        &:link, &:visited{
+          color: $color_font_white;
+          text-decoration: none;
+          background-color: $color_primary_light;
+        }
+        &:focus { outline: 1px dotted invert; }
+        &:hover, &:active {
+          outline: 0;
+          color: $color_font_white;
+          text-decoration: none;
+          background: $color_accent; 
+        }
+      }
+      .nav__list-level-2{
+        position: relative !important;
+      
+        min-width: 100%;
+        border: none;
+        @include glow;
+        padding: 0;
+      }
+        .nav__item-level-2{
+        }
+        .nav__item-level-2--footer{
+            padding-bottom: 0.25em;
+        }
+          .nav__link-level-2{
+            white-space: normal;
+
+            &:link, &:visited{
+              color: $color_font_white;
+              text-decoration: none;
+            }
+            &:hover, &:active, &:focus {
+              outline: 0;
+              color: $color_font_white;
+              text-decoration: none;
+              background: $color_accent;
+            }
+          }
+      .nav__list-level-3{
+        position: relative !important;
+      }
+        .nav__item-level-3{
+
+        }
+          .nav__link-level-3{
+            white-space: normal;
+
+            &:link, &:visited{
+              color: $color_font_white;
+              text-decoration: none;
+              @include rem-fallback(padding-top, 10);
+              @include rem-fallback(padding-bottom, 10);
+            }
+            &:hover, &:active, &:focus {
+              outline: 0;
+              color: $color_font_gray_dark;
+              text-decoration: none;
+              background: $color_gray_light;
+            }
+          }
+        .nav__list-level-3{
+        
+        }
+          .nav__item-level-3{
+
+          }
+            .nav__link-level-3{
+              white-space: normal;
+
+              &:link, &:visited{
+                color: $color_font_white;
+                text-decoration: none;
+              }
+              &:hover, &:active, &:focus {
+                outline: 0;
+                color: $color_font_gray_dark;
+                text-decoration: none;
+                background: $color_gray_light;
+              }
+            }
+
+
+  // Add Secondary Submenu Support to Bootstrap
+  .dropdown-submenu, .dropdown-menu {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+
+    &.open{
+      display: block;
+    }
+  }
+}
+
+/* ==========================================================================
+   Top Nav
+   ========================================================================== */
+$initial-max-width: 105px * $zoom_factor;
+
+.top-nav{
+  padding-top: em(6);
+  padding-bottom: em(6);
+  @include apply_sidepad;
+
+  .nav__list-level-1{
+    margin: 0;
+  }
+    .nav__item-level-1{
+      padding: 0;
+      max-width: $initial-max-width;
+      color: $color_font_white;
+    }
+      .nav__select{
+          padding: 10px;
+        max-width: $initial-max-width;
+        background: none;
+        @include rem-fallback(font-size, 16);
+        color: $color_font_white;
+      }
+        .nav__option{
+          color: $color_font_black;
+          @include rem-fallback(font-size, 14);
+          @include rem-fallback(padding, 5);
+        }
+
+
+  &--split-header{
+    .nav__item-level-1{
+      float: right;
+
+      &:first-child{
+        float: left;
+      }
+    }
+  }
+}
+
+.nav__item-level-1.nav__large-print {       
+    display: none;
+    max-width: none;
+
+    a,
+    a:active,
+    a:focus,
+    a:hover,
+    a:visited {
+        padding: 10px;
+        background-color: transparent;
+        @include rem-fallback(font-size, 16);
+        color: $color_font_white;
+        max-width: none;
+        text-decoration:none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (min-width: $large_print_break) {
+    .nav__item-level-1.nav__large-print {
+        display: block;
+    }
+}
+
+/* ==========================================================================
+   Footer Nav
+   ========================================================================== */
+.nav--footer{
+  
+
+  .expandable-block-nav{
+    .nav__item-level-1{
+     
+      &:first-child{
+        border: none;
+      }
+    }
+  }
+
+
+  @include mq($break_footer_mid){
+    .expandable-block-nav{
+      .nav__list-level-1{
+        float: none;
+        @include rem-fallback(padding-top,40);
+        @include rem-fallback(padding-bottom,40);
+
+        &.nav__list--items-7{
+          .nav__item-level-1{
+            width: floor(100%/3);
+
+            &:nth-child(4){
+              clear: left;
+            }
+          }
+        }
+      }
+        .nav__link-level-1--add-underline{
+            &:link, &:visited{
+                text-decoration: none;
+            } 
+            &:focus, &:hover{ 
+                text-decoration: underline;
+            }
+        }
+        .nav__item-level-1{
+          display: block;
+          float: left;
+          border: none;
+          padding-bottom: em(20);
+        }
+          .nav__link-level-1{
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:link, &:visited{
+              color: $color_font_white;
+              text-decoration: none;
+              background: none;
+            }
+            &:focus { outline: 0; }
+            &:hover, &:active {
+              outline: 0;
+              color: $color_font_white;
+              text-decoration: none; // set to 'underline' to add underline to labels in footer on wide screen
+              background: none;
+              cursor: default;
+            }
+
+            span{
+              display: none;
+            }
+          }
+
+
+          .nav__list-level-2{
+            position: relative;
+            top: auto;
+            left: auto;
+            z-index: auto;
+            float: none;
+            min-width: 0;          
+            display: block;
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+            background: none;
+            padding-bottom: em(10);
+          }
+            .nav__link-level-2{
+              @include apply_sidepad;
+
+              &:link, &:visited{
+                color: $color_font_white;
+                text-decoration: none;
+                background: none;
+                font-weight: 300;
+              }
+              &:hover, &:active {
+                outline: 0;
+                color: $color_font_footer_accent;
+                text-decoration: underline;
+                background: none;
+              }
+            }
+    }
+  }
+  @include mq($break_footer_mid + 150){
+    .expandable-block-nav{
+      .nav__list-level-1{
+
+        &.nav__list--items-7{
+          .nav__item-level-1{
+            width: floor(100%/4);
+
+            &:nth-child(4){
+              clear: none;
+            }
+            &:nth-child(5){
+              clear: left;           
+            }
+          }
+        }
+      }
+    }
+  }
+  @include mq($break_footer_mid + 300){
+    .expandable-block-nav{
+      .nav__list-level-1{
+
+        &.nav__list--items-7{
+          .nav__item-level-1{
+            width: floor(100%/5);
+
+            &:nth-child(5){
+              clear: none;
+            }
+            &:nth-child(6){
+              clear: left;           
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include mq($break_footer_mid + 450){
+    .expandable-block-nav{
+      .nav__list-level-1{
+
+        &.nav__list--items-7{
+          .nav__item-level-1{
+            width: floor(100%/6);
+
+            &:nth-child(6){
+              clear: none;
+            }
+            &:nth-child(7){
+              clear: left;           
+            }
+          }
+        }
+      }
+    }
+  }
+  @include mq($break_footer_mid + 500){
+    .expandable-block-nav{
+      .nav__list-level-1{
+
+        &.nav__list--items-7{
+          .nav__item-level-1{
+            width: floor(100%/7);
+
+            &:nth-child(7){
+              clear: none;
+            }
+            &:nth-child(8){
+              clear: left;           
+            }
+          }
+        }
+      }
+    }
+  }
+}

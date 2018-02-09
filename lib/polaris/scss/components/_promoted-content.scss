@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Promoted Content
+   ========================================================================== */
+
+.c-promoted-content {
+    &__heading {
+    }
+    
+    &__body {
+      a:link, a:visited {
+        font-weight: 500;
+        @include rem-fallback(font-size,18);
+      }
+    }
+}
+
+.panel {
+
+}
+
+.panel-default {
+  border: none;
+  @include box-shadow(none);
+  background-color: lighten($color_secondary_light,4);
+}
+
+.panel-default > .panel-heading {
+  background-color: $color_accent;
+}
+
+.panel-title {
+  a:link {
+    color: $color_font_white;
+  }
+}

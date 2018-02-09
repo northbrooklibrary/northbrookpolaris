@@ -1,0 +1,189 @@
+/* ==========================================================================
+   Images/Embeds
+   ========================================================================== */
+/*img, object, embed {
+  margin-bottom: em($base_font_line_height);
+}
+p{
+  img, object, embed {
+    padding-bottom: 0;
+  }
+}*/
+/*
+// Fix for images that are SVG
+img[src$=".svg"]{
+  padding-bottom: 0;
+}
+
+svg{
+  pointer-events: none;
+}
+*/
+
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+table{
+  
+  th{
+    background: $color_primary; 
+    color: $color_font_white;
+    border-right: 2px solid $color_white;
+  }
+  td{ 
+    padding: em(2) em(5);
+  }
+  .group{
+    img, .glyphicon{
+      padding-right: em(5);
+    }
+  }
+
+  a{
+    &:link, &:visited{
+      text-decoration: none;
+    }
+  }
+}
+
+.table-condensed {
+  font-size: .75em;
+}
+
+/* ==========================================================================
+   Dropdown menu
+   ========================================================================== */
+
+.scrollable-menu {
+    height: auto;
+    max-height: 13.7em;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Buttons (probably want to move this)
+   ========================================================================== */
+
+a.btn-inverse {
+    @include button-variant($color-btn-text, $color-btn-background-inverse, $color-btn-border);
+}
+ 
+a.btn-default {
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+  
+a.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+ 
+.btn, a.btn {
+  @include button-variant($color-btn-text, $color-btn-background, $color-btn-border);
+
+  &.no-touch:hover {
+    background-color: $color-btn-background;
+  }
+}
+
+.btn-group{
+  button:nth-of-type(even){
+    background-color: darken($color_accent,3);
+  }
+  button.active{
+    background-color: $color_white;
+  }
+}
+
+.popover--xl + .popover {
+    width: 48em;
+}
+
+.popover--lg + .popover {
+    width: 36em;
+}
+
+.popover--md  + .popover {
+    width: 24em;
+}
+
+.popover--sm + .popover {
+    width: 18em;
+}
+
+@media screen and (min-width: $popover-xs-breakpoint) {
+    .popover {
+        max-width: $popover-xs-max;
+    }
+}
+
+@media screen and (min-width: $popover-sm-breakpoint) {
+    .popover {
+        max-width: $popover-sm-max;
+    }
+}
+
+@media screen and (min-width: $popover-md-breakpoint) {
+    .popover {
+        max-width: $popover-md-max;
+    }
+}
+
+@media screen and (min-width: $popover-lg-breakpoint) {
+    .popover {
+        max-width: $popover-lg-max;
+    }
+}
+
+@media screen and (min-width: $popover-xl-breakpoint) {
+    .popover {
+        max-width: $popover-xl-max;
+    }
+}
+
+.modal-header {
+    padding: .75em 1em .5em 1em;
+
+	button {
+		padding: .1em .5em;
+	}
+
+    h4 {
+        margin-top: .2em;
+        text-transform: none;
+    }
+}
+
+/* ==========================================================================
+    Remove .text-xs-* .text-sm-* .text-md-* .text-lg-* : once responsive 
+    text-align classes are available in Bootstrap v4.*.
+    
+    $screen-sm-min, $screen-md-min, $screen-lg-min: 
+        are defined by ..\bootstrap\_variables.scss.
+   ========================================================================== */
+
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media screen and (min-width: $screen-sm-min) {
+  .text-sm-left { text-align: left; }
+  .text-sm-right { text-align: right; }
+  .text-sm-center { text-align: center; }
+  .text-sm-justify { text-align: justify; }
+}
+
+@media screen and (min-width: $screen-md-min) {
+  .text-md-left { text-align: left; }
+  .text-md-right { text-align: right; }
+  .text-md-center { text-align: center; }
+  .text-md-justify { text-align: justify; }
+}
+
+@media screen and (min-width: $screen-lg-min) {
+  .text-lg-left { text-align: left; }
+  .text-lg-right { text-align: right; }
+  .text-lg-center { text-align: center; }
+  .text-lg-justify { text-align: justify; }
+}
+

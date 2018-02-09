@@ -1,0 +1,4 @@
+﻿.modal-body {
+    max-height: calc(100% - 175px); /* Fallback */
+    max-height: calc(100vh - 175px); /* Default bootstrap */
+}

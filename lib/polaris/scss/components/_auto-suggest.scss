@@ -1,0 +1,92 @@
+﻿
+
+div.AutoSuggestMenu {
+
+    background-clip: padding-box;
+    background-color: transparent;
+    border: 1px solid $dropdown-fallback-border; // IE8 fallback
+    border: 1px solid $dropdown-border;
+    border-radius: $border-radius-base;
+    margin: 1px 0 0; 
+    padding: 0;
+    z-index: 9999;
+
+    ul {
+        border: none;
+        margin: 0;
+        padding: 0;
+        font-size: $font-size-base;
+        list-style: none;
+
+        @include box-shadow(0 6px 12px rgba(0,0,0,.175));
+
+        li {
+            color: #000;
+            margin: 0px;
+            padding: 2px 6px;
+            white-space: nowrap;
+            background-color: white;
+            font-size: $font-size-base;
+            font-weight: bold;
+
+            span {
+                color: #30465b;
+                font-size: $font-size-base;
+                font-weight: 100;
+             }
+        }
+
+        li#AutoSuggestHighlight {
+            background-color: $color_accent;
+            color: $color_font_white;
+            margin: 0px;
+            padding: 2px 6px;
+            white-space: nowrap;
+
+            span {
+                color: $color_font_white;
+            }
+        }
+    }
+
+    p {
+        background: #fff;
+        border-left: 8px;
+        border-top: 1px solid #eee;
+        color: #000000;
+        margin: 0px 0px 0px 0px;
+        padding: 4px 4px 4px 4px;
+
+        span {
+            background: transparent url(#{$shared-images-path}hide_suggestions_hot.gif) no-repeat left 50%;
+            color: $color_link;
+            font-size: ($font-size-base - 2);
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 21px;
+            text-decoration: underline;
+
+            &:hover {
+                color: $color_link_over;
+            }
+        }
+    }
+}
+
+input.AutoSuggestShowCold {
+    background: transparent url(#{$shared-images-path}show_suggestions_cold.gif) no-repeat center 50%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 21px;
+}
+
+input.AutoSuggestShowHot {
+    background: transparent url(#{$shared-images-path}show_suggestions_hot.gif) no-repeat center 50%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 21px;
+}
+
+.AdvancedHint {
+    padding: 5px;
+    width: 95%;
+  //  border: solid 1px #CCCCCC;
+    color: #333333;
+}

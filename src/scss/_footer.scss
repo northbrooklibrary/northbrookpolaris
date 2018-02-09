@@ -1,0 +1,31 @@
+.npl-site-footer{
+  background-color: $primary-color;
+  color: $white;
+
+  > .npl-container{
+    display: flex;
+  }
+}
+
+.npl-contact{
+  width: 50%;
+}
+
+.npl-brand-no-logo{
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.npl-address{
+  margin-top: 0;
+}
+
+.npl-emailaddress{
+  color: inherit;
+}
+
+.polaris-site-footer{
+  width: 50%;
+  text-align: right;
+}

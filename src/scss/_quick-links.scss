@@ -1,0 +1,22 @@
+.npl-quick-links{
+  background-color: $white;
+}
+
+.npl-quick-link-buttons{
+  @include unstyled-list;
+  display: flex;
+  margin-left: -1rem;
+
+  li{
+    min-width: calc(20% - 1rem);
+    margin-left: 1rem;
+
+    a{
+      display: block;
+      padding: 1rem;
+      background-color: $primary-color;
+      color: $white;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+// Neutrals
+$color_white:             #ffffff !default;
+$color_black:             #000000 !default;
+$color_gray_extra_light:  #cccccc !default;
+$color_gray_light:        #999999 !default;
+$color_gray_medium:       #666666 !default;
+$color_gray_dark:         #333333 !default;
+$color_red:               #9B3131 !default;
+
+// Color Variables
+$color_default_primary:           $color_primary !default;
+$color_default_secondary:         $color_secondary !default;
+
+$color_hr:                        $color_secondary_light !default;
+$color_money_green:               #216c2a !default;
+// Bib display alternate title/author
+$color_alternate_text:            #008000 !default;
+
+$color_dashboard_facet_count:     black !default;
+
+$color_font_white:            white !default;
+$color_font_black:            black !default;
+$color_font_accent_light:     $color_red !default;
+$color_font_footer_accent:    white !default;
+$color_font_accent_dark:      #3166AA !default;
+
+// Drawer Element Label, ie. Availability, Assigned Branch
+$color_font_dashboard_drawer_element_label: $color_font_primary !default; 
+
+// Facets within the Drawer Element
+$color_font_dashboard_facet_label:          $color_font_accent !default; 
+
+// Drawer Label, ie. Narrow Search, Related Search
+$color_font_dashboard_drawer_label:         $color_font_accent !default; 
+$color_font_dashboard_drawer_label_hover:   $color_font_primary !default; 
+
+// List item marker in the Facets within the Drawer Element
+$color_dashboard_facet_list_style:     purple !default;
+
+// Color for Restricted button / All Copies Expired button / disabled button
+$color_background_disabled_button: darken(#e6e6e6,15) !default;
+$color_font_disabled_button: darken(#9f9f9f,15) !default;
+
+// Color for search button with glyphicon hover
+$color_background_search_hover: #e6e6e6 !default;
+
+// Text Decoration
+$decoration_dashboard_hover_default: none !default;
+$decoration_dashboard_hover:         underline !default;
+
+// Warning background
+$color_message_panel_background:     #fffdea !default;
+
+// Patron grid select colors and attributes
+$decoration_patrongrid_default:      none !default;
+$decoration_patrongrid_hover:        underline !default;
+$color_patrongrid_default:           $color_accent !default;
+$color_patrongrid_hover:             $color_red !default;
+
+
+// Font colors -------------------------------------------------------------------
+
+//Color for Dashboards selected item 
+$color_font_dashboard_selected_item:    #e66400 !default;  // orange
+
+// Data following the facel label, ie. 'by: Smith, John'
+$color_font_dashboard_facet_label_secondary: black !default;     
+
+// Dashboard Narrow your search Assigned branch facet, "Other"/"Local" Label color
+$color_font_dashboard_Other_Local:     #888 !default;
+
+$color_font_gray_extra_light:          $color_gray_extra_light !default;
+$color_font_gray_medium_light:         #71777A !default;
+$color_font_gray_medium:               $color_gray_medium !default;
+$color_font_gray_dark:                 $color_gray_dark !default;
+
+// Color for dashboard More/Less link
+$color_font_dashboard_more_less:       $color_font_primary !default;  
+
+$color_text_main:                      $color_font_primary !default;
+$color_link:                           $color_font_accent !default;
+$color_link_over:                      $color_font_accent_light !default;
+
+//Color for Dashboards hover 
+$color_font_dashboard_hover_over:      $color_red !default;
+
+// Warning text color
+$color_font_warning_text:              $color_red !default;
+
+// Buttons
+$color-btn-text:                       $color_font_white !default;
+$color-btn-background:                 $color_accent !default;
+$color-btn-background-inverse:         $color_primary !default;
+$color-btn-border:                     darken($color-btn-background, 5%) !default;
+
+// Title list
+$color_title_list_status: $color_red !default;
+$color_title_list_remove: $color_money_green !default;
+
+// patron account and self registration disabled font color
+$color_disabled_font: darkgray;

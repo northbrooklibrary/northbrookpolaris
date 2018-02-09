@@ -1,0 +1,26 @@
+﻿.policy {
+
+  &__back-column {
+      text-align: center;
+      padding:0;
+  }
+  &__container{
+      padding:0;
+      width:auto;
+  }
+  &__row{
+      padding:0;
+      margin: 1em;
+  }
+  &__column {
+      padding:0;
+  }
+  &__link{
+    &:link, &:visited{
+        text-decoration: none;
+    }
+    &:hover, &:focus{
+        text-decoration: underline;
+    }
+  }
+}

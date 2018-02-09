@@ -1,0 +1,139 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+$color_error:         $color_accent;
+$color_field_bg:      $color_accent;
+$form_maxwidth:       450;
+$field_label_padding: 5;
+
+form{
+
+  ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// Labels ==================================================================
+label {
+  padding: 0 0 em($field_label_padding) 0;
+  @include rem-fallback(font-size, 14);
+  font-weight: normal;
+  color: $color_text_main;
+}
+
+
+// Inputs ==================================================================
+
+// Common styles
+input[type=text],
+input[type=url],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=password],
+textarea,
+select,
+select[multiple="multiple"] {
+  @include web-font( $font_sansserif_primary, reg );
+  color: $color_font_gray_dark;
+  font-size: inherit;
+
+  &:focus {
+    border-color: $color_secondary;
+  }
+}
+
+input[type=text],
+input[type=url],
+input[type=email],
+input[type=tel],
+input[type=number],
+input[type=password],
+textarea {
+  //@include rem-fallback(padding, 11);
+  //@include glow;
+  
+  &:focus {
+    @include box-shadow(0);
+    @include transition-fade;
+  }
+}
+
+// Textarea
+textarea,
+select[multiple="multiple"] {
+  min-height: (4em*1.4);
+  line-height: 1.4;
+  resize: none;
+}
+
+// Select
+.select-styled{
+  position: relative;
+  max-width: em($form_maxwidth);
+
+  &:after{
+    content: ' ';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 11px;
+    width: 0;
+    height: 0;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    vertical-align: middle;
+    pointer-events: none;
+
+    .lt-ie10 &{
+      display: none;
+    }
+  } 
+
+  select {
+    position: relative; 
+    border: none;
+    border-radius: 0;
+    @include appearance(none);
+    padding-right: 30px;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  &--no-arrow-pad{
+    &:after{
+      right: 3px;
+    }
+
+    select{
+      padding-right: 0;
+    }
+  }
+}
+
+select {
+  -webkit-border-radius: 0; // Turn off native styling
+}
+
+// Select multiple
+select[multiple="multiple"] {
+  option {
+    text-indent: 0;
+    padding: 0.2em em(11);
+  }
+}
+
+
+
+
+
+
+
+

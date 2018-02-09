@@ -1,0 +1,157 @@
+﻿.c-self-register {
+     background-color: $color_white; 
+
+    .aspNetDisabled {
+        background-color: green;//white !important;
+        color: $color_disabled_font !important;
+    }
+
+    &__row-data {
+        padding-left: 1em;
+        text-align: left;
+    }
+    &__row-udf{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    &__row-label {
+        padding-left: 1em;
+        padding-bottom: 0.5em;
+        padding-right: 1em;
+        padding-top: 5px;
+        input {
+            border: none;
+        }
+    }
+    &__button-left {
+        text-align: center;
+        margin: 0 1em 0 0;
+    }    
+    &__button-row--center {
+        text-align: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }   
+    &__button-row--left {
+        text-align: left;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    &__data--bold{
+        font-weight: bold;
+    }
+    &__dropdown, &__dropdown--width {
+        height: 26px;
+        border: solid 1px #ccc;
+        background-color:white; 
+    }
+    &__udf-row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+   
+    &__row {
+        padding-top: 0.5em;
+        margin-right: 0;
+        margin-left: 0;
+    }   
+    &__row--addnl{
+        padding-top: 0.5em;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom:0.5em;
+    }
+    &__row--custom-udf{
+       margin-right: 0;
+        margin-left: 0;
+    }
+    &__row--inner {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &__content-container {
+    }
+    &__zipcode {
+        height: 28px;
+        border: none;
+        transition: none;
+        margin: 0em 1em 0em 0em;
+        outline-style: none;
+        background-color: white;
+        border-bottom-color: none;
+        border-top-color: none;
+        border-right-color: none;
+        border-left-color: none;
+
+        &input {
+            padding-left: 1em;
+            height: 28px;
+            border: none;
+            transition: none;
+            outline-style: none;
+            padding-right: 5px;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        &:focus {
+            border-color: none;
+        }
+    }
+    &__label{
+        @include rem-fallback(font-size, 16);
+        margin: 0;
+        color: $color_font_primary;
+        white-space: nowrap;
+        padding-top: 9px;
+        margin-bottom: 5px;
+    }
+    &__list{
+        overflow:auto;
+        max-width: calc(90% - 10px);
+    }
+    &__line{
+        margin: 0;
+    }
+    &__notice-element{
+        margin-bottom: 0.5em;
+        padding-left: 2em;
+    }      
+    &__element{
+        margin-bottom: 0.5em;
+    }
+    &__udf-element{
+        margin-bottom: 0.5em;
+    }
+    &__row-udf-element{
+        margin-bottom: 0.5em;
+        padding-right:0;
+        padding-left:0;
+    }
+    &__text-entry{
+        width:95%;
+        max-width: 31.25em;
+        border: solid 1px #ccc;
+        height:26px;
+    }    
+    &__textbox{
+        border: solid 1px #ccc;
+        height: 26px;
+    }
+}
+@media (max-width: 767px){
+    .c-self-register__checkbox{
+        height:0;
+    }
+}
+ @media (min-width: 768px){
+    .c-self-register__list{
+        max-width:80%;
+    }
+    .c-self-register__checkbox{
+        height:20px;
+    }
+}
+  

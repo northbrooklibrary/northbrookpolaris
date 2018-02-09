@@ -1,0 +1,26 @@
+﻿.new-releases__rows{
+    .new-releases__row-item{
+        padding: 1em;
+        border-bottom: solid 1px $color_secondary_light;
+        }
+}
+.new-releases__img-row{
+    padding-right:5px;
+    padding-left:10px;
+    &__img{
+        min-width:35px;
+        min-height: 50px;
+    }
+}
+.new-releases__heading{
+    font-size: 20px;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align:center;
+}
+.new-releases__message{
+    padding-bottom: 1em;
+}
+.new-releases__link a:hover{
+    text-decoration:underline;
+}

@@ -1,0 +1,17 @@
+﻿.message-panel {
+    border: solid 1px #cccccc; 
+    background-color: $color_message_panel_background; 
+    color: $color_font_warning-text;
+    max-width: 100%; 
+    padding: 14px;
+    margin: 12px 0px;
+}
+
+.message-panel ul {
+  margin: 1em 0;
+  padding: 0 0 0 40px;
+}
+
+.message-panel ul li {
+    list-style: disc;
+}

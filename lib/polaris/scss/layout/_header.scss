@@ -1,0 +1,421 @@
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.site-header{
+  padding: 0;
+  background: $color_primary;
+  
+  &__content-container{
+    
+  }
+
+  &__branch{
+    @include clearfix;
+    width: 100%;
+    clear: both;
+    background-color: $color_white;
+    @include apply_sidepad;
+    text-align: center;
+    @include rem-fallback(padding, 15);
+    
+    &-logo, &-name{
+      width: 100%;
+    }
+
+    &-logo{
+      display: none;
+      padding: 0;
+    }
+
+    &-logo-center{
+        display:none;
+        padding: 0;
+    }
+      &-logo-link{
+
+      }
+    &-name{
+      display: block;
+
+      &-link{
+        @include rem-fallback(font-size, 18);
+        text-transform: uppercase;
+        color: $color_font_primary;
+        @include rem-fallback(padding-top, 15);
+        @include rem-fallback(padding-bottom, 12);
+        font-weight: 500;
+        
+        &:link, &:visited{
+          color: $color_font_primary;
+          text-decoration: none;
+        }
+        &:focus { outline: 1px dotted invert; }
+        &:hover, &:active {
+          outline: 0;
+          color: $color_font_accent;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &--align-left{
+      text-align: left;
+    }
+    &--align-right{
+      text-align: right;
+        }
+      }
+        }
+
+.site-header__branch--no-name.site-header__branch--has-logo {
+  padding: 0px;
+  
+  .site-header__branch-logo {
+      display: block;
+  }
+}
+
+.nav-panel {
+  &--my-account {
+    .nav-panel__nav-container .dropdown-menu {
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      margin-top: 1px;
+      @include transition-fade;
+    }
+
+    .nav-panel__nav-head {
+      a {
+        &:link, &:visited, &:hover, &:active {
+          color: $color_font_white;
+          text-decoration: none;
+          cursor: default;
+        }
+        &:focus { outline: 1px dotted invert; }
+
+        span{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@mixin site-header-branch-expose-logo(){
+  .site-header{
+    &__branch{
+
+        padding: 0px;
+
+      &-logo{
+        display: block;
+      }
+
+      &-logo-center{
+        display: inline-block;
+        align: right; 
+        vertical-align: middle; 
+      }
+    
+      &--align-left{
+        &.site-header__branch--has-logo.site-header__branch--has-name{
+          .site-header__branch-logo{
+            img{
+              max-width: none;
+              width: 100%;
+            }
+          }
+          .site-header__branch-name{
+            padding-left: em(20);
+          }
+        }
+      }
+      &--align-right{
+        &.site-header__branch--has-logo.site-header__branch--has-name{
+         .site-header__branch-logo{
+          img{
+            max-width: none;
+            width: 100%;
+          }
+        }
+          .site-header__branch-name{
+            text-align: left; 
+            padding-right: em(20);
+          }
+        }
+      }
+    
+      &--align-left, &--align-right{
+        &.site-header__branch--has-logo.site-header__branch--has-name{
+          display: table;
+
+          .site-header__branch-logo, .site-header__branch-name{
+            display: table-cell;
+            vertical-align: middle;
+          }
+        }     
+      }
+    }
+  }
+}
+
+@mixin site-header-branch-adjust-cols($logo: 25%, $name: 75%){
+  // if it has a logo and name then put them side by side if they are aligned left or right
+  .site-header__branch--has-logo.site-header__branch--has-name{
+    &.site-header__branch--align-left, &.site-header__branch--align-right{
+      .site-header__branch-logo{
+        width: $logo;
+      }
+      .site-header__branch-name{
+        width: $name;
+      }
+    }
+  }
+}
+
+@mixin site-header-branch-adjust-name-size($font-size: 22){
+  .site-header__branch-name-link{
+    @include rem-fallback(font-size, $font-size);
+  }
+}
+
+$height-top-bar: 50;
+
+@mixin site-header-myaccount-expose($col-left: auto, $col-right: auto){
+  .site-header{
+    position: relative;
+    padding: 0 0 em(50) 0;
+    @include clearfix;
+    border-bottom: 1px solid $color_secondary_light;
+      
+  }
+
+  .toggle-nav-panel{
+    &--myaccount, &--main-menu{
+      display: none;
+    }
+  }
+  .nav-panel{
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: auto !important;
+    height: auto !important;
+    z-index: auto !important;
+    overflow: visible !important;
+
+    &--my-account{
+      float: right !important;
+      width: $col-right !important;
+      height: em($height-top-bar) !important;
+      
+      .nav-panel__welcome{
+        @include rem-fallback(font-size, 14);
+        @include apply_sidepad(30);
+        @include rem-fallback(padding-top, 15);
+        color: $color_font_white;
+        white-space: nowrap;
+      }
+
+      .nav-panel__top-nav{
+        display: none;
+        nav__large-print {
+            display: none;
+        }
+      }
+
+      .nav-panel__nav-container{
+        position: relative;
+        display: block;
+        width: 100%;
+      }
+        .nav-panel__nav-head {
+          @include rem-fallback(font-size, 20);
+          font-weight: 500;
+          @include apply_sidepad(20);
+          a {
+            &:link, &:visited{
+              cursor: pointer;
+            }
+            &:hover, &:active {
+              cursor: pointer;
+              text-decoration: none;
+            }
+
+            // Down caret
+            span{
+              display: inline-block;
+              float: none;
+              margin-left: em(5);
+              margin-top: 0;
+            }
+          }
+        }
+        .dropdown-menu {
+          width: 100%;
+          margin: 0;
+        }
+    }
+    &--main-menu{
+      float: left;
+      width: 100% !important;
+      height: 0 !important;
+
+      .nav-panel__top-nav{
+        position: relative;
+        float: left;
+        width: $col-left;
+        height: em($height-top-bar);
+        top: em(- $height-top-bar);
+        background-color: $color_primary;
+        
+        &.top-nav--split-header{
+          .nav__item-level-1{
+            float: left;
+            margin-right: em(70);
+          }
+        }
+
+        .nav__list-level-1{
+          float: none;
+        }
+          .nav__option{
+            background-color: $color_white;
+          }
+      }
+
+      .nav-panel__nav{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: $color_white;
+        border-top: 4px solid $color_secondary_light;
+
+        .nav__item-level-1{
+          float: left;
+          margin-top: -4px;
+
+          &:first-child{
+            border-left: 0;
+          }
+          &:last-child{
+            .nav__list-level-2{
+              left: auto;
+              right: 0;
+            }
+          }
+        }
+          .nav__link-level-1{
+
+            span{
+              float: none;
+              margin-left: em(5);
+              margin-top: 0;
+            }
+
+            &:link, &:visited{
+              color: $color_font_primary;
+              text-decoration: none;
+              background-color: transparent;
+              font-weight: 500;
+              @include rem-fallback(font-size, 20);
+              border-top: 4px solid transparent;
+                 
+            }
+            &:focus { outline: 1px dotted invert; }
+            &:hover, &:active {
+              outline: 0;
+              color: $color_font_accent;
+              text-decoration: none;
+              background: $color_white;
+              border-color: $color_accent;
+              @include transition-fade;
+            }
+          }
+
+          .nav__list-level-2{
+            position: absolute !important;
+            background: lighten($color_secondary,10);
+            @include glow;
+          }
+
+            .nav__link-level-2{
+              white-space: nowrap;
+
+              &:link, &:visited{
+                color: $color_font_primary;
+                @include rem-fallback(padding-top, 10);
+                @include rem-fallback(padding-bottom, 10);
+                border-bottom: 1px solid lighten($color_secondary, 4);
+                text-decoration: none;
+              }
+              &:focus { outline: 1px dotted invert; }
+              &:hover, &:active {
+                outline: 0;
+                color: $color_font_white;
+                text-decoration: none;
+              }
+
+
+            }
+              .nav__link-level-3{
+                white-space: nowrap;
+
+                &:link, &:visited{
+                  color: $color_font_gray_medium;
+                  text-decoration: none;
+                }
+                &:focus { outline: 1px dotted invert; }
+                &:hover, &:active {
+                  outline: 0;
+                  color: $color_font_gray_dark;
+                  text-decoration: none;
+                }
+              }
+      }
+    }
+  }
+}
+
+.nav__zoom {
+    float: right;
+}
+
+.nav__zoom-in, .nav__zoom-out {
+    color: $color_font_white;
+    background-color: transparent;
+}
+
+@mixin site-header-myaccount-adjust-cols($col-left: 70%, $col-right: 30%){
+
+  .nav-panel{
+    
+    &--myaccount{
+      width: $col-right !important;
+    }
+    &--main-menu{
+      .nav-panel__top-nav{
+        width: $col-left;
+      }
+    }
+  }
+  
+}
+
+// Undo some of bootstrap's styles for .dropdown-menu at small.
+// Note this is a MAX-WIDTH, not min-width.
+@media(max-width: em($break_sidebar)) {
+  .nav-panel--my-account {
+    .nav-panel__nav-container .dropdown-menu {
+      position: static;
+      display: block;
+      float: none;
+      border: none;
+      box-shadow: none;
+    }
+  }
+}

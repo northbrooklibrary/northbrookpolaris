@@ -1,0 +1,39 @@
+﻿/* ==========================================================================
+   Change Databases
+   ========================================================================== */
+
+.change-databases {
+    &__table-header-text {
+        font-size: 1.2em;
+        color: $color_font_white;
+        padding: 7px;
+    }
+
+    &__category-text {
+        font-weight: bold;
+        color: #666666;
+    }
+
+    &__database-name {
+        font-weight: normal;
+        
+        &--selected {
+            //font-weight: bold;
+            //background-color: green;
+        }
+
+        &--restricted {
+            color: #888888;
+        }
+    }
+
+    &__restricted-text {
+        color: #860608;
+    }
+
+    &__table-container {
+        label > input[type=checkbox]:checked + span {
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+﻿#showSearchStatusBox {
+    margin-left: 0;
+    visibility: visible;
+    a:link, a:visited,
+    a:hover, a:focus{
+        text-decoration: $decoration_dashboard_hover_default;
+    }
+}
+
+.search-status__container {
+    margin: .75em 0 1.5em 0;
+}
+
+
+.search-status-box__container {
+    font-size: 1em;
+    margin-top: .5em;
+}
+
+.c-results-utility--full + .search__position,
+.feature-it__panel + .search__position {
+    padding-top: .875em;
+}
+ 
+.c-results-utility-community--full + .search__position,
+.feature-it__panel + .search__position {
+    padding-top: .875em;
+}
+ 
+.search-status__container + .search__position {
+    border-top: 1px solid $gray-lighter;
+    padding-top: .875em;
+}
+
+a.status-text-visible {
+    visibility: visible;
+}
+
+a.status-text-hidden {
+    visibility: hidden;
+}
+
+#searchStatusBox {
+
+    .table-responsive {
+        min-height: 20em;
+        overflow-y: auto;
+        position: relative;
+    }      
+    
+    .table {
+        position: relative;
+    }
+}
+
+.status-text-visible {
+    padding: .75em;
+}
+
+@media screen and (min-width: $screen-md-min) {
+    .search-status-box__container {
+        float: right;
+        font-size: 1em;
+        margin-top: 0;
+
+        #showSearchStatusBox {
+            text-align: right;
+        }
+    }
+}
+
+@media screen and (max-width: 412px) {
+    #searchStatusBox {
+        .modal-dialog {
+            width: 100%
+        }
+    }
+}
+
+@media screen and (min-width: 1px) {
+    .search-status-status-column {
+        .popover {
+            max-width: 280px !important;
+            min-width: 5em !important;
+        }
+    }
+
+    #searchStatusBox {
+        .modal-header, .modal-body, .modal-footer {
+            padding: 5px;
+        }
+
+        .modal-content {
+            padding: .28125em .125em;
+        }
+    }
+}
+
+@media screen and (min-width: 412px) {
+    #searchStatusBox {
+        .modal-header, .modal-body, .modal-footer {
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .search-status-status-column {
+        .popover {
+            max-width: 575px !important;
+            min-width: 5em !important;
+        }       
+    }
+
+    #searchStatusBox {
+        .modal-header, .modal-body, .modal-footer {
+            padding: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .search-status-status-column {
+        .popover {
+            max-width: 950px !important;
+            min-width: 5em !important;
+        }
+    }
+}

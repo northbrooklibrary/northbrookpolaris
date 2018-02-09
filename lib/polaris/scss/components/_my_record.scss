@@ -1,0 +1,155 @@
+﻿.my-record__association-name{
+    word-break:break-word;
+}
+.my-record__drawer{
+    margin-top:0;
+}
+.my-record__table {
+       margin: 0px auto;
+
+       &-header{
+           text-align:center;
+       }
+}
+.my-record__messages--scroll{
+    overflow-x:auto;
+}
+.my-record__separator{
+     height:.7em;
+     background-color:$color_secondary;
+}
+.my-record__table-header-labels{
+     color:$color_white;
+     background-color: $color_primary;
+}
+.my-record__associations{
+    overflow-x:auto;
+    .my-record__association{
+        &:nth-child(odd){background-color:$color_white;}
+        &:nth-child(even){background-color:lighten($color_secondary_light,3);}
+        }
+}
+.my-record__buttons--no-padding{
+    padding-left: 0;
+    overflow-wrap: break-word;
+}
+.my-record__content-container{
+     padding-bottom:1em;
+}
+.my-record__body{
+    background-color: $color_white;
+}
+.my-record__patron-account{
+    background-color: $color_white;
+    .aspNetDisabled {
+        background-color: white !important;
+        color: $color_disabled_font !important;
+    }
+}
+.my-record__button--padding{
+    padding-bottom:1em;
+}
+.my-record__info{
+    background-color: $color_secondary;
+    padding-left:5px;
+}
+.my-record__row-element{
+        padding-bottom: 0.5em;
+}
+.my-record__message-row{
+    padding-top:1em !important;
+    padding-bottom:1em !important;
+    padding-right:0.5em;
+    padding-left:0.5em;
+}
+.my-record__message-checkbox{
+    padding:0 !important;
+}
+.my-record__message-checkbox-label{
+    padding: 1.2em;
+}
+.my-record__row{
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0.3em;
+}
+.my-record__row--separator{
+    margin-right: 0;
+    margin-left: 0;
+}
+.my-record__label{
+    color: $color_gray_light;
+}
+.my-record__data{
+    color: $color_primary;
+    margin-left: 1em;
+}
+.my-record__current-blocks{
+    color: $color_primary;
+}
+.my-record__data--blocks{
+    color: $color_red;
+    margin-left: 1em;
+}
+.my-record__drawer-head-hover{
+    background-color: $color_white;
+    color: $color_accent;
+}
+.my-record__checkbox-label{
+    label{
+        @include rem-fallback(font-size, 16);
+        padding:  0 0 0 0.5em;
+        margin-bottom: 0;
+    }
+}
+.my-record__account-view {
+    padding-bottom: 5px;
+    border-width:0px;
+}
+.my-record__tableresults{
+    font-weight: bold;
+    color: $color_red;
+    margin-left: 1em;
+    margin-right:1em;
+   
+    ul, li{
+        list-style: disc;
+    }
+    ul{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 3em;
+    }
+}
+.my-record__label--bold{
+    font-weight: bold;
+}
+.my-record__data--bold{
+    font-weight: bold;
+}
+/* --- PATRON ACCOUNT ------------------------------------------------------------------- */
+
+.patron-default-body
+{
+    background-color: #F6F6F6;
+    border: solid 1px #CCCCCC;
+}
+.MessageInfoHeader
+{
+    font-size : 1.1em;
+    font-weight : bold;
+    color: $color_black;
+}
+
+.MessageInfoMaroonHeader
+{
+    font-size : 1.1em;
+    font-weight : bold;
+    color: Maroon;
+}
+
+.MessageDataGridStyle
+{
+    background-color: ButtonFace;
+    padding: 2px 2px 2px 4px;    
+}

@@ -1,0 +1,8 @@
+/* ==========================================================================
+   Random lazyload
+   ========================================================================== */
+
+html.js [data-adj-rand-replace] {
+  // Allow to-be-replaced stuff to take up space but hide.
+  visibility: hidden;
+}

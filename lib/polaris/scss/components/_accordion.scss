@@ -1,0 +1,496 @@
+
+.c-accordion {
+  padding-bottom: em(13);
+
+  &__save-search-heading{
+    padding: 0;
+    h5{
+          color: $color_font_white;
+          &:visited,
+          &:hover,
+          &.focus,
+          &:active {
+              color: $color_font_white;
+          }
+    a{
+        &:link{
+            color: $color_font_white;
+        }
+     }
+    }
+  }
+  &__save-search-link{
+      border: none;
+      margin-bottom: 0.5em;
+      margin-top: 0.5em;
+      &:link, &:visited,
+      &:hover, &:focus {
+          text-decoration: none !important;
+      }
+  }
+
+
+  &__panel{
+  }
+ 
+  &__link-more-less{
+      padding-right: 10px;
+      font-weight: 500;
+      color: $color_font_dashboard_more_less;
+      font-weight: bold;
+      text-decoration: $decoration_dashboard_hover_default;
+
+    a, b {    
+        &:link{
+            color: $color_font_dashboard_more_less; 
+            text-decoration: $decoration_dashboard_hover_default;
+        }
+        &:visited{
+	        color: $color_font_dashboard_more_less;   
+	        text-decoration: $decoration_dashboard_hover_default;
+        }
+
+        &:hover{
+	        color: $color_font_dashboard_hover_over;
+	        text-decoration: $decoration_dashboard_hover; 
+        }    
+    }
+  }
+  
+  &__heading{
+    padding: em(4) 0 0;
+  }
+    &__title{
+      padding: 0;
+
+      a{
+        position: relative;
+        display: block;
+        @include rem-fallback(font-size, 16);
+        @include rem-fallback(padding, 10, 15);
+        font-weight: 500;
+        color: $color_font_white;
+
+        &:after{
+          content: ' ';
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          margin-top: -3px;
+          right: 11px;
+          width: 0;
+          height: 0;
+          border-right: 4px solid transparent;
+          border-left: 4px solid transparent;
+          border-bottom: 4px solid;
+          border-top: none;
+          vertical-align: middle;
+        } 
+
+        &:link, &:visited{
+          color: $color_font_dashboard_drawer_label;  // $color_accent;
+          text-decoration: none;
+          background-color: $color_white;
+        }
+        &:focus { outline: 1px dotted invert; }
+        &:hover, &:active {
+          outline: 0;
+          color: $color_font_dashboard_drawer_label_hover; // $color_primary;
+          text-decoration: none;
+          background-color: $color_white;
+        }
+
+        &.collapsed{
+          &:after{
+            border-bottom: none;
+            border-top: 4px solid;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+          } 
+        }
+      }      
+    }
+
+  &__body{
+    background-color: $color_white;
+    // Update the padding to reduce the amount of white space
+    padding-top: em(5);  
+    padding-bottom: em(5);   
+    padding-right: em(10);  
+    padding-left: em(10);   
+    position: relative;
+    @include rem-fallback(font-size,14);
+    line-height: 1.3;  // ADJ added in Feb. 2017 release
+
+    p{
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // ELEMENTS
+  &__list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &--show-bullets{
+      list-style: disc;
+      padding-left: em(16);
+    }
+    :checked + label { color: $color_font_dashboard_selected_item }
+  }
+    &__item{
+      position: relative;
+      //@include clearfix;
+      margin: 0;
+      padding-right: 0;
+      padding-left: 0;
+      padding-top: 0;
+      padding-bottom:5px;
+
+    }
+
+    &__item-webparts{
+        padding-bottom: 5px;    
+    }
+
+    &__item-webparts--no-bullets{
+        list-style: none;    
+    }
+ 
+    &__item--not-selected{
+         list-style: disc; 
+         padding: 0;
+         margin: 0 0 0 11px;
+         }
+    &__link--not-selected{
+         color: $color_font_dashboard_facet_label;  //$color_primary;
+    }   
+    &__item--selected{
+         list-style-image: url(#{$shared-images-path}raquo.gif);  // remove if you use font awesome <<
+         padding: 0;
+         margin: 0 0 0 11px;   // remove if you use font awesome <<
+         color: $color_font_dashboard_selected_item;
+    }
+
+     &__link--selected{
+        padding: em(5) em(0);
+        color: $color_font_dashboard_selected_item;
+        text-decoration: $decoration_dashboard_hover_default; 
+
+
+        &:link{     // makes Narrow your Search, Authors and Subjects turn orange when selected. 
+	        text-decoration: $decoration_dashboard_hover_default;
+            color: $color_font_dashboard_selected_item;
+        }
+        &:visited{
+	        text-decoration: $decoration_dashboard_hover_default;
+            color: $color_font_dashboard_selected_item;
+        }
+        &:hover{
+	        text-decoration: $decoration_dashboard_hover; 
+	        color: $color_font_dashboard_selected_item;
+        }  
+        &:active{
+	        text-decoration: $decoration_dashboard_hover_default;
+            color: $color_font_dashboard_selected_item;
+        }
+     }
+      &__link{
+        padding: em(5) em(0);
+        text-decoration: $decoration_dashboard_hover_default;  
+        color: $color_font_dashboard_facet_label; 
+        &:link{
+            color: $color_font_dashboard_facet_label;
+	        text-decoration: $decoration_dashboard_hover_default;
+        }
+        &:visited{
+            color: $color_font_dashboard_facet_label;
+	        text-decoration: $decoration_dashboard_hover_default;
+        }
+        &:hover{
+	        color: $color_font_dashboard_hover_over;
+	        text-decoration: $decoration_dashboard_hover;
+        } 
+        &:active{ 
+            color: $color_font_dashboard_selected_item;
+            text-decoration: $decoration_dashboard_hover_default;
+        }    
+      }
+      &__link-webparts-author{
+          color: $color_font_dashboard_facet_label_secondary;
+      }
+        &__span-count{
+        text-decoration: $decoration_dashboard_hover_default;
+        color: $color_dashboard_facet_count;
+        font-style: normal;
+        font-weight: 300;
+        display: inline;
+        &:hover{
+	        color: $color_dashboard_facet_count;
+	        text-decoration: $decoration_dashboard_hover_default; 
+        } 
+      }
+      &__checkbox{
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &:visited{
+	        color: $color_font_dashboard_facet_label; 
+        }
+        &:hover{
+	        color: $color_font_dashboard_hover_over;
+        }    
+      }
+
+      
+      &__label{
+        margin-left: em(20);
+        text-decoration: none;
+      }
+      &__item-narrowsearch{
+        text-indent: 0em;
+        padding-left: 1.5em; 
+      }
+      // Add style for the checkbox labels in narrow search. If use __label, it is bold and black.
+      &__label-narrowsearch{
+
+        text-decoration: $decoration_dashboard_hover_default;
+        color: $color_font_dashboard_facet_label;
+        font-style: normal;
+        display: inline;  // puts numbers on same line with label BUT wrap is wrong now
+        font-weight: 300;
+        // add hover processing to make it red
+
+        &:visited{
+	        color: $color_font_dashboard_facet_label;   // need to reset color to original
+	        text-decoration: $decoration_dashboard_hover_default;
+        }
+        &:hover{
+	        color: $color_font_dashboard_hover_over;
+	        text-decoration: $decoration_dashboard_hover; 
+        } 
+      }
+    
+  // LEVEL 2
+  &-lvl2{
+    //border: 1px solid lighten($color_primary_light, 60);
+    &__panel{
+
+    }
+    &__heading{
+
+    }
+
+    // Add style for the OTHER/LOCAL subheadings 
+    &__title-link-subheading{  
+          position: relative;
+          display: block;
+          @include rem-fallback(font-size, 13);
+          color: $color_font_dashboard_Other_Local; 
+          font-weight: bold;
+          padding-bottom: 0.5em;
+    }
+      &__title{
+        a{
+          position: relative;
+          display: block;
+          @include rem-fallback(font-size, 13);
+          @include rem-fallback(padding, 10, 15);
+          color: $color_font_white;
+
+          &:after{
+            content: ' ';
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            margin-top: -3px;
+            right: 11px;
+            width: 0;
+            height: 0;
+            border-right: 4px solid transparent;
+            border-left: 4px solid transparent;
+            border-bottom: 4px solid;
+            border-top: none;
+            vertical-align: middle;
+          } 
+
+          &:link, &:visited{
+  // overrides color in collapsed          
+            color: $color_font_dashboard_drawer_element_label; // $color_primary;
+            text-decoration: none;
+            background-color: $color_white;
+            border-top: 1px solid lighten($color_primary_light, 60);
+          }
+          &:focus { outline: 1px dotted invert; }
+          &:hover, &:active {
+            outline: 0;
+            color: $color_font_white;
+            text-decoration: none;
+            background-color: $color_accent;
+          }
+
+          &.collapsed{
+            //  color:lawngreen;   did not stay this color when collapsed with selections
+
+            &:after{
+           //   color:lawngreen;   did not stay this color when collapsed with selections
+              border-bottom: none;
+              border-top: 4px solid;
+              border-right: 4px solid transparent;
+              border-left: 4px solid transparent;
+            } 
+          }
+        }    
+      }
+    &__body{
+      // Update the padding to reduce the amount of white space
+      padding-top: em(5);  
+      padding-bottom: em(5);  
+      padding-right: em(10);  
+      padding-left: em(20);  
+      @include rem-fallback(font-size, 14);
+    }
+    &__body-narrowsearch{
+        padding-left: 1em;
+    }
+  }
+
+  // Accordions in the results utility component
+  &--results-utility{
+    padding: 0;
+    background: none;
+
+    .c-accordion{
+      &__panel{
+        padding-left: 0;
+        padding-right: 0;
+      }
+      &__heading{
+        float: right;
+        width: 50%;
+        height: em(60);     
+        text-align: center;
+        padding: 0;
+      }
+        &__title{
+          height: 100%;
+
+          a{
+            @include rem-fallback(font-size, 16);
+            @include rem-fallback(padding, 22, 0, 0, 0);
+            height: 100%;
+            line-height: 1;
+            background-color: darken($color_accent,5);
+            vertical-align: middle;
+
+            &:after{
+              position: relative;
+              top: auto;
+              right: auto;
+              margin-top: 0;
+              margin-left: 5px;
+            } 
+
+            &:link, &:visited{
+              color: $color_font_white;
+              text-decoration: none;
+              background-color: darken($color_accent,5);
+            }
+            &:focus { outline: 1px dotted invert; }
+            &:hover, &:active {
+              outline: 0;
+              color: $color_font_gray_dark;
+              text-decoration: none;
+              background-color: $color_gray_light;
+              border-left: 1px solid $color_gray_medium;
+            }
+          }
+        }      
+    }
+    .panel-collapse{
+      clear: both;
+    }
+  }
+
+ &__account{
+    padding: 1.2em;
+    padding-top: .5em;
+  }
+
+ &__account-name {
+    font-weight: bold;
+    padding-bottom: .8em;
+  }
+
+ &__account-option {
+    padding: .5em 0em .5em .7em;
+  }
+
+ &__account-option-highlighted {
+     a:link, a:visited {
+        color: $color_font_dashboard_selected_item
+    }
+  }
+
+  &__account-alert {
+    padding: .5em 0em .5em 2em;
+    a:link, a:visited, a:hover {
+        font-weight: bold;
+    }
+  }
+
+   &__account-logoff {
+    padding-top: 1em;
+    a:link, a:visited, a:hover, a:focus{
+        text-decoration: $decoration_dashboard_hover_default;
+    }
+  }
+}
+
+.content-container--wysiwyg .c-accordion {
+  .c-accordion__title {
+    a {
+      border-bottom: 1px solid $color_accent;
+    }
+  }
+}
+
+.c-accordion-lvl2__title > a.c-accordion-lvl2__subheading--filtered.collapsed:not(:hover) {
+    color: $color_font_dashboard_selected_item;
+}
+
+#c-accordion__panel-narrow .c-accordion__heading.c-accordion__heading--full {
+    height: 60px;
+    width: 100%;
+}
+
+
+.c-accordion__panel--my-account {
+    display: none;
+}
+
+@media only screen and (min-width: em($break_mid, 16)) {
+    .c-accordion__panel--my-account {
+        display: block;
+    }
+}
+@media only screen and (max-width: $screen-sm-min){
+    .c-accordion__item{
+        padding: 0.5em 0;
+    }
+    .c-accordion__item-narrowsearch .c-accordion__checkbox{
+        margin: 0.5em 0;
+    }
+}
+@media only screen and (min-width:$screen-sm-min + 1){
+    .c-accordion__item{
+        padding: 0.25em 0;
+    }
+    .c-accordion__item-narrowsearch .c-accordion__checkbox{
+        margin: 0.4em 0;
+    }
+}

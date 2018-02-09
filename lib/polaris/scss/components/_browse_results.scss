@@ -1,0 +1,46 @@
+
+.TableHeader 
+{
+//	FONT-SIZE: 1.2em; 
+	COLOR: $color_font_white;   
+    background-color: $color_accent;
+    padding: 7px;
+}
+
+
+.ColumnHeader
+{
+	font-weight : bold;
+	background-color : #6696c8;
+    margin-bottom: 3em;
+}
+
+.c-browse-results {
+    &__heading{
+	    BORDER-LEFT-COLOR: #cfcfcf; 
+	    BORDER-BOTTOM-COLOR: #cfcfcf; 
+	    BORDER-TOP-COLOR: #cfcfcf; 
+	    BACKGROUND-COLOR: #ffffff; 
+	    BORDER-RIGHT-COLOR: #cfcfcf;
+        padding-bottom: 0.4em;
+        font-weight: 500;
+    }
+    &__link{
+          &:link, &:visited{
+            text-decoration: $decoration_dashboard_hover_default;
+	    }
+        &:hover, &:focus{
+            text-decoration: $decoration_dashboard_hover;
+            color: $color_font_dashboard_hover_over;
+        }
+    }
+
+    &__heading-alt
+    {
+	    BORDER-LEFT-COLOR: #cfcfcf; 
+	    BORDER-BOTTOM-COLOR: #cfcfcf; 
+	    BORDER-TOP-COLOR: #cfcfcf; 
+	    BACKGROUND-COLOR: $color_secondary;
+	    BORDER-RIGHT-COLOR: #cfcfcf;      
+    }
+}

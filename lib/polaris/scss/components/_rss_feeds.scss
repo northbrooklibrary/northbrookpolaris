@@ -1,0 +1,44 @@
+﻿.rss-feeds__rows{
+    .rss-feeds__row{
+        &:nth-child(even){background-color:$color_white;}
+        &:nth-child(odd){background-color:lighten($color_secondary_light,3);}
+        }
+}
+.rss-feeds__row{
+    padding-right:1em;
+    padding-left:0;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin-right: 0;
+    margin-left: 0;
+}
+.rss-feeds__row-heading{
+    padding-right:1em;
+    padding-left:0;
+    margin-right: 0;
+    margin-left: 0;
+}
+.rss-feeds__img{
+    min-width:36px;
+    min-height: 14px;
+}
+.rss-feeds__row-data1{
+    padding-right:0;
+    padding-left:1em;
+    padding-top:0.5em;
+    word-break:break-all;
+}
+.rss-feeds__row-data2{
+    padding-right:0;
+    padding-left:1em;
+    padding-bottom:0.5em;
+    word-break:break-all;
+}
+.rss-feeds__links a:hover{
+    text-decoration:underline;
+}
+.rss-feeds__RegularXSmall
+{
+	font-size : .9em;
+}
+

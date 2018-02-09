@@ -1,0 +1,390 @@
+﻿.nsm-brief-block-subzone {
+    float: none;
+    margin-bottom: 5px;
+}
+
+.nsm-brief-hosted-by-group {
+    font-size: 100%;
+    text-indent: 12px;
+}
+
+.nsm-brief-iconified-group {
+    padding-left: 1em;
+    text-indent: -1em;
+
+    .glyphicon-new-window {
+        padding: 0 .1em;
+        text-indent: 0;
+    }
+}
+
+.nsm-brief-inline-subzone {
+    float: none;
+}
+
+.nsm-brief-label {
+    color: $color_font_gray_medium_light;
+    font-size: .875em;
+    word-wrap: break-word;
+}
+
+.nsm-brief-label.nsm-e258 {
+    color: #000;
+    font-weight: bold;
+}
+
+.nsm-brief-primary-author-group {
+    text-indent: 12px;
+    word-wrap: break-word;
+}
+
+.nsm-brief-primary-name-group {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-bottom: 2px;
+    word-break: break-word;
+}
+
+.nsm-brief-primary-title-group {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-bottom: 2px;
+    word-break: break-word;
+}
+
+.nsm-brief-primary-title-group + .nsm-brief-standard-group,
+.nsm-brief-primary-author-group + .nsm-brief-standard-group {
+	padding-top: .5em;
+}
+
+.nsm-brief-standard-group {
+    margin-bottom: 2px;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.nsm-highlight-local-availability {
+    font-weight: bold;
+}
+
+.nsm-hit-text {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.nsm-full-block-subzone {
+    float: none;
+    margin-bottom: 5px;
+}
+
+.nsm-full-content {
+    line-height: 1.5em;
+    font-size: .875em;
+    text-align: left;
+    width: 75%;
+    word-wrap: break-word;
+}
+
+.nsm-full-label {
+    color: $color_font_gray_medium_light;
+    font-size: .875em;
+    line-height: 1.5em;
+    text-align: right;
+    width: 25%;
+    word-wrap: break-word;
+}
+
+.nsm-full-label.nsm-e258 {
+    color: #000;
+    font-weight: bold;
+}
+
+.nsm-full-inline-subzone {
+    float: none;
+    font: .875em;
+}
+
+.nsm-full-standard-group {
+    vertical-align: top;
+}
+
+tr.nsm-full-standard-group.nsm-full-zone + tr.nsm-full-standard-group.nsm-full-zone,
+tr.nsm-full-standard-group:last-child {
+  display: none;
+}
+
+.nsm-short-image {
+    border: 0px;
+    height: 20px;
+    margin: 0px .2em;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.nsm-short-item:not(.nsm-e135) {
+    font-size: .875em;
+    word-wrap: break-word;
+}
+
+.nsm-summary-block-subzone {
+    float: none;
+    margin-bottom: 5px;
+}
+
+.nsm-summary-hosted-by-group {
+    font-size: 100%;
+    text-indent: 12px;
+}
+
+.nsm-summary-inline-subzone {
+    float: none;
+}
+
+.nsm-summary-label {
+    color: $color_font_gray_medium_light;
+    font-size: .875em;
+    margin-top: .5em;
+    word-wrap: break-word;
+}
+
+.nsm-summary-label.nsm-e258 {
+    color: #000;
+    font-weight: bold;
+}
+
+.nsm-summary-primary-author-group {
+    text-indent: 12px;
+    word-wrap: break-word;
+}
+
+.nsm-summary-primary-name-group {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-bottom: 2px;
+    word-break: break-word;
+}
+
+.nsm-summary-primary-title-group {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-bottom: 2px;
+    word-break: break-word;
+}
+
+.nsm-summary-primary-title-group + .nsm-summary-standard-group,
+.nsm-summary-primary-author-group + .nsm-summary-standard-group {
+	padding-top: .5em;
+}
+
+.nsm-summary-primary-zone {
+    margin-top: .5em;
+}
+
+.nsm-summary-secondary-subzone {
+    float: none;
+    margin-top: 10px;
+}
+
+.nsm-summary-secondary-zone {
+    margin-top: .5em;
+}
+
+div.nsm-long-item {
+    margin-left: 1em;
+    padding-bottom: .1em;
+    text-indent: -1em;
+}
+
+div.nsm-long-item span.nsm-alternate-part a.nsm-browse-link {
+    color: $color_alternate_text;
+    text-decoration: none;
+}
+
+div.nsm-long-item span.nsm-alternate-part a.nsm-browse-link:hover span.nsm-browse-text {
+    text-decoration: underline;
+}
+
+div.nsm-long-item a.nsm-browse-link {
+    color: $color_link;
+    text-decoration: none;
+}
+
+div.nsm-long-item a.nsm-browse-link:hover span.nsm-browse-text {
+    text-decoration: underline;
+}
+
+div.nsm-long-item a.nsm-browse-link:hover span.nsm-browse-text {
+    text-decoration: underline;
+    color: $color_link_over;
+}
+
+span.nsm-short-item span.nsm-alternate-part a.nsm-browse-link {
+    color: $color_alternate_text;
+    text-decoration: none;
+}
+
+span.nsm-short-item span.nsm-alternate-part a.nsm-browse-link:hover span.nsm-browse-text {
+    text-decoration: underline;
+}
+
+span.nsm-short-item a.nsm-browse-link {
+    color: $color_link;
+    text-decoration: none;
+}
+
+
+span.nsm-short-item > a {
+    color: $color_link;
+    text-decoration: $decoration_dashboard_hover_default;
+}
+
+span.nsm-short-item > a:hover {
+    color: $color_font_dashboard_hover_over;
+    text-decoration: $decoration_dashboard_hover;
+}
+
+
+span.nsm-short-item a.nsm-browse-link:hover span.nsm-browse-text {
+    text-decoration: underline;
+    color: $color_link_over;
+}
+
+a.nsm-brief-action-link {
+    text-decoration: none;
+}
+
+a.nsm-brief-action-link span.nsm-short-item {
+    color: $color_link;
+}
+
+a.nsm-brief-action-link:hover span.nsm-short-item {
+    color: $color_link_over;
+    text-decoration: underline;
+}
+
+a.nsm-brief-action-link span.nsm-short-item span.nsm-alternate-part {
+    color: $color_alternate_text;
+}
+
+a.nsm-brief-action-link:hover span.nsm-short-item span.nsm-browse-text {
+    color: $color_link_over;
+    text-decoration: underline;
+}
+
+a.nsm-brief-action-link:hover span.nsm-short-item span.nsm-alternate-part span.nsm-browse-text {
+    color: $color_link_over;
+    text-decoration: underline;
+}
+
+.nsm-e197{
+    a{
+        word-break:break-all;
+    }
+}
+a.nsm-summary-action-link {
+    text-decoration: none;
+}
+
+a.nsm-summary-action-link span.nsm-browse-text {
+    color: $color_link;
+    text-decoration: underline;
+}
+
+tr.nsm-brief-primary-zone td {
+    padding-top: 3px;
+}
+
+tr.nsm-brief-secondary-zone td {
+    padding-top: .5em;
+}
+
+tr.nsm-brief-secondary-zone td:empty {
+    padding-top: 0px;
+}
+
+body.preview tr.nsm-brief-primary-zone > td > table > tbody > tr > td:nth-of-type(1) {
+    display: none;
+}
+
+body.preview tr.nsm-brief-primary-zone > td > table > tbody > tr > td:nth-of-type(2) {
+    padding-left: 0px;
+}
+
+/* quick hack for result number */
+
+tr.nsm-brief-primary-zone td:first-child[width='1%'] {
+    padding-top: 5px;
+}
+
+tr.nsm-brief-primary-zone td:first-child[width='1%']::after {
+    content: "\00a0";
+}
+
+.search-results__did-you-mean,
+.search-results__follow-on-search,
+.search-results__include-related-words {
+    margin: 1em;
+}
+.search-results__follow-on-search{
+    a:link, a:visited,
+    a:hover, a:focus{
+        text-decoration: $decoration_dashboard_hover_default;
+    }
+}
+
+.search-results__results-link-panel{
+    background-color: $color_secondary;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+.search-results__results-link{
+    color: $color_font_accent_dark;
+    &:link, &:visited{
+        text-decoration: $decoration_dashboard_hover_default;
+    }
+    &:hover,&:focus{
+        text-decoration: $decoration_dashboard_hover;
+        color: $color_font_dashboard_hover_over;
+    }
+}
+.search-results__browse-results{
+    color: $color_font_accent_dark;
+    &:link, &:visited{
+        color: $color_font_accent_dark;
+        text-decoration: none;
+    }     
+    &:hover, &:focus {
+        color: $color_font_dashboard_hover_over;
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width: em($break_sidebar, 16)) {
+    .nsm-hidden-xs {
+        display: none !important;
+    }
+
+    body.page-title .content-module .content-container {
+        padding-right: 0 !important;
+    }
+
+    table.nsm-full-record {
+
+        table, tbody {
+            display: block !important;
+        }
+
+        tr:not(.nsm-hidden-xs) {
+            display: block;
+            margin-bottom: .5em;
+        }
+
+        div, th, td {
+            display: inline !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            text-indent: 0 !important;
+            width: auto !important;
+        }
+    }
+} 
