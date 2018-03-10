@@ -1,93 +1,94 @@
-.npl-site-nav{
-  position: fixed;
-  top: 6.5rem;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  padding: 2rem 0 1rem;
-  background-color: $white;
-  z-index: 999;
-  opacity: .99;
-  transition: left .2s ease-in-out;
-
-  @media screen and (#{$bp-larger-than-tablet}){
+.nav-panel--main-menu {
+  .nav-panel__nav{
     position: static;
-    float: right;
     width: auto;
-    height: auto;
-    margin-top: 2.5rem;
-    padding: 0;
-    background-color: transparent;
+    float: right;
+    margin-top: 2rem;
     border-top: 0;
-    opacity: 1;
   }
 
-  &.open{
-    left: 0;
+  .nav__item-level-1{
+    display: inline-block;
+    float: none !important;
+    margin-top: 0 !important;
+  }
+
+
+  .nav__link-level-1:link, .nav__link-level-1:visited{
+    display: block;
+    margin-left: 2rem;
+    padding: 0;
+    font-size: 1rem !important;
+    text-transform: uppercase;
+    color: $primary-color !important;
+
+    &:hover{
+      border: 0;
+    }
+  }
+
+  .nav-panel__top-nav{
+    width: auto !important;
+    height: auto;
+    top: 0;
+    float: none;
+    padding: 0;
   }
 }
 
-.npl-nav{
-  @include unstyled-list;
-  width: 80%;
-  margin: auto;
+.nav-panel__header{
+  position: absolute;
+  top: 0;
 
-  @media screen and (#{$bp-larger-than-tablet}){
-    width: auto;
-  }
 
   li{
-    margin-bottom: 2rem;
-    text-align: center;
+    display: inline-block !important;
+    float: none !important;
+    margin-right: 0 !important;
 
-    @media screen and (#{$bp-larger-than-tablet}){
-      display: inline-block;
-      margin-bottom: 0;
+    a{
+      display: block;
+      margin-left: 1rem;
+      padding: 0 !important;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: $grey !important;
+      font-size: .875rem !important;
+      text-decoration: none;
     }
   }
 
-  a{
-    display: block;
+  .top-nav .nav__select{
+    padding: 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-family: $base-font-family;
-    color: $link-color;
-    text-decoration: none;
-
-    @media screen and (#{$bp-larger-than-tablet}){
-      margin-left: 2rem;
-      //color: $white;
-    }
-
-    &.active{
-      color: $light-grey;
-    }
+    letter-spacing: .5px;
+    color: $grey !important;
+    font-size: .875rem;
   }
 }
 
-.site-nav-control {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  display: inline-block;
-  float: right;
-  height: auto;
-  padding: .375rem 1rem;
-  color: $link-color;
-  background-color: $white;
-  border-color: transparent;
-  font-family: $base-font-family;
-  font-size: 1.5rem;
-
-  @media screen and (#{$bp-larger-than-tablet}){
-    display: none;
+.nav-panel--main-menu{
+  .nav-panel__header{
+    left: 2rem;
   }
 }
 
-.open-site-nav:before {
-  content: '\2630';
-}
+.nav-panel--my-account{
+  .nav-panel__header{
+    right: 2rem;
+  }
 
-.close-site-nav:before {
-  content: '\00D7';
+  .nav-panel__welcome{
+    padding: 0;
+
+    a{
+      display: inline-block;
+      margin-left: 1rem;
+      padding: 0;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: $grey !important;
+      font-size: .875rem;
+    }
+  }
 }

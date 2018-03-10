@@ -1,0 +1,18 @@
+.content-module{
+  background-color: $light-grey;
+
+}
+
+//will probably dump below
+
+.content-carousel__title{
+  margin: 0 0 .5rem;
+  text-align: left;
+
+  a:link, a:visited{
+    background-color: transparent;
+    color: $primary-color;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+  }
+}

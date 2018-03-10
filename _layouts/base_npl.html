@@ -11,103 +11,131 @@
 </head>
 <body onscroll="ResetTimer();" onload="" onclick="ResetTimer();" class="{{ page.polaris_body_classes }}">
 
-  <div id="top"></div>
+  <div class="site-container" id="top">
 
-    <header class="site-header npl-site-header" role="banner">
-       <div class="content-container site-header__content-container npl-container">
-         <a href="{{ site.baseurl }}/" class="npl-brand">
-           {% include npl-logo.svg %}
-           <span class="npl-sub-brand">Catalog</span>
-         </a>
-         <nav class="npl-meta-nav">
-           <ul class="npl-nav">
-             <li><a href="">Website</a></li>
-             <li><a href="">Catalog</a></li>
-             <li><a href="">Account</a></li>
-           </ul>
-         </nav>
+    <header class="site-header">
+      <div class="content-container site-header__content-container">
+
+        <div class="toggle-nav-panel--myaccount">
+          <a class="nav-panel__welcome-link" href="https://ccs-training.polarislibrary.com/polaris/logon.aspx?header=1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>&nbsp;
+          <a class="nav-panel__welcome-link" href="https://ccs-training.polarislibrary.com/polaris/logon.aspx?header=1">Log In</a>
+        </div>
+
+        <div class="nav-panel nav-panel--my-account scotch-panel-right" data-containerselector=".site-container" data-direction="right" data-clickselector=".toggle-nav-panel--my-account" style="top: 0px; right: -80%; width: 80%; height: 100%; position: absolute; z-index: 888888; overflow: hidden;">
+          <header class="nav-panel__header">
+            <div class="nav-panel__welcome">
+              <a href="#">Website</a>
+              <a href="#">Catalog</a>
+              <a class="nav-panel__welcome-link" href="https://ccs-training.polarislibrary.com/polaris/logon.aspx?header=1">Log In</a>
+
+            </div>
+          </header>
+          <span class="nav-panel__nav-container">
+          </span>
+        </div>
+        <a href="#" class="toggle-nav-panel--main-menu" style="text-align: left"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> Menu</a>
+        <div class="nav-panel nav-panel--main-menu scotch-panel-left" data-containerselector=".site-container" data-direction="left" data-clickselector=".toggle-nav-panel--main-menu" style="top: 0px; left: -80%; width: 80%; height: 100%; position: absolute; z-index: 888888; overflow: hidden;">
+          <header class="nav-panel__header">
+
+            <nav class="nav-panel__top-nav top-nav top-nav--split-header navbar-collapse" role="navigation" aria-hidden="true">
+              <ul class="nav__list-level-1 nav navbar-nav">
 
 
+                <li class="nav__item-level-1 select-styled select-styled--no-arrow-pad dropdown" id="header-dropdown-language">
+                  <select class="nav__select">
+                    <option value="#" class="nav__option">Language</option>
 
-        <nav class="npl-site-nav" id="site-nav" role="navigation" aria-hidden="false">
-          <ul class="npl-nav">
-            <li><a href="">Recommended</a></li>
-            <li><a href="">eResources</a></li>
-            <li><a href="">Help</a></li>
-          </ul>
-        </nav>
+                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1033.0.0.1" class="nav__option">English</option>
+
+                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1042.0.0.1" class="nav__option">한국어</option>
+
+                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1045.0.0.1" class="nav__option">Polskie</option>
+
+                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1049.0.0.1" class="nav__option">Русский</option>
+
+                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1081.0.0.1" class="nav__option">हिन्दि</option>
+
+                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.2052.0.0.1" class="nav__option">中文</option>
+
+                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.3082.0.0.1" class="nav__option">Español</option>
+
+                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.3084.0.0.1" class="nav__option">Français</option>
+
+                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.12289.0.0.1" class="nav__option">العربية</option>
+
+                  </select>
+                </li>
+
+
+                <li class="nav__item-level-1 nav__large-print">
+                  <a class="nav__large-print-link" href="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1033.0.0.1&amp;lp=1">
+                    Large Text
+                  </a>
+                </li>
+
+              </ul>
+            </nav>
+          </header>
+          <nav class="nav-panel__nav expandable-block-nav">
+            <ul class="nav__list-level-1 nav navbar-nav">
+
+              <li class="nav__item-level-1"><a href="#" class="nav__link-level-1">Recommendations</a></li>
+              <li class="nav__item-level-1"><a href="#" class="nav__link-level-1">eResources</a></li>
+              <li class="nav__item-level-1"><a href="#" class="nav__link-level-1">Help</a></li>
+
+
+              <li class="nav__item-level-1 nav__item-level-1--more dropdown" style="display: none;">
+                <a href="#" class="nav__link-level-1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></a>
+                <ul class="nav__list-level-2 dropdown-menu">
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <a href="{{ site.baseurl }}/" class="npl-brand">
+          {% include npl-logo.svg %}
+          <span class="npl-sub-brand">Catalog</span>
+        </a>
       </div>
     </header>
 
-    <!--- Search section start -->
-    <section class="npl-search">
-      <div class="npl-container">
-        <form class="npl-search-form">
-          <div class="npl-control-group npl-inline-controls">
-            <label class="npl-hidden">Enter your search term here</label>
-            <input type="text" placeholder="Find books, movies, and more here...">
-            <button class="npl-button npl-search-button">Search</button>
-          </div>
-        </form>
-        <nav class="npl-search-tools">
-          <ul class="npl-tools">
-            <li><a href="">Language</a></li>
-            <li><a href="">Library</a></li>
-            <li><a href="default.aspx?ctx=47.1033.0.0.1&type=Advanced">Advanced</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
+    <main class="site-main" id="content">
+        <div class="site-main__container">
+            <article class="primary-content">
+                <section class="primary-content__section">
+                    <form id="formMain" method="post" runat="server" onsubmit="<%# GetOnSubmitHandler() %>" onclick="<%# GetOnClickHandler() %>">
+                        {{ content }}
+                    </form>
+                </section>
+            </article>
+            <aside class="secondary-content">
+                <section class="secondary-content__section">
+                    <div class="content-module">
+                        <div class="content-container">
+                          {% if page.body_class == 'results' %}
+                            {% include filters.html %}
+                          {% endif %}
 
-    {% if page.body_class == "home" %}
-      <section class="npl-quick-links">
-        <div class="npl-container">
-          <ul class="npl-quick-link-buttons">
-            <li><a href="">New Fiction</a></li>
-            <li><a href="">New Nonfiction</a></li>
-            <li><a href="">New Movies</a></li>
-            <li><a href="">New Audiobooks</a></li>
-            <li><a href="">New Youth</a></li>
-          </ul>
+                          {% if page.body_class == 'record' %}
+                            {% include record-actions.html %}
+                          {% endif %}
+
+                          {% if page.body_class == 'account' %}
+                            {% include account-aside.html %}
+                          {% endif %}
+                        </div>
+                    </div>
+                </section>
+            </aside>
         </div>
-      </section>
-    {% endif %}
-
-
-    <!--- MAIN CONTENT - START -->
-    <main class="site-main npl-site-content" id="content">
-      <div class="site-main__container npl-container">
-        <section class="primary-content npl-primary-content">
-          {{ content }}
-        </section>
-        <aside class="secondary-content npl-secondary-content">
-          <div class="secondary-content__section npl-aside-content">
-            {% if page.body_class == 'results' %}
-              {% include filters.html %}
-            {% endif %}
-
-            {% if page.body_class == 'record' %}
-              {% include record-actions.html %}
-            {% endif %}
-
-            {% if page.body_class == 'account' %}
-              {% include account-aside.html %}
-            {% endif %}
-
-          </div>
-        </aside>
-      </div>
     </main>
-
-
-
 
     <!--- MAIN CONTENT - END -->
 
     <!--- FOOTER - START -->
 
     <footer class="site-footer npl-site-footer" role="contentinfo">
-      <div class="content-container site-footer__content-container npl-container">
+      <div class="content-container site-footer__content-container">
         <div class="npl-contact">
           <a href="#" class="npl-brand-no-logo">Northbrook Public Library</a>
           <p class="npl-address">1201 Cedar Lane  <br> Northbrook, Illinois 60062 <br> 847-272-6224</p>
@@ -122,6 +150,7 @@
     </footer>
 
     <!--- FOOTER - END -->
+  </div><!--end of site container-->
 
     <div class="site-overlay"></div>
 

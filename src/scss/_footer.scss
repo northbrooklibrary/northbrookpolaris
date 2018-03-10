@@ -1,9 +1,14 @@
-.npl-site-footer{
+.site-footer{
   background-color: $primary-color;
   color: $white;
 
-  > .npl-container{
+  > .content-container{
+    @include container;
     display: flex;
+  }
+
+  a{
+    color: $white;
   }
 }
 

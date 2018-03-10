@@ -1,16 +1,24 @@
-.npl-container{
-  position: relative;
-  clear: both;
-  max-width: $max-width;
-  margin: 0 auto;
-  padding: 2rem;
-  overflow: hidden;
 
-  &.narrow{
-
-    @media screen and (#{$bp-larger-than-tablet}){
-      padding-left: 6rem;
-      padding-right: 6rem;
-    }
+.site-header{
+  .content-container{
+    @include container;
   }
+}
+
+.row{
+  @include container;
+}
+
+.section-root{
+  .primary-content{
+    width: 100%;
+  }
+
+  .secondary-content{
+    @include hidden;
+  }
+}
+
+.npl-container{
+  @include container;
 }

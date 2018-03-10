@@ -1,0 +1,21 @@
+
+.npl-brand{
+  display: inline-block;
+
+  svg{
+    width: 10.625rem;
+    height: auto;
+  }
+}
+
+.npl-sub-brand{
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  margin-left: 2rem;
+  margin-bottom: .25rem;
+  border-left: 1px solid $border-color;
+  font-size: 1.5rem;
+  color: $font-color;
+  text-transform: uppercase;
+  vertical-align: bottom;
+}
