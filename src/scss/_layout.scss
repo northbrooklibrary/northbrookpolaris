@@ -1,17 +1,60 @@
 
+.row{
+  @include container;
+}
+
+.npl-container{
+  @include container;
+}
+
+.primary-content{
+  background-color: $light-grey;
+}
+
+//container for header
 .site-header{
   .content-container{
     @include container;
   }
 }
 
-.row{
-  @include container;
+
+//tweak to make homepage container have bottom padding.
+.content-container--portal{
+  padding-bottom: 2rem !important;
 }
 
+.has-sidebar .secondary-content .content-module .content-container{
+  padding: 0;
+}
+
+//container for search results page
+.page-searchresults{
+  .site-main__container{
+    @include container;
+  }
+}
+
+//container for search results page
+.page-title{
+  .site-main__container{
+    @include container;
+  }
+}
+
+//container for account page
+.section-patronaccount, .section-PatronAccount{
+  .site-main__container{
+    @include container;
+  }
+}
+
+//layout for primary and secondary content sections
+
+//container for homepage
 .section-root{
   .primary-content{
-    width: 100%;
+    width: 100% !important;
   }
 
   .secondary-content{
@@ -19,6 +62,18 @@
   }
 }
 
-.npl-container{
-  @include container;
+.has-sidebar .primary-content{
+  @media only screen and (min-width: 40.625em){
+    width: calc(75% - 2rem);
+    margin-right: 2rem;
+    margin-left: 0;
+  }
+}
+
+.has-sidebar.sidebar-left .primary-content{
+  @media only screen and (min-width: 40.625em){
+    width: calc(75% - 2rem);
+    margin-left: 2rem;
+    margin-right: 0;
+  }
 }

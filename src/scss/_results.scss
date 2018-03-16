@@ -1,0 +1,278 @@
+
+ .c-results-utility--partial{
+   background-color: transparent;
+   padding: 0;
+ }
+
+.c-results-utility__container{
+  display: inline-block;
+  margin-bottom: -.5rem;
+
+  *{
+    color: $grey;
+    background-color: transparent;
+  }
+
+
+}
+
+.c-results-utility__container--sort-narrow{
+  width: auto !important;
+}
+
+.c-results-utility-result-count{
+  display: inline-block;
+
+  &:after{
+    content: " Results"
+  }
+}
+
+.c-results-utility--full{
+  padding: 0;
+  background-color: $background-color;
+}
+
+//search counts and sort tools
+
+.c-results-utility__container--result-count{
+  width: auto !important;
+  float: none !important;
+  padding: 0 !important;
+}
+
+.c-results-utility-per-page{
+  display: inline-block;
+  margin-left: 2rem;
+
+   *{
+    display: inline;
+  }
+
+  &:before{
+    content: "Showing "
+  }
+}
+
+select.c-results-utility-per-page__select{
+  margin-right: 2px;
+  padding-left: 4px;
+  background-color: rgba($white, .5);
+}
+
+.c-results-utility-sort{
+  background-color: transparent;
+  color: $grey;
+}
+
+.c-results-utility-sort__label{
+  color: $grey;
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.c-results-utility-per-page__select{
+
+}
+
+.c-results-utility__container--sort-narrow{
+  float: right;
+
+   *{
+    display: inline;
+  }
+}
+
+//search result item
+
+.content-module--search-result{
+  position: relative;
+  margin: 1rem 0 2rem;
+  padding: 1rem;
+  background-color: $white;
+  overflow: hidden;
+
+  hr{
+    display: none;
+  }
+
+  p{
+    margin-top: 0;
+  }
+}
+
+.c-title-detail__container{
+  //display: flex;
+  width: 100% !important;
+}
+
+//results meta
+
+.c-title-detail-media__container{
+  position: relative;
+  width: 20% !important;
+  margin: 0;
+  text-align: center;
+}
+
+.c-title-detail__image-container{
+  img{
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: none;
+    //background-color: $light-grey;
+  }
+}
+
+.c-title-detail__3rd-party-item--google-preview{
+  margin-top: 2rem;
+}
+
+//results info
+
+.c-title-detail-info__container{
+  width: calc(80% - 2rem) !important;
+  margin-left: 2rem !important;
+  padding: 0 !important;
+}
+
+.has-sidebar .c-title-detail--initial-two-col .c-title-detail-info__container{
+  float: left;
+}
+
+.nsm-brief-label{
+  color: $grey;
+}
+
+.nsm-brief-primary-zone > td > table > tbody > tr{
+  > td{
+    padding: 0 0 1rem !important;
+
+    &:first-child{
+      display: none;
+    }
+  }
+}
+
+.nsm-brief-primary-title-group{
+  font-size: 1.5rem;
+}
+
+//hide edition label because it's silly
+.nsm-brief-label.nsm-e105, .nsm-brief-label.nsm-e147{
+  @include hidden;
+}
+
+//hide summary label because it's silly too
+.nsm-brief-label.nsm-e109{
+  @include hidden;
+}
+
+.nsm-brief-standard-group{
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+  text-indent: 0 !important;
+}
+
+.nsm-brief-primary-author-group{
+  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+  text-indent: 0 !important;
+}
+
+.nsm-short-item:not(.nsm-e135){
+  font-size: 1rem !important;
+}
+
+.nsm-brief-secondary-zone{
+
+  td{
+    padding-bottom: 1rem;
+  }
+}
+
+//action buttons
+
+.c-title-detail__title-display{
+  .c-title-detail-actions__container{
+    width: auto !important;
+    float: none !important;
+    margin-left: calc(20% + 2rem);
+  }
+}
+
+
+.c-title-detail-actions__list{
+  @include unstyled-list;
+  margin-left: -1rem;
+  padding-left: 25%;
+}
+
+.c-title-detail-actions__item{
+  display: inline-block;
+  margin-left: .5rem;
+
+}
+
+.c-title-detail-actions__btn:link, .c-title-detail-actions__btn:visited{
+  display: block;
+  padding: .5rem 2rem;
+  background-color: lighten($grey, 30%);
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .875rem;
+}
+
+.c-title-detail-actions__btn{
+  span{
+    display: none !important;
+  }
+}
+
+.button-brief-availability a{
+  background-color: $primary-color !important;
+}
+
+.content-module--search-result .c-title-detail-actions__add-to-my-list{
+  display: inline-block;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: .75rem;
+
+  a{
+    color: $white;
+  }
+
+}
+
+.c-results-utility__container--pagination{
+  float: right !important;
+}
+
+.pagination{
+  @include unstyled-list;
+  position: relative;
+  top: -.25rem;
+  display: inline-block;
+
+  li{
+    display: inline-block;
+  }
+}
+
+.page-link{
+  display: block;
+  min-width: .5rem;
+  margin: 0 .25rem;
+  padding: .25rem .75rem !important;
+  background-color: $white;
+  border: 0 !important;
+}
+
+.active{
+  .page-link{
+    background-color: $primary-color !important;
+  }
+}

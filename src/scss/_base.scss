@@ -9,7 +9,7 @@ html{
 }
 
 body{
-  height: 100%;
+  min-height: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: $background-color;
@@ -25,6 +25,7 @@ h2{
 }
 
 a{
+  font-family: $base-font-family;
   color: darken($link-color, 5%);
   text-decoration: none;
   cursor: pointer;
@@ -45,4 +46,10 @@ hr{
 
 input[type=text], input[type=url], input[type=email], input[type=tel], input[type=number], input[type=password], textarea, select, select[multiple="multiple"]{
   font-family: $base-font-family;
+}
+
+.c-accordion__heading{
+  &:first-child{
+    padding-top: 0;
+  }
 }

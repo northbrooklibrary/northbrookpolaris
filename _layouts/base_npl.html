@@ -11,91 +11,52 @@
 </head>
 <body onscroll="ResetTimer();" onload="" onclick="ResetTimer();" class="{{ page.polaris_body_classes }}">
 
-  <div class="site-container" id="top">
+  <div class="polaris-site-container" id="top">
 
-    <header class="site-header">
-      <div class="content-container site-header__content-container">
+    <header class="site-header npl-site-header" role="banner">
+       <div class="content-container site-header__content-container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="{{ site.baseurl }}/" class="npl-brand">
+              {% include npl-logo.svg %}
+              <span class="npl-sub-brand">Catalog</span>
+            </a>
+          </div>
 
-        <div class="toggle-nav-panel--myaccount">
-          <a class="nav-panel__welcome-link" href="https://ccs-training.polarislibrary.com/polaris/logon.aspx?header=1"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>&nbsp;
-          <a class="nav-panel__welcome-link" href="https://ccs-training.polarislibrary.com/polaris/logon.aspx?header=1">Log In</a>
-        </div>
+         <nav class="npl-meta-nav">
+           <ul class="npl-nav">
+             <li class="npl-language-dropdown select-styled" id="header-dropdown-language">
+               <select class="nav__select">
+                 <option value="#" class="nav__option">Language</option>
+                 <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1033.0.0.1" class="nav__option">English</option>
+                 <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1042.0.0.1" class="nav__option">한국어</option>
+                 <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1045.0.0.1" class="nav__option">Polskie</option>
+                 <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1049.0.0.1" class="nav__option">Русский</option>
+                 <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1081.0.0.1" class="nav__option">हिन्दि</option>
+                 <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.2052.0.0.1" class="nav__option">中文</option>
+                 <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.3082.0.0.1" class="nav__option">Español</option>
+                 <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.3084.0.0.1" class="nav__option">Français</option>
+                 <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.12289.0.0.1" class="nav__option">العربية</option>
+               </select>
+             </li>
+             <li><a href="">Website</a></li>
+             <li><a href="">Catalog</a></li>
+             <li><a href="">Account</a></li>
+           </ul>
+         </nav>
 
-        <div class="nav-panel nav-panel--my-account scotch-panel-right" data-containerselector=".site-container" data-direction="right" data-clickselector=".toggle-nav-panel--my-account" style="top: 0px; right: -80%; width: 80%; height: 100%; position: absolute; z-index: 888888; overflow: hidden;">
-          <header class="nav-panel__header">
-            <div class="nav-panel__welcome">
-              <a href="#">Website</a>
-              <a href="#">Catalog</a>
-              <a class="nav-panel__welcome-link" href="https://ccs-training.polarislibrary.com/polaris/logon.aspx?header=1">Log In</a>
-
-            </div>
-          </header>
-          <span class="nav-panel__nav-container">
-          </span>
-        </div>
-        <a href="#" class="toggle-nav-panel--main-menu" style="text-align: left"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span> Menu</a>
-        <div class="nav-panel nav-panel--main-menu scotch-panel-left" data-containerselector=".site-container" data-direction="left" data-clickselector=".toggle-nav-panel--main-menu" style="top: 0px; left: -80%; width: 80%; height: 100%; position: absolute; z-index: 888888; overflow: hidden;">
-          <header class="nav-panel__header">
-
-            <nav class="nav-panel__top-nav top-nav top-nav--split-header navbar-collapse" role="navigation" aria-hidden="true">
-              <ul class="nav__list-level-1 nav navbar-nav">
-
-
-                <li class="nav__item-level-1 select-styled select-styled--no-arrow-pad dropdown" id="header-dropdown-language">
-                  <select class="nav__select">
-                    <option value="#" class="nav__option">Language</option>
-
-                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1033.0.0.1" class="nav__option">English</option>
-
-                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1042.0.0.1" class="nav__option">한국어</option>
-
-                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1045.0.0.1" class="nav__option">Polskie</option>
-
-                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1049.0.0.1" class="nav__option">Русский</option>
-
-                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1081.0.0.1" class="nav__option">हिन्दि</option>
-
-                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.2052.0.0.1" class="nav__option">中文</option>
-
-                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.3082.0.0.1" class="nav__option">Español</option>
-
-                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.3084.0.0.1" class="nav__option">Français</option>
-
-                    <option value="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.12289.0.0.1" class="nav__option">العربية</option>
-
-                  </select>
-                </li>
-
-
-                <li class="nav__item-level-1 nav__large-print">
-                  <a class="nav__large-print-link" href="http://ccs-training.polarislibrary.com/polaris/default.aspx?ctx=47.1033.0.0.1&amp;lp=1">
-                    Large Text
-                  </a>
-                </li>
-
-              </ul>
-            </nav>
-          </header>
-          <nav class="nav-panel__nav expandable-block-nav">
-            <ul class="nav__list-level-1 nav navbar-nav">
-
-              <li class="nav__item-level-1"><a href="#" class="nav__link-level-1">Recommendations</a></li>
-              <li class="nav__item-level-1"><a href="#" class="nav__link-level-1">eResources</a></li>
-              <li class="nav__item-level-1"><a href="#" class="nav__link-level-1">Help</a></li>
-
-
-              <li class="nav__item-level-1 nav__item-level-1--more dropdown" style="display: none;">
-                <a href="#" class="nav__link-level-1 dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span></a>
-                <ul class="nav__list-level-2 dropdown-menu">
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <a href="{{ site.baseurl }}/" class="npl-brand">
-          {% include npl-logo.svg %}
-          <span class="npl-sub-brand">Catalog</span>
-        </a>
+         <nav class="navbar npl-site-nav">
+           <ul class="nav navbar-nav">
+             <li><a href="#">Recommendations</a></li>
+             <li><a href="#">eResources</a></li>
+             <li><a href="#">Help</a></li>
+           </ul>
+         </nav>
       </div>
     </header>
 

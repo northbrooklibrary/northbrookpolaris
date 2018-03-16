@@ -1,0 +1,40 @@
+
+.npl-meta-nav{
+  @include unstyled-list;
+  position: absolute;
+  top: .5rem;
+  left: 0;
+  width: 100%;
+  padding: 0 2rem;
+  text-align: right;
+
+  li{
+    display: inline-block;
+
+    a, select{
+      display: block;
+      margin-left: 1rem;
+      background-color: transparent;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: $grey;
+      font-size: .875rem;
+      text-decoration: none;
+    }
+  }
+
+  .npl-language-dropdown{
+    position: absolute;
+    left: 1rem;
+    margin-left: 0;
+
+    select{
+      padding-right: 1.5rem;
+
+      &:after{
+        top: 50%;
+        margin-top: 0;
+      }
+    }
+  }
+}
